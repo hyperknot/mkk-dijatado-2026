@@ -21,6 +21,6 @@ Diavetítés a 2026-os MKK díjátadóra (2026. november 20.), [reveal.js](https
 ## Források
 
 - Eredmények: a saját validálásunk (2026-10-15, `eredmenyek_2026.md`), a gravírozott nevek a serlegrendelésből.
-- Fotók: a pilóták XContest profilképei (2026-11-17). Ahol nincs (vagy nem arc), a 2026-os Google Slides diáiból.
+- Fotók: a pilóta XContest profilképe (2026-11-17), ha az arcát mutatja; különben a 2025-ös díjátadó diájáról az ő képe. Akinek egyik sincs, annál monogram szerepel.
 - Költségvetés és statisztika grafikonok: a 2026-os Google Slides diáiról (még a 2025-ös adatok).
 - Rekordok: https://szakbizottsag.hu/rekordok/

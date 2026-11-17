@@ -624,3 +624,10 @@ section.records-slide {
   margin: 10px 0;
   padding-left: 30px;
 }
+
+.podium .glider {
+  margin-top: 8px;
+  font-size: 34px;
+  font-weight: 600;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+}
