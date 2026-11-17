@@ -1,7 +1,7 @@
 # Writes results.json: the MKK rankings from our own flight validation. Not runnable here: it needs
-# the private validation repo (xcontest-hun-validate, its lib/ and data). Run it from that repo's
+# the private validation repo (xcontest-hun-validate: this folder sits next to its src/). Run it from that repo's
 # src/ and copy the output over src/results.json:
-#   uv run python /path/to/mkk-dijatado-2026/src/export_results.py > /path/to/mkk-dijatado-2026/src/results.json
+#   uv run python ../mkk-dijatado-2026/src/export_results.py > ../mkk-dijatado-2026/src/results.json
 # (a "podium check" line printed before the JSON has to be removed)
 import json
 
