@@ -505,7 +505,8 @@ section.budget {
   display: grid !important;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto 1fr;
-  gap: 30px 40px;
+  gap: 90px 60px;
+  padding-top: 90px;
 }
 
 .budget .panel {
@@ -518,15 +519,22 @@ section.budget {
 }
 
 .budget img {
+  display: block;
   width: 100%;
   border-radius: 12px;
   box-shadow: var(--shadow);
+}
+
+.budget .stale {
   align-self: start;
 }
 
-.budget img.wide {
+.budget .wide {
   grid-column: 1 / 3;
-  height: 400px;
+}
+
+.budget .wide img {
+  height: 360px;
   object-fit: contain;
   background: #1b1b1b;
 }
@@ -543,10 +551,22 @@ section.stats {
 }
 
 .stats img {
+  display: block;
   width: 100%;
   border-radius: 12px;
   box-shadow: var(--shadow);
+}
+
+.stats .stale {
   align-self: start;
+  margin-top: 40px;
+}
+
+.note {
+  margin-top: 20px;
+  font-size: 28px;
+  font-weight: 600;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.7);
 }
 
 .big-numbers {
@@ -579,17 +599,34 @@ section.stats {
   text-align: center;
 }
 
-/* the marker of content that still has to be updated; delete the element when done */
-.todo {
-  display: inline-block;
-  padding: 6px 18px;
+/* outdated or missing content: a thick red frame with a label; remove the class when updated */
+.stale {
+  position: relative;
+  outline: 14px solid #e01b1b;
+  outline-offset: 6px;
+  border-radius: 12px;
+}
+
+.stale::before {
+  content: attr(data-warn);
+  position: absolute;
+  z-index: 10;
+  top: -44px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 8px 24px;
   border-radius: 10px;
-  background: #d62828;
+  background: #e01b1b;
   color: #fff;
-  font-size: 26px;
-  font-weight: 700;
+  font-size: 34px;
+  font-weight: 800;
+  white-space: nowrap;
   text-shadow: none;
-  vertical-align: middle;
+}
+
+.cover .stale {
+  margin-top: 70px;
+  padding: 6px 40px;
 }
 
 .name-md {

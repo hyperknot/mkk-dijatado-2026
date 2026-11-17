@@ -16,7 +16,7 @@ Diavetítés a 2026-os MKK díjátadóra (2026. november 20.), [reveal.js](https
 - Minden dia az `index.html`-ben van, egy `<section>` egy dia. GitHubon a ceruza ikonnal közvetlenül szerkeszthető.
 - Képek: `assets/img/photos/<xcontest felhasználónév>.jpg`. Csere: ugyanazzal a névvel felülírni. Ha az arc nem középen van, a képen a `style="object-position: 80% 40%"` állítja a kivágást (vízszintes, függőleges).
 - Megjelenés: `assets/css/style.css`.
-- A még frissítendő részeket piros `frissítendő` címke jelöli (`class="todo"`), ezeket a végén törölni kell.
+- A régi vagy hiányzó adatokat vastag piros keret és felirat jelöli (`class="stale" data-warn="..."`). Frissítés után a `stale` osztályt törölni kell. Ami nincs pirossal jelölve, az a 2026-os végeredményből vagy a 2026-os szezon adataiból van.
 
 ## Források
 
