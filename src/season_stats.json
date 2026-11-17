@@ -1,0 +1,359 @@
+{
+ "records": [
+  {
+   "title": "Legerősebb termik (átlagos emelkedés)",
+   "columns": {
+    "pilot": "Pilóta",
+    "task": "Task",
+    "avg_climb_ms": "Átl. emelkedés (m/s)",
+    "gain_m": "Magasságnyerés (m)",
+    "duration_s": "Időtartam (s)"
+   },
+   "rows": [
+    {
+     "pilot": "Balazs Racz",
+     "task": 3,
+     "avg_climb_ms": 4.61,
+     "gain_m": 447,
+     "duration_s": 97
+    },
+    {
+     "pilot": "Róbert Sörös",
+     "task": 4,
+     "avg_climb_ms": 4.03,
+     "gain_m": 685,
+     "duration_s": 170
+    },
+    {
+     "pilot": "Bartos Miklós",
+     "task": 4,
+     "avg_climb_ms": 3.98,
+     "gain_m": 1099,
+     "duration_s": 276
+    }
+   ]
+  },
+  {
+   "title": "Leggyorsabb hivatalos task sebesség (ESS-ig érők)",
+   "columns": {
+    "pilot": "Pilóta",
+    "task": "Task",
+    "speed_kmh": "Sebesség (km/h)",
+    "glider": "Ernyő"
+   },
+   "rows": [
+    {
+     "pilot": "Claudiu Pista",
+     "task": 1,
+     "speed_kmh": 36.56,
+     "glider": "Niviuk Artik R"
+    },
+    {
+     "pilot": "Balazs Racz",
+     "task": 3,
+     "speed_kmh": 33.79,
+     "glider": "Ozone Enzo 3"
+    },
+    {
+     "pilot": "Richard Dosa",
+     "task": 3,
+     "speed_kmh": 33.7,
+     "glider": "Advance Tau Dls"
+    }
+   ]
+  },
+  {
+   "title": "Legnagyobb talajsebesség (30 s-os átlag, hátszéllel)",
+   "columns": {
+    "pilot": "Pilóta",
+    "task": "Task",
+    "max_ground_speed_kmh": "Talajsebesség (km/h)",
+    "glider": "Ernyő"
+   },
+   "rows": [
+    {
+     "pilot": "Janos Barna",
+     "task": 1,
+     "max_ground_speed_kmh": 84.7,
+     "glider": "Ozone Zeno 2"
+    },
+    {
+     "pilot": "Balazs Racz",
+     "task": 1,
+     "max_ground_speed_kmh": 84.1,
+     "glider": "Ozone Enzo 3"
+    },
+    {
+     "pilot": "Adam Barat",
+     "task": 1,
+     "max_ground_speed_kmh": 76.7,
+     "glider": "Ozone Lyght"
+    }
+   ]
+  },
+  {
+   "title": "Legnagyobb GPS-magasság",
+   "columns": {
+    "pilot": "Pilóta",
+    "task": "Task",
+    "max_gps_alt": "GPS-magasság (m)",
+    "glider": "Ernyő"
+   },
+   "rows": [
+    {
+     "pilot": "Zsolt Takacs",
+     "task": 4,
+     "max_gps_alt": 2510,
+     "glider": "Skywalk Mint"
+    },
+    {
+     "pilot": "Börcsök Gergő",
+     "task": 4,
+     "max_gps_alt": 2475,
+     "glider": "Flow Freedom"
+    },
+    {
+     "pilot": "Róbert Sörös",
+     "task": 4,
+     "max_gps_alt": 2469,
+     "glider": "Flow Fusion"
+    }
+   ]
+  }
+ ],
+ "post_start_thermals": 1141,
+ "left_share": 0.487,
+ "awards": [
+  {
+   "award": "Hajszálnyira",
+   "pilots": [
+    "Tamás Ács"
+   ],
+   "task": 1,
+   "value": "2,14 km hiányzott",
+   "meaning": "A legkisebb különbség a task táv és a hivatalos táv között goal nélkül"
+  },
+  {
+   "award": "Fűszálról vissza",
+   "pilots": [
+    "Tamás Ács"
+   ],
+   "task": 3,
+   "value": "kb. 110 m-ről, +188 m",
+   "meaning": "A talajhoz legközelebbről induló termik, amely legalább 100 m-t emelt"
+  },
+  {
+   "award": "Hason csúszva goalba",
+   "pilots": [
+    "Janos Barna"
+   ],
+   "task": 2,
+   "value": "kb. 25 m",
+   "meaning": "A legalacsonyabb magasság a talaj felett a goal vonalon"
+  },
+  {
+   "award": "Minek ennyi magasság?",
+   "pilots": [
+    "Róbert Sörös"
+   ],
+   "task": 4,
+   "value": "kb. 895 m",
+   "meaning": "A legnagyobb magasság a talaj felett az ESS-nél"
+  },
+  {
+   "award": "Hétalvó",
+   "pilots": [
+    "András Radnai"
+   ],
+   "task": 1,
+   "value": "144:19 perc a start gate után",
+   "meaning": "A leghosszabb várakozás a start gate nyitása és a tényleges startolás között"
+  },
+  {
+   "award": "Puskagolyó",
+   "pilots": [
+    "Tolnai Gergő"
+   ],
+   "task": 2,
+   "value": "0:02 perc a start gate után",
+   "meaning": "A leggyorsabb startolás a start gate nyitása után"
+  },
+  {
+   "award": "A türelem termiket terem",
+   "pilots": [
+    "András Radnai"
+   ],
+   "task": 1,
+   "value": "0,34 m/s, 119 m-en át",
+   "meaning": "A leggyengébb emelés azon termikek közül, amelyek így is legalább 100 m-t emeltek"
+  },
+  {
+   "award": "Liftezés",
+   "pilots": [
+    "Zsolt Ero"
+   ],
+   "task": 4,
+   "value": "+1552 m, 3,93 m/s-mal",
+   "meaning": "A legnagyobb magasságnyerés egyetlen termikben"
+  },
+  {
+   "award": "Körhinta",
+   "pilots": [
+    "Peter A. Molnar"
+   ],
+   "task": 3,
+   "value": "20:27 perc alatt +1511 m",
+   "meaning": "A leghosszabb körözés egyetlen termikben"
+  },
+  {
+   "award": "Körözésfüggő",
+   "pilots": [
+    "Dávid Hargitai"
+   ],
+   "task": 1,
+   "value": "a start utáni repülési idő 50%-a körözéssel",
+   "meaning": "A start utáni repülési idő legnagyobb része telt termikben (legalább 30 perc repülés a start után), az ESS-ig érők közül"
+  },
+  {
+   "award": "Nyílegyenes",
+   "pilots": [
+    "Zoltan Szaloki"
+   ],
+   "task": 3,
+   "value": "a start utáni repülési idő 21%-a körözéssel",
+   "meaning": "A start utáni repülési idő legkisebb része telt termikben (legalább 30 perc repülés a start után), az ESS-ig érők közül"
+  },
+  {
+   "award": "Balra át!",
+   "pilots": [
+    "Tamás Ács"
+   ],
+   "task": null,
+   "value": "a körözési idő 99%-a balra, 36 termik",
+   "meaning": "A körözési idő aránya, legalább 20 start utáni termikkel rendelkező pilóták közül"
+  },
+  {
+   "award": "Jobbra át!",
+   "pilots": [
+    "Peter Kocsis"
+   ],
+   "task": null,
+   "value": "a körözési idő 99%-a jobbra, 62 termik",
+   "meaning": "A körözési idő aránya, legalább 20 start utáni termikkel rendelkező pilóták közül"
+  },
+  {
+   "award": "Gaggle-mágnes",
+   "pilots": [
+    "Attila Mayer",
+    "Balazs Racz",
+    "Börcsök Gergő",
+    "Dániel Ábel",
+    "Janos Barna",
+    "Levente Huszkó",
+    "Tolnai Gergő",
+    "Veronika Kiss-Beck",
+    "Zoltan Szaloki",
+    "Zsolt Ero",
+    "Zsolt Takacs"
+   ],
+   "task": 2,
+   "value": "11 pilóta, 12:39:24–12:46:33 UTC",
+   "meaning": "A legtöbb pilóta által a start után közösen tekert termik (időben átfedve, középpontok 500 m-en belül)"
+  },
+  {
+   "award": "Éllovas",
+   "pilots": [
+    "Claudiu Pista"
+   ],
+   "task": 1,
+   "value": "lead coeff 0,761",
+   "meaning": "A task legalacsonyabb GAP lead coefficientje (minél kisebb, annál többet vezetett elöl)"
+  },
+  {
+   "award": "Éllovas",
+   "pilots": [
+    "Balazs Racz"
+   ],
+   "task": 2,
+   "value": "lead coeff 1,056",
+   "meaning": "A task legalacsonyabb GAP lead coefficientje (minél kisebb, annál többet vezetett elöl)"
+  },
+  {
+   "award": "Éllovas",
+   "pilots": [
+    "Richard Dosa"
+   ],
+   "task": 3,
+   "value": "lead coeff 1,058",
+   "meaning": "A task legalacsonyabb GAP lead coefficientje (minél kisebb, annál többet vezetett elöl)"
+  },
+  {
+   "award": "Éllovas",
+   "pilots": [
+    "Róbert Sörös"
+   ],
+   "task": 4,
+   "value": "lead coeff 2,034",
+   "meaning": "A task legalacsonyabb GAP lead coefficientje (minél kisebb, annál többet vezetett elöl)"
+  },
+  {
+   "award": "Éllovas",
+   "pilots": [
+    "Janos Barna"
+   ],
+   "task": 5,
+   "value": "lead coeff 1,599",
+   "meaning": "A task legalacsonyabb GAP lead coefficientje (minél kisebb, annál többet vezetett elöl)"
+  }
+ ],
+ "civl_ids": {
+  "Claudiu Pista": 89917,
+  "Balazs Racz": 3525,
+  "Janos Barna": 45290,
+  "Adam Barat": 33026,
+  "Zoltan Szaloki": 9194,
+  "László Ravasz": 64159,
+  "Róbert Sörös": 15697,
+  "Florian Czinege": 76839,
+  "Richard Dosa": 9197,
+  "Tamás Gábor Fülöp": 89329,
+  "Péter Szabó Ee": 33296,
+  "Dávid Hargitai": 85827,
+  "Tamás Ács": 89913,
+  "Dániel Ábel": 64142,
+  "Bence Börcsök": 83624,
+  "András Radnai": 96863,
+  "Arnold Réti": 85915,
+  "Balazs Bruszniczky": 89539,
+  "Ferenc Resch": 80682,
+  "Attila Sukosd": 89408,
+  "Levente Huszkó": 76823,
+  "Gábor Nagy": 76822,
+  "Attila Kovacs": 82851,
+  "Bartos Miklós": 63618,
+  "Gergely Varga": 89523,
+  "Gábor Hangácsi": 96885,
+  "Istvan Katai": 58721,
+  "Judit Vas": 93463,
+  "Kiss Marton": 89977,
+  "Levente Barta": 96723,
+  "Tamás Szántó": 96714,
+  "Zsolt Ero": 35133,
+  "Zsolt Takacs": 73075,
+  "Tolnai Gergő": 94252,
+  "Börcsök Gergő": 89702,
+  "Attila Mayer": 73459,
+  "Márton Mucsi": 70513,
+  "Veronika Kiss-Beck": 88244,
+  "Szabolcs Szalai": 64144,
+  "Dániel Reményi": 89643,
+  "Peter Kocsis": 89554,
+  "Dorottya Salamon": 85834,
+  "Peter A. Molnar": 89227,
+  "Gabrieli Richárd": 54662,
+  "Gáspár Balczó": 37141,
+  "Kornel Feil": 73060,
+  "Máté Hidasnémeti": 90261,
+  "Varga Zoltán": 2475
+ }
+}

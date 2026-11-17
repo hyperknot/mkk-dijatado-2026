@@ -40,6 +40,7 @@ DECK = [
     ('liga', 'sport'),
     ('liga', 'fun'),
     ('liga', 'women'),
+    ('liga-records',),
 ]
 
 # Engraved names (the cup order, Hungarian order) by XContest username; others keep the XContest name
@@ -90,6 +91,15 @@ LIGA = {
     'women': ('Női', lambda p: p['sex'] == 'F'),
 }
 
+# The Liga records slide (src/season_stats.json), by value column: title, unit, decimals, and
+# the height gained for the thermal
+LIGA_RECORDS = {
+    'avg_climb_ms': ('Legerősebb termik', 'm/s', 2, True),
+    'speed_kmh': ('Leggyorsabb task', 'km/h', 1, False),
+    'max_ground_speed_kmh': ('Legnagyobb talajsebesség', 'km/h', 0, False),
+    'max_gps_alt': ('Legnagyobb magasság', 'm', 0, False),
+}
+
 # The Liga pilots on the slides, by AirScore ID: (name on the slide, photo name in assets/img/photos/
 # or None). The photo name is the XContest username where the name and the glider match an MKK
 # pilot, else a name-based one (pilots without a known XContest username)
@@ -130,6 +140,7 @@ TYPES = {
 def main():
     data = json.loads((SRC / 'results.json').read_text())
     liga = json.loads((SRC / 'liga.json').read_text())
+    season = json.loads((SRC / 'season_stats.json').read_text())
     photos = {p.stem for p in (ROOT / 'assets/img/photos').glob('*.jpg')}
     slides = []
     for entry in DECK:
@@ -143,6 +154,8 @@ def main():
             slides += club_slides(data['clubs'])
         elif entry[0] == 'liga':
             slides += liga_slides(liga, entry[1], photos)
+        elif entry[0] == 'liga-records':
+            slides.append(liga_records_slide(season, liga))
     template = (SRC / 'template.html').read_text()
     html = template.replace('<!-- SLIDES -->', '\n\n'.join(slides))
     (ROOT / 'index.html').write_text(html)
@@ -379,6 +392,38 @@ def liga_podium(category, r, liga, photos):
           </tbody>
         </table>
       </div>
+</section>'''
+
+
+def liga_records_slide(season, liga):
+    # the 4 records of src/season_stats.json (our analysis of the liga IGCs), top 3 each
+    by_civl = {p['civl_id']: p['ID'] for p in liga['results']}
+
+    def pilot(row):
+        return LIGA_PILOTS.get(by_civl.get(season['civl_ids'].get(row['pilot'])), (row['pilot'],))[0]
+
+    cards = []
+    for rec in season['records']:
+        key = list(rec['columns'])[2]
+        title, unit, places, gain = LIGA_RECORDS[key]
+        rows = '\n'.join(
+            f'        <tr><td><span class="rank p{i}">{i}</span></td><td class="who"><b>{escape(pilot(r))}</b></td>'
+            + (f'<td class="num gain">+{r["gain_m"]} m</td>' if gain else '')
+            + f'<td class="num pts">{f"{r[key]:.{places}f}".replace(".", ",")} {unit}</td></tr>'
+            for i, r in enumerate(rec['rows'], 1)
+        )
+        cards.append(f'''  <div class="card rec">
+    <h3>{title}</h3>
+    <table class="list">
+      <tbody>
+{rows}
+      </tbody>
+    </table>
+  </div>''')
+    body = '\n'.join(cards)
+    return f'''<section data-background-image="{LIGA_BG}" class="liga liga-records">
+  <h2>Liga rekordok</h2>
+{body}
 </section>'''
 
 
