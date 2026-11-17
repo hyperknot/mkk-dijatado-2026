@@ -1,0 +1,4396 @@
+{
+ "classes": {
+  "open": {
+   "name": "PG Nyílt",
+   "count": 285,
+   "rows": [
+    {
+     "place": 1,
+     "name": "Ata B",
+     "username": "Wmpilot",
+     "club": "Winchflyer SE",
+     "points": 1225.12,
+     "flights": [
+      {
+       "date": "2026-07-31",
+       "takeoff": "Sárhegy",
+       "type": "FAI_TRIANGLE",
+       "km": 180.7,
+       "points": 361.4,
+       "glider": "OZONE Enzo 3",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Wmpilot/31.07.2026/09:24"
+      },
+      {
+       "date": "2026-06-27",
+       "takeoff": "?",
+       "type": "FAI_TRIANGLE",
+       "km": 164.69,
+       "points": 329.39,
+       "glider": "OZONE Enzo 3",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Wmpilot/27.06.2026/09:07"
+      },
+      {
+       "date": "2026-06-20",
+       "takeoff": "?",
+       "type": "FAI_TRIANGLE",
+       "km": 143.62,
+       "points": 287.24,
+       "glider": "OZONE Enzo 3",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Wmpilot/20.06.2026/10:25"
+      },
+      {
+       "date": "2026-08-06",
+       "takeoff": "Kiskunhalas",
+       "type": "FAI_TRIANGLE",
+       "km": 123.55,
+       "points": 247.09,
+       "glider": "OZONE Enzo 3",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Wmpilot/6.08.2026/10:13"
+      }
+     ]
+    },
+    {
+     "place": 2,
+     "name": "Balazs Racz",
+     "username": "ENAIRGY",
+     "club": "Amatőr SE",
+     "points": 1211.62,
+     "flights": [
+      {
+       "date": "2026-06-27",
+       "takeoff": "Kalocsa",
+       "type": "FAI_TRIANGLE",
+       "km": 175.72,
+       "points": 351.44,
+       "glider": "OZONE Enzo 3",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:ENAIRGY/27.06.2026/09:18"
+      },
+      {
+       "date": "2026-06-25",
+       "takeoff": "Kalocsa",
+       "type": "FAI_TRIANGLE",
+       "km": 162.23,
+       "points": 324.46,
+       "glider": "OZONE Enzo 3",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:ENAIRGY/25.06.2026/09:18"
+      },
+      {
+       "date": "2026-06-26",
+       "takeoff": "Kalocsa",
+       "type": "FAI_TRIANGLE",
+       "km": 150.09,
+       "points": 300.18,
+       "glider": "OZONE Enzo 3",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:ENAIRGY/26.06.2026/09:39"
+      },
+      {
+       "date": "2026-06-20",
+       "takeoff": "Kalocsa",
+       "type": "FAI_TRIANGLE",
+       "km": 117.77,
+       "points": 235.54,
+       "glider": "OZONE Enzo 3",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:ENAIRGY/20.06.2026/09:14"
+      }
+     ]
+    },
+    {
+     "place": 3,
+     "name": "Tasi Péter",
+     "username": "Tasipepo",
+     "club": "Griff SC",
+     "points": 1173.92,
+     "flights": [
+      {
+       "date": "2026-06-25",
+       "takeoff": "Kalocsa",
+       "type": "FAI_TRIANGLE",
+       "km": 162.05,
+       "points": 324.09,
+       "glider": "OZONE Photon",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Tasipepo/25.06.2026/09:29"
+      },
+      {
+       "date": "2026-06-27",
+       "takeoff": "Kiskunhalas",
+       "type": "FAI_TRIANGLE",
+       "km": 160.75,
+       "points": 321.5,
+       "glider": "OZONE Photon",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Tasipepo/27.06.2026/09:13"
+      },
+      {
+       "date": "2026-06-20",
+       "takeoff": "Kiskunhalas",
+       "type": "FAI_TRIANGLE",
+       "km": 143.83,
+       "points": 287.67,
+       "glider": "OZONE Photon",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Tasipepo/20.06.2026/09:45"
+      },
+      {
+       "date": "2026-08-10",
+       "takeoff": "Kiskunhalas",
+       "type": "FAI_TRIANGLE",
+       "km": 120.33,
+       "points": 240.66,
+       "glider": "OZONE Photon",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Tasipepo/10.08.2026/10:10"
+      }
+     ]
+    },
+    {
+     "place": 4,
+     "name": "Dávid Kerényi",
+     "username": "kerenyid",
+     "club": "Fly Away SE",
+     "points": 1012.16,
+     "flights": [
+      {
+       "date": "2026-07-25",
+       "takeoff": "Orosháza",
+       "type": "FAI_TRIANGLE",
+       "km": 156.95,
+       "points": 313.9,
+       "glider": "GIN GLIDERS Bonanza 2",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:kerenyid/25.07.2026/08:45"
+      },
+      {
+       "date": "2026-06-07",
+       "takeoff": "Csörlő Billeg",
+       "type": "FREE_FLIGHT",
+       "km": 241.06,
+       "points": 241.06,
+       "glider": "GIN GLIDERS Bonanza 2",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:kerenyid/7.06.2026/10:09"
+      },
+      {
+       "date": "2026-09-26",
+       "takeoff": "Orosháza",
+       "type": "FAI_TRIANGLE",
+       "km": 120.18,
+       "points": 240.36,
+       "glider": "GIN GLIDERS Bonanza 2",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:kerenyid/26.09.2026/09:34"
+      },
+      {
+       "date": "2026-09-15",
+       "takeoff": "Orosháza",
+       "type": "FAI_TRIANGLE",
+       "km": 108.42,
+       "points": 216.84,
+       "glider": "GIN GLIDERS Bonanza 2",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:kerenyid/15.09.2026/09:12"
+      }
+     ]
+    },
+    {
+     "place": 5,
+     "name": "Jani Barna",
+     "username": "janibar",
+     "club": "Sirius SE",
+     "points": 1003.26,
+     "flights": [
+      {
+       "date": "2026-07-31",
+       "takeoff": "Sárhegy",
+       "type": "FAI_TRIANGLE",
+       "km": 164.84,
+       "points": 329.67,
+       "glider": "OZONE Photon",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:janibar/31.07.2026/09:24"
+      },
+      {
+       "date": "2026-06-28",
+       "takeoff": "Eged DK",
+       "type": "FREE_TRIANGLE",
+       "km": 153.82,
+       "points": 276.88,
+       "glider": "OZONE Photon",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:janibar/28.06.2026/09:38"
+      },
+      {
+       "date": "2026-06-19",
+       "takeoff": "Sárhegy",
+       "type": "FAI_TRIANGLE",
+       "km": 127.23,
+       "points": 254.47,
+       "glider": "OZONE Photon",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:janibar/19.06.2026/09:49"
+      },
+      {
+       "date": "2026-08-15",
+       "takeoff": "Szársomlyó",
+       "type": "FREE_FLIGHT",
+       "km": 142.24,
+       "points": 142.24,
+       "glider": "OZONE Photon",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:janibar/15.08.2026/09:55"
+      }
+     ]
+    },
+    {
+     "place": 6,
+     "name": "Botond Nyiri",
+     "username": "boti",
+     "club": "Winchflyer SE",
+     "points": 993.59,
+     "flights": [
+      {
+       "date": "2026-06-27",
+       "takeoff": "Kiskunhalas reptér",
+       "type": "FAI_TRIANGLE",
+       "km": 136.43,
+       "points": 272.86,
+       "glider": "OZONE Photon",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:boti/27.06.2026/09:31"
+      },
+      {
+       "date": "2026-07-25",
+       "takeoff": "Orosháza",
+       "type": "FAI_TRIANGLE",
+       "km": 130.54,
+       "points": 261.09,
+       "glider": "OZONE Photon",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:boti/25.07.2026/09:03"
+      },
+      {
+       "date": "2026-05-28",
+       "takeoff": "Nyikom",
+       "type": "FREE_FLIGHT",
+       "km": 232.59,
+       "points": 232.59,
+       "glider": "OZONE Photon",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:boti/28.05.2026/09:57"
+      },
+      {
+       "date": "2026-07-17",
+       "takeoff": "Orosháza",
+       "type": "FAI_TRIANGLE",
+       "km": 113.53,
+       "points": 227.05,
+       "glider": "OZONE Photon",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:boti/17.07.2026/09:28"
+      }
+     ]
+    },
+    {
+     "place": 7,
+     "name": "Richard Dósa",
+     "username": "dosa.richard",
+     "club": "Eged Eagles SE",
+     "points": 975.36,
+     "flights": [
+      {
+       "date": "2026-06-28",
+       "takeoff": "Eged DK",
+       "type": "FAI_TRIANGLE",
+       "km": 134.16,
+       "points": 268.33,
+       "glider": "ADVANCE Tau DLS",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:dosa.richard/28.06.2026/09:38"
+      },
+      {
+       "date": "2026-06-27",
+       "takeoff": "Kalocsa",
+       "type": "FAI_TRIANGLE",
+       "km": 128.82,
+       "points": 257.64,
+       "glider": "ADVANCE Tau DLS",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:dosa.richard/27.06.2026/10:36"
+      },
+      {
+       "date": "2026-06-26",
+       "takeoff": "Kalocsa",
+       "type": "FAI_TRIANGLE",
+       "km": 120.43,
+       "points": 240.86,
+       "glider": "ADVANCE Tau DLS",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:dosa.richard/26.06.2026/09:51"
+      },
+      {
+       "date": "2026-06-07",
+       "takeoff": "Nyikom",
+       "type": "FREE_FLIGHT",
+       "km": 208.53,
+       "points": 208.53,
+       "glider": "ADVANCE Tau DLS",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:dosa.richard/7.06.2026/09:52"
+      }
+     ]
+    },
+    {
+     "place": 8,
+     "name": "Pál Takáts",
+     "username": "PalTakats",
+     "club": "Amatőr SE",
+     "points": 972.81,
+     "flights": [
+      {
+       "date": "2026-07-31",
+       "takeoff": "Sárhegy",
+       "type": "FAI_TRIANGLE",
+       "km": 235.26,
+       "points": 470.53,
+       "glider": "OZONE Enzo 3",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:PalTakats/31.07.2026/08:45"
+      },
+      {
+       "date": "2026-06-27",
+       "takeoff": "Csobánc",
+       "type": "FAI_TRIANGLE",
+       "km": 107.47,
+       "points": 214.94,
+       "glider": "OZONE Alpina 5",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:PalTakats/27.06.2026/10:49"
+      },
+      {
+       "date": "2026-05-14",
+       "takeoff": "Szársomlyó",
+       "type": "FREE_FLIGHT",
+       "km": 144.73,
+       "points": 144.73,
+       "glider": "OZONE Alpina 5",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:PalTakats/14.05.2026/10:25"
+      },
+      {
+       "date": "2026-06-20",
+       "takeoff": "Szársomlyó",
+       "type": "FREE_FLIGHT",
+       "km": 142.61,
+       "points": 142.61,
+       "glider": "OZONE Alpina 5",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:PalTakats/20.06.2026/09:53"
+      }
+     ]
+    },
+    {
+     "place": 9,
+     "name": "Miklós Bartos",
+     "username": "Miko27",
+     "club": "Sirius SE",
+     "points": 944.3,
+     "flights": [
+      {
+       "date": "2026-08-13",
+       "takeoff": "Magashegy",
+       "type": "FREE_FLIGHT",
+       "km": 263.28,
+       "points": 263.28,
+       "glider": "FLOW PARAGLIDERS Fusion Light",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Miko27/13.08.2026/09:31"
+      },
+      {
+       "date": "2026-07-31",
+       "takeoff": "Sárhegy",
+       "type": "FAI_TRIANGLE",
+       "km": 128.35,
+       "points": 256.69,
+       "glider": "FLOW PARAGLIDERS Fusion Light",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Miko27/31.07.2026/09:28"
+      },
+      {
+       "date": "2026-08-04",
+       "takeoff": "Szársomlyó",
+       "type": "FREE_FLIGHT",
+       "km": 216.0,
+       "points": 216,
+       "glider": "FLOW PARAGLIDERS Fusion Light",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Miko27/4.08.2026/10:24"
+      },
+      {
+       "date": "2026-06-23",
+       "takeoff": "Csörlő Billeg",
+       "type": "FREE_FLIGHT",
+       "km": 208.33,
+       "points": 208.33,
+       "glider": "SKYWALK Spice 2",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Miko27/23.06.2026/09:46"
+      }
+     ]
+    },
+    {
+     "place": 10,
+     "name": "Gábor Szalai",
+     "username": "gszala",
+     "club": "KEMRSE",
+     "points": 938.5,
+     "flights": [
+      {
+       "date": "2026-07-28",
+       "takeoff": "Vértesszőlős",
+       "type": "FREE_FLIGHT",
+       "km": 275.88,
+       "points": 275.88,
+       "glider": "ZOOM PARAGLIDERS X2C",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:gszala/28.07.2026/09:38"
+      },
+      {
+       "date": "2026-07-10",
+       "takeoff": "Vértesszőlős",
+       "type": "FREE_FLIGHT",
+       "km": 247.38,
+       "points": 247.38,
+       "glider": "ZOOM PARAGLIDERS X2C",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:gszala/10.07.2026/09:30"
+      },
+      {
+       "date": "2026-08-01",
+       "takeoff": "Szársomlyó",
+       "type": "FREE_FLIGHT",
+       "km": 212.2,
+       "points": 212.2,
+       "glider": "ZOOM PARAGLIDERS X2C",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:gszala/1.08.2026/09:35"
+      },
+      {
+       "date": "2026-08-12",
+       "takeoff": "Vértesszőlős",
+       "type": "FREE_FLIGHT",
+       "km": 203.04,
+       "points": 203.04,
+       "glider": "ZOOM PARAGLIDERS X2C",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:gszala/12.08.2026/10:13"
+      }
+     ]
+    }
+   ]
+  },
+  "sport": {
+   "name": "PG Sport",
+   "count": 264,
+   "rows": [
+    {
+     "place": 1,
+     "name": "Tasi Péter",
+     "username": "Tasipepo",
+     "club": "Griff SC",
+     "points": 1173.92,
+     "flights": [
+      {
+       "date": "2026-06-25",
+       "takeoff": "Kalocsa",
+       "type": "FAI_TRIANGLE",
+       "km": 162.05,
+       "points": 324.09,
+       "glider": "OZONE Photon",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Tasipepo/25.06.2026/09:29"
+      },
+      {
+       "date": "2026-06-27",
+       "takeoff": "Kiskunhalas",
+       "type": "FAI_TRIANGLE",
+       "km": 160.75,
+       "points": 321.5,
+       "glider": "OZONE Photon",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Tasipepo/27.06.2026/09:13"
+      },
+      {
+       "date": "2026-06-20",
+       "takeoff": "Kiskunhalas",
+       "type": "FAI_TRIANGLE",
+       "km": 143.83,
+       "points": 287.67,
+       "glider": "OZONE Photon",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Tasipepo/20.06.2026/09:45"
+      },
+      {
+       "date": "2026-08-10",
+       "takeoff": "Kiskunhalas",
+       "type": "FAI_TRIANGLE",
+       "km": 120.33,
+       "points": 240.66,
+       "glider": "OZONE Photon",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Tasipepo/10.08.2026/10:10"
+      }
+     ]
+    },
+    {
+     "place": 2,
+     "name": "Dávid Kerényi",
+     "username": "kerenyid",
+     "club": "Fly Away SE",
+     "points": 1012.16,
+     "flights": [
+      {
+       "date": "2026-07-25",
+       "takeoff": "Orosháza",
+       "type": "FAI_TRIANGLE",
+       "km": 156.95,
+       "points": 313.9,
+       "glider": "GIN GLIDERS Bonanza 2",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:kerenyid/25.07.2026/08:45"
+      },
+      {
+       "date": "2026-06-07",
+       "takeoff": "Csörlő Billeg",
+       "type": "FREE_FLIGHT",
+       "km": 241.06,
+       "points": 241.06,
+       "glider": "GIN GLIDERS Bonanza 2",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:kerenyid/7.06.2026/10:09"
+      },
+      {
+       "date": "2026-09-26",
+       "takeoff": "Orosháza",
+       "type": "FAI_TRIANGLE",
+       "km": 120.18,
+       "points": 240.36,
+       "glider": "GIN GLIDERS Bonanza 2",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:kerenyid/26.09.2026/09:34"
+      },
+      {
+       "date": "2026-09-15",
+       "takeoff": "Orosháza",
+       "type": "FAI_TRIANGLE",
+       "km": 108.42,
+       "points": 216.84,
+       "glider": "GIN GLIDERS Bonanza 2",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:kerenyid/15.09.2026/09:12"
+      }
+     ]
+    },
+    {
+     "place": 3,
+     "name": "Jani Barna",
+     "username": "janibar",
+     "club": "Sirius SE",
+     "points": 1003.26,
+     "flights": [
+      {
+       "date": "2026-07-31",
+       "takeoff": "Sárhegy",
+       "type": "FAI_TRIANGLE",
+       "km": 164.84,
+       "points": 329.67,
+       "glider": "OZONE Photon",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:janibar/31.07.2026/09:24"
+      },
+      {
+       "date": "2026-06-28",
+       "takeoff": "Eged DK",
+       "type": "FREE_TRIANGLE",
+       "km": 153.82,
+       "points": 276.88,
+       "glider": "OZONE Photon",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:janibar/28.06.2026/09:38"
+      },
+      {
+       "date": "2026-06-19",
+       "takeoff": "Sárhegy",
+       "type": "FAI_TRIANGLE",
+       "km": 127.23,
+       "points": 254.47,
+       "glider": "OZONE Photon",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:janibar/19.06.2026/09:49"
+      },
+      {
+       "date": "2026-08-15",
+       "takeoff": "Szársomlyó",
+       "type": "FREE_FLIGHT",
+       "km": 142.24,
+       "points": 142.24,
+       "glider": "OZONE Photon",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:janibar/15.08.2026/09:55"
+      }
+     ]
+    },
+    {
+     "place": 4,
+     "name": "Botond Nyiri",
+     "username": "boti",
+     "club": "Winchflyer SE",
+     "points": 993.59,
+     "flights": [
+      {
+       "date": "2026-06-27",
+       "takeoff": "Kiskunhalas reptér",
+       "type": "FAI_TRIANGLE",
+       "km": 136.43,
+       "points": 272.86,
+       "glider": "OZONE Photon",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:boti/27.06.2026/09:31"
+      },
+      {
+       "date": "2026-07-25",
+       "takeoff": "Orosháza",
+       "type": "FAI_TRIANGLE",
+       "km": 130.54,
+       "points": 261.09,
+       "glider": "OZONE Photon",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:boti/25.07.2026/09:03"
+      },
+      {
+       "date": "2026-05-28",
+       "takeoff": "Nyikom",
+       "type": "FREE_FLIGHT",
+       "km": 232.59,
+       "points": 232.59,
+       "glider": "OZONE Photon",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:boti/28.05.2026/09:57"
+      },
+      {
+       "date": "2026-07-17",
+       "takeoff": "Orosháza",
+       "type": "FAI_TRIANGLE",
+       "km": 113.53,
+       "points": 227.05,
+       "glider": "OZONE Photon",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:boti/17.07.2026/09:28"
+      }
+     ]
+    },
+    {
+     "place": 5,
+     "name": "Richard Dósa",
+     "username": "dosa.richard",
+     "club": "Eged Eagles SE",
+     "points": 975.36,
+     "flights": [
+      {
+       "date": "2026-06-28",
+       "takeoff": "Eged DK",
+       "type": "FAI_TRIANGLE",
+       "km": 134.16,
+       "points": 268.33,
+       "glider": "ADVANCE Tau DLS",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:dosa.richard/28.06.2026/09:38"
+      },
+      {
+       "date": "2026-06-27",
+       "takeoff": "Kalocsa",
+       "type": "FAI_TRIANGLE",
+       "km": 128.82,
+       "points": 257.64,
+       "glider": "ADVANCE Tau DLS",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:dosa.richard/27.06.2026/10:36"
+      },
+      {
+       "date": "2026-06-26",
+       "takeoff": "Kalocsa",
+       "type": "FAI_TRIANGLE",
+       "km": 120.43,
+       "points": 240.86,
+       "glider": "ADVANCE Tau DLS",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:dosa.richard/26.06.2026/09:51"
+      },
+      {
+       "date": "2026-06-07",
+       "takeoff": "Nyikom",
+       "type": "FREE_FLIGHT",
+       "km": 208.53,
+       "points": 208.53,
+       "glider": "ADVANCE Tau DLS",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:dosa.richard/7.06.2026/09:52"
+      }
+     ]
+    },
+    {
+     "place": 6,
+     "name": "Miklós Bartos",
+     "username": "Miko27",
+     "club": "Sirius SE",
+     "points": 944.3,
+     "flights": [
+      {
+       "date": "2026-08-13",
+       "takeoff": "Magashegy",
+       "type": "FREE_FLIGHT",
+       "km": 263.28,
+       "points": 263.28,
+       "glider": "FLOW PARAGLIDERS Fusion Light",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Miko27/13.08.2026/09:31"
+      },
+      {
+       "date": "2026-07-31",
+       "takeoff": "Sárhegy",
+       "type": "FAI_TRIANGLE",
+       "km": 128.35,
+       "points": 256.69,
+       "glider": "FLOW PARAGLIDERS Fusion Light",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Miko27/31.07.2026/09:28"
+      },
+      {
+       "date": "2026-08-04",
+       "takeoff": "Szársomlyó",
+       "type": "FREE_FLIGHT",
+       "km": 216.0,
+       "points": 216,
+       "glider": "FLOW PARAGLIDERS Fusion Light",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Miko27/4.08.2026/10:24"
+      },
+      {
+       "date": "2026-06-23",
+       "takeoff": "Csörlő Billeg",
+       "type": "FREE_FLIGHT",
+       "km": 208.33,
+       "points": 208.33,
+       "glider": "SKYWALK Spice 2",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Miko27/23.06.2026/09:46"
+      }
+     ]
+    },
+    {
+     "place": 7,
+     "name": "Gábor Szalai",
+     "username": "gszala",
+     "club": "KEMRSE",
+     "points": 938.5,
+     "flights": [
+      {
+       "date": "2026-07-28",
+       "takeoff": "Vértesszőlős",
+       "type": "FREE_FLIGHT",
+       "km": 275.88,
+       "points": 275.88,
+       "glider": "ZOOM PARAGLIDERS X2C",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:gszala/28.07.2026/09:38"
+      },
+      {
+       "date": "2026-07-10",
+       "takeoff": "Vértesszőlős",
+       "type": "FREE_FLIGHT",
+       "km": 247.38,
+       "points": 247.38,
+       "glider": "ZOOM PARAGLIDERS X2C",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:gszala/10.07.2026/09:30"
+      },
+      {
+       "date": "2026-08-01",
+       "takeoff": "Szársomlyó",
+       "type": "FREE_FLIGHT",
+       "km": 212.2,
+       "points": 212.2,
+       "glider": "ZOOM PARAGLIDERS X2C",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:gszala/1.08.2026/09:35"
+      },
+      {
+       "date": "2026-08-12",
+       "takeoff": "Vértesszőlős",
+       "type": "FREE_FLIGHT",
+       "km": 203.04,
+       "points": 203.04,
+       "glider": "ZOOM PARAGLIDERS X2C",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:gszala/12.08.2026/10:13"
+      }
+     ]
+    },
+    {
+     "place": 8,
+     "name": "Zoltán Szalóki",
+     "username": "Zale",
+     "club": "Eged Eagles SE",
+     "points": 931.73,
+     "flights": [
+      {
+       "date": "2026-06-27",
+       "takeoff": "Kalocsa",
+       "type": "FAI_TRIANGLE",
+       "km": 132.29,
+       "points": 264.59,
+       "glider": "OZONE Delta 5",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Zale/27.06.2026/10:30"
+      },
+      {
+       "date": "2026-06-26",
+       "takeoff": "Kalocsa",
+       "type": "FAI_TRIANGLE",
+       "km": 119.5,
+       "points": 238.99,
+       "glider": "OZONE Delta 5",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Zale/26.06.2026/10:06"
+      },
+      {
+       "date": "2026-06-07",
+       "takeoff": "Nyikom",
+       "type": "FREE_FLIGHT",
+       "km": 221.24,
+       "points": 221.24,
+       "glider": "OZONE Delta 5",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Zale/7.06.2026/09:48"
+      },
+      {
+       "date": "2026-05-31",
+       "takeoff": "Nyikom",
+       "type": "FREE_FLIGHT",
+       "km": 206.91,
+       "points": 206.91,
+       "glider": "OZONE Delta 5",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Zale/31.05.2026/09:52"
+      }
+     ]
+    },
+    {
+     "place": 9,
+     "name": "László Mlinkó",
+     "username": "mlinko",
+     "club": "Eged Eagles SE",
+     "points": 887.43,
+     "flights": [
+      {
+       "date": "2026-06-28",
+       "takeoff": "Eged DK",
+       "type": "FREE_TRIANGLE",
+       "km": 135.13,
+       "points": 243.23,
+       "glider": "OZONE Photon",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:mlinko/28.06.2026/09:32"
+      },
+      {
+       "date": "2026-07-25",
+       "takeoff": "Eged",
+       "type": "FAI_TRIANGLE",
+       "km": 118.97,
+       "points": 237.95,
+       "glider": "OZONE Photon",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:mlinko/25.07.2026/10:05"
+      },
+      {
+       "date": "2026-06-08",
+       "takeoff": "Eged",
+       "type": "FREE_TRIANGLE",
+       "km": 122.76,
+       "points": 220.96,
+       "glider": "OZONE Photon",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:mlinko/8.06.2026/09:58"
+      },
+      {
+       "date": "2026-04-04",
+       "takeoff": "Eged",
+       "type": "FREE_FLIGHT",
+       "km": 185.29,
+       "points": 185.29,
+       "glider": "OZONE Photon",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:mlinko/4.04.2026/09:26"
+      }
+     ]
+    },
+    {
+     "place": 10,
+     "name": "Károly Radványi",
+     "username": "Radi",
+     "club": "Tokaj Fly SE",
+     "points": 828.81,
+     "flights": [
+      {
+       "date": "2026-08-13",
+       "takeoff": "Magashegy",
+       "type": "FREE_FLIGHT",
+       "km": 245.56,
+       "points": 245.56,
+       "glider": "FLOW PARAGLIDERS Mystic",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Radi/13.08.2026/09:28"
+      },
+      {
+       "date": "2026-06-07",
+       "takeoff": "Nyikom",
+       "type": "FREE_FLIGHT",
+       "km": 203.34,
+       "points": 203.35,
+       "glider": "FLOW PARAGLIDERS Mystic",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Radi/7.06.2026/09:51"
+      },
+      {
+       "date": "2026-06-24",
+       "takeoff": "Magashegy",
+       "type": "FREE_FLIGHT",
+       "km": 193.39,
+       "points": 193.39,
+       "glider": "FLOW PARAGLIDERS Mystic",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Radi/24.06.2026/09:41"
+      },
+      {
+       "date": "2026-04-22",
+       "takeoff": "Magashegy",
+       "type": "FREE_FLIGHT",
+       "km": 186.51,
+       "points": 186.51,
+       "glider": "FLOW PARAGLIDERS Mystic",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Radi/22.04.2026/10:57"
+      }
+     ]
+    }
+   ]
+  },
+  "standard": {
+   "name": "PG Standard",
+   "count": 167,
+   "rows": [
+    {
+     "place": 1,
+     "name": "Páll Csaba",
+     "username": "WingsOfFury",
+     "club": "Sirius SE",
+     "points": 760.85,
+     "flights": [
+      {
+       "date": "2026-08-05",
+       "takeoff": "Nyikom",
+       "type": "FAI_TRIANGLE",
+       "km": 103.75,
+       "points": 207.49,
+       "glider": "SKYWALK Chili 5",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:WingsOfFury/5.08.2026/10:24"
+      },
+      {
+       "date": "2026-06-27",
+       "takeoff": "Nyikom",
+       "type": "FAI_TRIANGLE",
+       "km": 93.43,
+       "points": 186.85,
+       "glider": "SKYWALK Chili 5",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:WingsOfFury/27.06.2026/10:10"
+      },
+      {
+       "date": "2026-07-14",
+       "takeoff": "Nyikom",
+       "type": "FAI_TRIANGLE",
+       "km": 92.45,
+       "points": 184.9,
+       "glider": "SKYWALK Chili 5",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:WingsOfFury/14.07.2026/10:12"
+      },
+      {
+       "date": "2026-07-31",
+       "takeoff": "Nyikom",
+       "type": "FAI_TRIANGLE",
+       "km": 90.81,
+       "points": 181.61,
+       "glider": "SKYWALK Chili 5",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:WingsOfFury/31.07.2026/10:24"
+      }
+     ]
+    },
+    {
+     "place": 2,
+     "name": "Péter Kocsis",
+     "username": "Kojak",
+     "club": "Eged Eagles SE",
+     "points": 757.98,
+     "flights": [
+      {
+       "date": "2026-06-07",
+       "takeoff": "Nyikom",
+       "type": "FREE_FLIGHT",
+       "km": 221.44,
+       "points": 221.44,
+       "glider": "NOVA MENTOR 7",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Kojak/7.06.2026/09:50"
+      },
+      {
+       "date": "2026-05-31",
+       "takeoff": "Nyikom",
+       "type": "FREE_FLIGHT",
+       "km": 212.38,
+       "points": 212.38,
+       "glider": "NOVA MENTOR 7",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Kojak/31.05.2026/09:53"
+      },
+      {
+       "date": "2026-04-04",
+       "takeoff": "Eged",
+       "type": "FREE_FLIGHT",
+       "km": 183.03,
+       "points": 183.03,
+       "glider": "NOVA MENTOR 7",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Kojak/4.04.2026/09:36"
+      },
+      {
+       "date": "2026-05-09",
+       "takeoff": "Hajdúszoboszló",
+       "type": "FREE_FLIGHT",
+       "km": 141.13,
+       "points": 141.13,
+       "glider": "NOVA MENTOR 7",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Kojak/9.05.2026/11:32"
+      }
+     ]
+    },
+    {
+     "place": 3,
+     "name": "Csaba Somfai",
+     "username": "Furge",
+     "club": "Griff SC",
+     "points": 734.32,
+     "flights": [
+      {
+       "date": "2026-07-31",
+       "takeoff": "Sárhegy",
+       "type": "FAI_TRIANGLE",
+       "km": 118.58,
+       "points": 237.17,
+       "glider": "OZONE Rush 6",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Furge/31.07.2026/09:28"
+      },
+      {
+       "date": "2026-07-10",
+       "takeoff": "Csobánc",
+       "type": "FREE_FLIGHT",
+       "km": 219.33,
+       "points": 219.33,
+       "glider": "OZONE Rush 6",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Furge/10.07.2026/09:46"
+      },
+      {
+       "date": "2026-07-29",
+       "takeoff": "Szársomlyó",
+       "type": "FREE_FLIGHT",
+       "km": 139.73,
+       "points": 139.73,
+       "glider": "OZONE Rush 6",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Furge/29.07.2026/10:38"
+      },
+      {
+       "date": "2026-08-21",
+       "takeoff": "Orosháza",
+       "type": "FREE_FLIGHT",
+       "km": 138.09,
+       "points": 138.09,
+       "glider": "OZONE Rush 6",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Furge/21.08.2026/10:06"
+      }
+     ]
+    },
+    {
+     "place": 4,
+     "name": "Csaba Kátai",
+     "username": "CsAbU",
+     "club": "Siresz",
+     "points": 553.72,
+     "flights": [
+      {
+       "date": "2026-07-04",
+       "takeoff": "Nyikom",
+       "type": "FREE_FLIGHT",
+       "km": 209.18,
+       "points": 209.18,
+       "glider": "FLOW PARAGLIDERS Freedom 2",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:CsAbU/4.07.2026/08:43"
+      },
+      {
+       "date": "2026-07-11",
+       "takeoff": "Csobánc",
+       "type": "FREE_FLIGHT",
+       "km": 124.12,
+       "points": 124.12,
+       "glider": "FLOW PARAGLIDERS Freedom 2",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:CsAbU/11.07.2026/09:47"
+      },
+      {
+       "date": "2026-04-27",
+       "takeoff": "Naszály",
+       "type": "FREE_FLIGHT",
+       "km": 111.83,
+       "points": 111.83,
+       "glider": "FLOW PARAGLIDERS Freedom 2",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:CsAbU/27.04.2026/10:34"
+      },
+      {
+       "date": "2026-05-08",
+       "takeoff": "Vértesszőlős",
+       "type": "FREE_FLIGHT",
+       "km": 108.59,
+       "points": 108.59,
+       "glider": "FLOW PARAGLIDERS Freedom 2",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:CsAbU/8.05.2026/10:42"
+      }
+     ]
+    },
+    {
+     "place": 5,
+     "name": "Tamás Bujdosó",
+     "username": "Rebellion",
+     "club": "NagyLufi SE",
+     "points": 551.72,
+     "flights": [
+      {
+       "date": "2026-07-28",
+       "takeoff": "Vértesszőlős",
+       "type": "FREE_FLIGHT",
+       "km": 165.68,
+       "points": 165.68,
+       "glider": "SKYWALK Chili 5",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Rebellion/28.07.2026/10:19"
+      },
+      {
+       "date": "2026-05-28",
+       "takeoff": "Nyikom",
+       "type": "FREE_FLIGHT",
+       "km": 149.42,
+       "points": 149.42,
+       "glider": "SKYWALK Chili 5",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Rebellion/28.05.2026/10:53"
+      },
+      {
+       "date": "2026-04-17",
+       "takeoff": "Márkó",
+       "type": "FREE_FLIGHT",
+       "km": 124.96,
+       "points": 124.96,
+       "glider": "SKYWALK Chili 5",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Rebellion/17.04.2026/10:16"
+      },
+      {
+       "date": "2026-04-12",
+       "takeoff": "Sárhegy",
+       "type": "FAI_TRIANGLE",
+       "km": 55.83,
+       "points": 111.66,
+       "glider": "SKYWALK Chili 5",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Rebellion/12.04.2026/10:35"
+      }
+     ]
+    },
+    {
+     "place": 6,
+     "name": "Peter Zsolnai",
+     "username": "ianlosz",
+     "club": "Felhőút SE",
+     "points": 531.06,
+     "flights": [
+      {
+       "date": "2026-07-11",
+       "takeoff": "Nyikom",
+       "type": "FREE_FLIGHT",
+       "km": 153.95,
+       "points": 153.95,
+       "glider": "OZONE Rush 6",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:ianlosz/11.07.2026/10:04"
+      },
+      {
+       "date": "2026-06-07",
+       "takeoff": "?",
+       "type": "FREE_FLIGHT",
+       "km": 152.09,
+       "points": 152.09,
+       "glider": "OZONE Rush 6",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:ianlosz/7.06.2026/10:17"
+      },
+      {
+       "date": "2026-08-01",
+       "takeoff": "Orosháza",
+       "type": "FREE_TRIANGLE",
+       "km": 70.12,
+       "points": 126.22,
+       "glider": "OZONE Rush 6",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:ianlosz/1.08.2026/11:50"
+      },
+      {
+       "date": "2026-06-20",
+       "takeoff": "Kalocsa",
+       "type": "FAI_TRIANGLE",
+       "km": 49.4,
+       "points": 98.8,
+       "glider": "OZONE Rush 6",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:ianlosz/20.06.2026/10:22"
+      }
+     ]
+    },
+    {
+     "place": 7,
+     "name": "Gyula Horák",
+     "username": "horakgyuszibacsi",
+     "club": "Blue Sky SE",
+     "points": 506.14,
+     "flights": [
+      {
+       "date": "2026-05-27",
+       "takeoff": "Szokolya",
+       "type": "FREE_FLIGHT",
+       "km": 157.81,
+       "points": 157.81,
+       "glider": "OZONE Rush 6",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:horakgyuszibacsi/27.05.2026/10:12"
+      },
+      {
+       "date": "2026-06-07",
+       "takeoff": "Nyikom",
+       "type": "FREE_FLIGHT",
+       "km": 125.78,
+       "points": 125.78,
+       "glider": "OZONE Rush 6",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:horakgyuszibacsi/7.06.2026/10:16"
+      },
+      {
+       "date": "2026-09-03",
+       "takeoff": "Vértesszőlős",
+       "type": "FREE_FLIGHT",
+       "km": 115.92,
+       "points": 115.92,
+       "glider": "OZONE Rush 6",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:horakgyuszibacsi/3.09.2026/10:38"
+      },
+      {
+       "date": "2026-06-12",
+       "takeoff": "Csobánc",
+       "type": "FREE_FLIGHT",
+       "km": 106.63,
+       "points": 106.63,
+       "glider": "OZONE Rush 6",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:horakgyuszibacsi/12.06.2026/10:43"
+      }
+     ]
+    },
+    {
+     "place": 8,
+     "name": "Tamas Mezo",
+     "username": "mezot",
+     "club": "Szat-Air",
+     "points": 475.19,
+     "flights": [
+      {
+       "date": "2026-07-25",
+       "takeoff": "Orosháza",
+       "type": "FAI_TRIANGLE",
+       "km": 88.81,
+       "points": 177.61,
+       "glider": "SKYWALK Chili 5",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:mezot/25.07.2026/10:57"
+      },
+      {
+       "date": "2026-06-27",
+       "takeoff": "Orosháza",
+       "type": "FREE_FLIGHT",
+       "km": 118.51,
+       "points": 118.51,
+       "glider": "SKYWALK Chili 5",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:mezot/27.06.2026/10:25"
+      },
+      {
+       "date": "2026-04-19",
+       "takeoff": "Orosháza",
+       "type": "FREE_FLIGHT",
+       "km": 110.13,
+       "points": 110.13,
+       "glider": "SKYWALK Chili 5",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:mezot/19.04.2026/10:49"
+      },
+      {
+       "date": "2026-05-03",
+       "takeoff": "Orosháza",
+       "type": "FREE_FLIGHT",
+       "km": 68.94,
+       "points": 68.94,
+       "glider": "SKYWALK Chili 5",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:mezot/3.05.2026/11:01"
+      }
+     ]
+    },
+    {
+     "place": 9,
+     "name": "István Gyarmati-Szabó",
+     "username": "Pisti",
+     "club": "Free Air SE.",
+     "points": 456.61,
+     "flights": [
+      {
+       "date": "2026-08-04",
+       "takeoff": "Szársomlyó",
+       "type": "FREE_FLIGHT",
+       "km": 163.85,
+       "points": 163.85,
+       "glider": "UP Summit XC4",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Pisti/4.08.2026/10:12"
+      },
+      {
+       "date": "2026-07-09",
+       "takeoff": "Nyikom",
+       "type": "FREE_FLIGHT",
+       "km": 132.19,
+       "points": 132.19,
+       "glider": "UP Summit XC4",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Pisti/9.07.2026/09:55"
+      },
+      {
+       "date": "2026-07-04",
+       "takeoff": "Eged",
+       "type": "FREE_FLIGHT",
+       "km": 108.39,
+       "points": 108.39,
+       "glider": "UP UP  Summit XC4",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Pisti/4.07.2026/10:38"
+      },
+      {
+       "date": "2026-04-17",
+       "takeoff": "Csörlő Billeg",
+       "type": "FREE_FLIGHT",
+       "km": 52.17,
+       "points": 52.18,
+       "glider": "UP Summit X",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Pisti/17.04.2026/10:38"
+      }
+     ]
+    },
+    {
+     "place": 10,
+     "name": "Sándor Fülöp",
+     "username": "Smelakz37",
+     "club": "Hajdúszoboszló",
+     "points": 451.56,
+     "flights": [
+      {
+       "date": "2026-08-15",
+       "takeoff": "Orosháza",
+       "type": "FREE_FLIGHT",
+       "km": 168.5,
+       "points": 168.5,
+       "glider": "SKYWALK Chili 4",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Smelakz37/15.08.2026/10:09"
+      },
+      {
+       "date": "2026-07-25",
+       "takeoff": "Orosháza",
+       "type": "FAI_TRIANGLE",
+       "km": 59.57,
+       "points": 119.14,
+       "glider": "SKYWALK Chili 4",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Smelakz37/25.07.2026/09:37"
+      },
+      {
+       "date": "2026-04-05",
+       "takeoff": "Hajdúszoboszló",
+       "type": "FREE_FLIGHT",
+       "km": 85.89,
+       "points": 85.89,
+       "glider": "SKYWALK Chili 4",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Smelakz37/5.04.2026/10:42"
+      },
+      {
+       "date": "2026-05-20",
+       "takeoff": "Hajdúszoboszló",
+       "type": "FREE_FLIGHT",
+       "km": 78.03,
+       "points": 78.03,
+       "glider": "SKYWALK Chili 4",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Smelakz37/20.05.2026/09:45"
+      }
+     ]
+    }
+   ]
+  },
+  "tandem": {
+   "name": "PG Tandem",
+   "count": 14,
+   "rows": [
+    {
+     "place": 1,
+     "name": "Csaba Földi",
+     "username": "Onesto",
+     "club": "Winchflyer SE",
+     "points": 645.03,
+     "flights": [
+      {
+       "date": "2026-07-17",
+       "takeoff": "Orosháza",
+       "type": "FAI_TRIANGLE",
+       "km": 110.58,
+       "points": 221.15,
+       "glider": "OZONE Swiftmax",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Onesto/17.07.2026/09:32"
+      },
+      {
+       "date": "2026-06-29",
+       "takeoff": "Hajdúszoboszló",
+       "type": "FAI_TRIANGLE",
+       "km": 101.22,
+       "points": 202.45,
+       "glider": "OZONE Swiftmax",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Onesto/29.06.2026/09:32"
+      },
+      {
+       "date": "2026-05-31",
+       "takeoff": "Nyikom",
+       "type": "FREE_FLIGHT",
+       "km": 129.79,
+       "points": 129.79,
+       "glider": "OZONE Swiftmax",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Onesto/31.05.2026/11:03"
+      },
+      {
+       "date": "2026-09-27",
+       "takeoff": "Orosháza",
+       "type": "FREE_TRIANGLE",
+       "km": 50.91,
+       "points": 91.64,
+       "glider": "OZONE Swiftmax",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Onesto/27.09.2026/09:57"
+      }
+     ]
+    },
+    {
+     "place": 2,
+     "name": "Zoltán Máté",
+     "username": "homokipisztrang",
+     "club": "Napmadár SE",
+     "points": 476.93,
+     "flights": [
+      {
+       "date": "2026-06-07",
+       "takeoff": "Nyikom",
+       "type": "FREE_FLIGHT",
+       "km": 171.93,
+       "points": 171.93,
+       "glider": "SKYWALK  Join't 3",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:homokipisztrang/7.06.2026/10:26"
+      },
+      {
+       "date": "2026-05-24",
+       "takeoff": "Hajdúnánás",
+       "type": "FREE_FLIGHT",
+       "km": 121.83,
+       "points": 121.83,
+       "glider": "SKYWALK  Join't 3",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:homokipisztrang/24.05.2026/11:44"
+      },
+      {
+       "date": "2026-05-01",
+       "takeoff": "?",
+       "type": "FREE_FLIGHT",
+       "km": 103.8,
+       "points": 103.8,
+       "glider": "SKYWALK  Join't 3",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:homokipisztrang/1.05.2026/11:55"
+      },
+      {
+       "date": "2026-08-23",
+       "takeoff": "Kunmadaras",
+       "type": "FREE_FLIGHT",
+       "km": 79.37,
+       "points": 79.37,
+       "glider": "SKYWALK  Join't 3",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:homokipisztrang/23.08.2026/11:02"
+      }
+     ]
+    },
+    {
+     "place": 3,
+     "name": "Zsolt Takács",
+     "username": "Doto",
+     "club": "Cloudbase",
+     "points": 423.87,
+     "flights": [
+      {
+       "date": "2026-07-20",
+       "takeoff": "Nyikom",
+       "type": "FREE_FLIGHT",
+       "km": 135.19,
+       "points": 135.18,
+       "glider": "SKYWALK Join’t 5",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Doto/20.07.2026/10:17"
+      },
+      {
+       "date": "2026-08-09",
+       "takeoff": "Magashegy",
+       "type": "FREE_FLIGHT",
+       "km": 107.31,
+       "points": 107.3,
+       "glider": "OZONE Magnum 3",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Doto/9.08.2026/09:29"
+      },
+      {
+       "date": "2026-06-25",
+       "takeoff": "Magashegy",
+       "type": "FREE_FLIGHT",
+       "km": 102.9,
+       "points": 102.9,
+       "glider": "Skywalk Join't 1",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Doto/25.06.2026/09:34"
+      },
+      {
+       "date": "2026-08-30",
+       "takeoff": "Nyikom",
+       "type": "FREE_FLIGHT",
+       "km": 78.49,
+       "points": 78.49,
+       "glider": "SKYWALK  Join't 3",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Doto/30.08.2026/11:06"
+      }
+     ]
+    },
+    {
+     "place": 4,
+     "name": "Csaba Sándor",
+     "username": "scsabi92",
+     "club": "KEMRSE",
+     "points": 124.93,
+     "flights": [
+      {
+       "date": "2026-08-08",
+       "takeoff": "Csörlő Billeg",
+       "type": "FREE_FLIGHT",
+       "km": 124.94,
+       "points": 124.93,
+       "glider": "NOVA Jamboo",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:scsabi92/8.08.2026/11:20"
+      }
+     ]
+    },
+    {
+     "place": 5,
+     "name": "Miklós Bartos",
+     "username": "Miko27",
+     "club": "Sirius SE",
+     "points": 54.91,
+     "flights": [
+      {
+       "date": "2026-06-20",
+       "takeoff": "Kalocsa",
+       "type": "FREE_TRIANGLE",
+       "km": 30.51,
+       "points": 54.91,
+       "glider": "UP K2 3",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Miko27/20.06.2026/10:58"
+      }
+     ]
+    },
+    {
+     "place": 6,
+     "name": "Bálint Biró",
+     "username": "Beno",
+     "club": "Blue Sky SE",
+     "points": 51.07,
+     "flights": [
+      {
+       "date": "2026-09-16",
+       "takeoff": "Szársomlyó",
+       "type": "FREE_TRIANGLE",
+       "km": 15.31,
+       "points": 27.56,
+       "glider": "OZONE Magnum 3",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Beno/16.09.2026/11:28"
+      },
+      {
+       "date": "2026-04-11",
+       "takeoff": "?",
+       "type": "FREE_TRIANGLE",
+       "km": 13.06,
+       "points": 23.51,
+       "glider": "OZONE Magnum 3",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Beno/11.04.2026/13:44"
+      }
+     ]
+    },
+    {
+     "place": 7,
+     "name": "Regina Ludányi",
+     "username": "lregina",
+     "club": "Amatőr SE",
+     "points": 44.11,
+     "flights": [
+      {
+       "date": "2026-04-25",
+       "takeoff": "Eged",
+       "type": "FREE_FLIGHT",
+       "km": 44.11,
+       "points": 44.11,
+       "glider": "BGD Dual 3",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:lregina/25.04.2026/09:08"
+      }
+     ]
+    },
+    {
+     "place": 8,
+     "name": "Szilárd Berkei",
+     "username": "beszili",
+     "club": "MPC Extrém SE",
+     "points": 30.4,
+     "flights": [
+      {
+       "date": "2026-06-21",
+       "takeoff": "Csobánc",
+       "type": "FREE_TRIANGLE",
+       "km": 10.98,
+       "points": 19.76,
+       "glider": "SKY PARAGLIDERS Bi 4 2",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:beszili/21.06.2026/12:19"
+      },
+      {
+       "date": "2026-06-09",
+       "takeoff": "Csobánc",
+       "type": "FREE_FLIGHT",
+       "km": 10.64,
+       "points": 10.64,
+       "glider": "SKY PARAGLIDERS Metis 4",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:beszili/9.06.2026/12:22"
+      }
+     ]
+    },
+    {
+     "place": 9,
+     "name": "Csaba Gombik",
+     "username": "recsega",
+     "club": "Free Air SE.",
+     "points": 24.43,
+     "flights": [
+      {
+       "date": "2026-06-24",
+       "takeoff": "Vértesszőlős",
+       "type": "FAI_TRIANGLE",
+       "km": 12.22,
+       "points": 24.43,
+       "glider": "SUPAIR Sora 2",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:recsega/24.06.2026/13:10"
+      }
+     ]
+    },
+    {
+     "place": 9,
+     "name": "József Pintér",
+     "username": "Joci",
+     "club": "KEMRSE",
+     "points": 23.8,
+     "flights": [
+      {
+       "date": "2026-04-05",
+       "takeoff": "Vértesszőlős",
+       "type": "FREE_FLIGHT",
+       "km": 23.8,
+       "points": 23.8,
+       "glider": "NOVA Bion",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Joci/5.04.2026/12:49"
+      }
+     ]
+    }
+   ]
+  },
+  "women": {
+   "name": "PG Női",
+   "count": 14,
+   "rows": [
+    {
+     "place": 1,
+     "name": "Tamara Hegedűs",
+     "username": "H_Tami",
+     "club": "Fly Away SE",
+     "points": 355.22,
+     "flights": [
+      {
+       "date": "2026-05-14",
+       "takeoff": "Szeged",
+       "type": "FREE_FLIGHT",
+       "km": 102.02,
+       "points": 102.02,
+       "glider": "OZONE Alpina 5",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:H_Tami/14.05.2026/11:54"
+      },
+      {
+       "date": "2026-05-10",
+       "takeoff": "Szársomlyó",
+       "type": "FAI_TRIANGLE",
+       "km": 45.34,
+       "points": 90.68,
+       "glider": "OZONE Alpina 5",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:H_Tami/10.05.2026/11:13"
+      },
+      {
+       "date": "2026-07-31",
+       "takeoff": "Sárhegy",
+       "type": "FREE_FLIGHT",
+       "km": 89.59,
+       "points": 89.59,
+       "glider": "OZONE Delta 5",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:H_Tami/31.07.2026/09:46"
+      },
+      {
+       "date": "2026-05-09",
+       "takeoff": "Szársomlyó",
+       "type": "FREE_TRIANGLE",
+       "km": 40.52,
+       "points": 72.93,
+       "glider": "OZONE Alpina 5",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:H_Tami/9.05.2026/14:00"
+      }
+     ]
+    },
+    {
+     "place": 2,
+     "name": "Kata Stemler",
+     "username": "Katapult",
+     "club": "Blue Sky SE",
+     "points": 282.83,
+     "flights": [
+      {
+       "date": "2026-06-28",
+       "takeoff": "Szársomlyó",
+       "type": "FREE_FLIGHT",
+       "km": 132.96,
+       "points": 132.96,
+       "glider": "OZONE Rush 6",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Katapult/28.06.2026/10:48"
+      },
+      {
+       "date": "2026-06-27",
+       "takeoff": "Szársomlyó",
+       "type": "FREE_FLIGHT",
+       "km": 61.41,
+       "points": 61.41,
+       "glider": "OZONE Rush 6",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Katapult/27.06.2026/10:41"
+      },
+      {
+       "date": "2026-07-31",
+       "takeoff": "Szársomlyó",
+       "type": "FREE_FLIGHT",
+       "km": 44.88,
+       "points": 44.88,
+       "glider": "OZONE Rush 6",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Katapult/31.07.2026/10:10"
+      },
+      {
+       "date": "2026-06-08",
+       "takeoff": "Szársomlyó",
+       "type": "FREE_FLIGHT",
+       "km": 43.58,
+       "points": 43.58,
+       "glider": "OZONE Rush 6",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Katapult/8.06.2026/10:49"
+      }
+     ]
+    },
+    {
+     "place": 3,
+     "name": "Dori Salamon",
+     "username": "S.Dori",
+     "club": "Fly Away SE",
+     "points": 255.27,
+     "flights": [
+      {
+       "date": "2026-07-29",
+       "takeoff": "Kalocsa",
+       "type": "FREE_TRIANGLE",
+       "km": 95.65,
+       "points": 172.16,
+       "glider": "OZONE Rush 6",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:S.Dori/29.07.2026/10:57"
+      },
+      {
+       "date": "2026-05-25",
+       "takeoff": "Eged",
+       "type": "FREE_FLIGHT",
+       "km": 53.33,
+       "points": 53.33,
+       "glider": "OZONE Rush 6",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:S.Dori/25.05.2026/11:44"
+      },
+      {
+       "date": "2026-08-09",
+       "takeoff": "Hajdúszoboszló",
+       "type": "FREE_FLIGHT",
+       "km": 29.78,
+       "points": 29.78,
+       "glider": "OZONE Rush 6",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:S.Dori/9.08.2026/11:57"
+      }
+     ]
+    },
+    {
+     "place": 4,
+     "name": "Flóra Jámbor",
+     "username": "JamborFlora",
+     "club": "Airborne SE",
+     "points": 185.64,
+     "flights": [
+      {
+       "date": "2026-05-10",
+       "takeoff": "Szársomlyó",
+       "type": "FAI_TRIANGLE",
+       "km": 40.64,
+       "points": 81.28,
+       "glider": "OZONE SwiftSix",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:JamborFlora/10.05.2026/10:22"
+      },
+      {
+       "date": "2026-05-09",
+       "takeoff": "Szársomlyó",
+       "type": "FREE_TRIANGLE",
+       "km": 39.46,
+       "points": 71.03,
+       "glider": "OZONE SwiftSix",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:JamborFlora/9.05.2026/12:50"
+      },
+      {
+       "date": "2026-08-09",
+       "takeoff": "Hajdúszoboszló",
+       "type": "FREE_FLIGHT",
+       "km": 19.84,
+       "points": 19.84,
+       "glider": "OZONE SwiftSix",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:JamborFlora/9.08.2026/13:34"
+      },
+      {
+       "date": "2026-03-03",
+       "takeoff": "Csolnok",
+       "type": "FREE_FLIGHT",
+       "km": 13.49,
+       "points": 13.49,
+       "glider": "OZONE SwiftSix",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:JamborFlora/3.03.2026/11:59"
+      }
+     ]
+    },
+    {
+     "place": 5,
+     "name": "Adél Honti",
+     "username": "ozibiusz",
+     "club": "Felhőút SE",
+     "points": 177.53,
+     "flights": [
+      {
+       "date": "2026-05-10",
+       "takeoff": "Szársomlyó",
+       "type": "FAI_TRIANGLE",
+       "km": 40.52,
+       "points": 81.03,
+       "glider": "OZONE Photon",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:ozibiusz/10.05.2026/10:16"
+      },
+      {
+       "date": "2026-07-29",
+       "takeoff": "Kalocsa",
+       "type": "FREE_FLIGHT",
+       "km": 57.26,
+       "points": 57.26,
+       "glider": "OZONE Photon",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:ozibiusz/29.07.2026/09:01"
+      },
+      {
+       "date": "2026-05-14",
+       "takeoff": "Szeged",
+       "type": "FREE_FLIGHT",
+       "km": 39.24,
+       "points": 39.24,
+       "glider": "OZONE Photon",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:ozibiusz/14.05.2026/10:05"
+      }
+     ]
+    },
+    {
+     "place": 6,
+     "name": "Timea Szántó",
+     "username": "TimiXcontest",
+     "club": "Free Air SE.",
+     "points": 145.82,
+     "flights": [
+      {
+       "date": "2026-08-21",
+       "takeoff": "Orosháza",
+       "type": "FREE_FLIGHT",
+       "km": 92.06,
+       "points": 92.06,
+       "glider": "SKYWALK Chili 5",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:TimiXcontest/21.08.2026/11:00"
+      },
+      {
+       "date": "2026-05-14",
+       "takeoff": "Szársomlyó",
+       "type": "FREE_FLIGHT",
+       "km": 34.47,
+       "points": 34.47,
+       "glider": "SKYWALK Chili 5",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:TimiXcontest/14.05.2026/12:51"
+      },
+      {
+       "date": "2026-08-09",
+       "takeoff": "Hajdúszoboszló",
+       "type": "FREE_FLIGHT",
+       "km": 19.29,
+       "points": 19.29,
+       "glider": "SKYWALK Chili 5",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:TimiXcontest/9.08.2026/12:11"
+      }
+     ]
+    },
+    {
+     "place": 7,
+     "name": "Regina Ludányi",
+     "username": "lregina",
+     "club": "Amatőr SE",
+     "points": 130.48,
+     "flights": [
+      {
+       "date": "2026-05-14",
+       "takeoff": "Szeged",
+       "type": "FREE_FLIGHT",
+       "km": 46.73,
+       "points": 46.73,
+       "glider": "BGD Base 2",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:lregina/14.05.2026/11:41"
+      },
+      {
+       "date": "2026-04-25",
+       "takeoff": "Eged",
+       "type": "FREE_FLIGHT",
+       "km": 44.11,
+       "points": 44.11,
+       "glider": "BGD Dual 3",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:lregina/25.04.2026/09:08"
+      },
+      {
+       "date": "2026-04-17",
+       "takeoff": "Nyikom",
+       "type": "FREE_FLIGHT",
+       "km": 25.21,
+       "points": 25.21,
+       "glider": "BGD Base 2",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:lregina/17.04.2026/12:23"
+      },
+      {
+       "date": "2026-08-09",
+       "takeoff": "Hajdúszoboszló",
+       "type": "FREE_FLIGHT",
+       "km": 14.43,
+       "points": 14.43,
+       "glider": "BGD Base 2",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:lregina/9.08.2026/13:36"
+      }
+     ]
+    },
+    {
+     "place": 8,
+     "name": "Dóri Fűrész",
+     "username": "paracsigo",
+     "club": "MPC Extrém SE",
+     "points": 121.94,
+     "flights": [
+      {
+       "date": "2026-06-25",
+       "takeoff": "Osi",
+       "type": "FREE_FLIGHT",
+       "km": 79.65,
+       "points": 79.65,
+       "glider": "OZONE Zeolite GT",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:paracsigo/25.06.2026/10:42"
+      },
+      {
+       "date": "2026-06-18",
+       "takeoff": "Csobánc",
+       "type": "FREE_FLIGHT",
+       "km": 42.29,
+       "points": 42.29,
+       "glider": "OZONE Zeolite GT",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:paracsigo/18.06.2026/11:33"
+      }
+     ]
+    },
+    {
+     "place": 9,
+     "name": "Judit Vas",
+     "username": "stopover3",
+     "club": "Sirius SE",
+     "points": 107.16,
+     "flights": [
+      {
+       "date": "2026-09-19",
+       "takeoff": "Eged",
+       "type": "FREE_FLIGHT",
+       "km": 37.68,
+       "points": 37.68,
+       "glider": "SKYWALK Arak",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:stopover3/19.09.2026/12:06"
+      },
+      {
+       "date": "2026-05-10",
+       "takeoff": "Szársomlyó",
+       "type": "FREE_FLIGHT",
+       "km": 32.77,
+       "points": 32.77,
+       "glider": "SKYWALK Arak",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:stopover3/10.05.2026/10:11"
+      },
+      {
+       "date": "2026-08-15",
+       "takeoff": "Szársomlyó",
+       "type": "FREE_FLIGHT",
+       "km": 23.58,
+       "points": 23.58,
+       "glider": "SKYWALK Arak",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:stopover3/15.08.2026/10:44"
+      },
+      {
+       "date": "2026-07-25",
+       "takeoff": "Eged",
+       "type": "FREE_FLIGHT",
+       "km": 13.13,
+       "points": 13.13,
+       "glider": "SKYWALK Arak",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:stopover3/25.07.2026/12:24"
+      }
+     ]
+    },
+    {
+     "place": 10,
+     "name": "Éva (Vica🌷) Vízvári",
+     "username": "Vicu09",
+     "club": "Felhőút SE",
+     "points": 61.4,
+     "flights": [
+      {
+       "date": "2026-09-13",
+       "takeoff": "Nyikom",
+       "type": "FREE_FLIGHT",
+       "km": 25.27,
+       "points": 25.27,
+       "glider": "MAC PARA Eden 8",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Vicu09/13.09.2026/13:09"
+      },
+      {
+       "date": "2026-09-27",
+       "takeoff": "Orosháza",
+       "type": "FREE_TRIANGLE",
+       "km": 12.76,
+       "points": 22.97,
+       "glider": "MAC PARA Eden 8",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Vicu09/27.09.2026/11:24"
+      },
+      {
+       "date": "2026-08-09",
+       "takeoff": "Hajdúszoboszló",
+       "type": "FREE_FLIGHT",
+       "km": 13.16,
+       "points": 13.16,
+       "glider": "MAC PARA Eden 8",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Vicu09/9.08.2026/11:12"
+      }
+     ]
+    }
+   ]
+  },
+  "juniors": {
+   "name": "PG Ifi",
+   "count": 2,
+   "rows": [
+    {
+     "place": 1,
+     "name": "Tamás Torkos",
+     "username": "TomiTorkos",
+     "club": "Napmadár SE",
+     "points": 568.2,
+     "flights": [
+      {
+       "date": "2026-06-07",
+       "takeoff": "Nyikom",
+       "type": "FREE_FLIGHT",
+       "km": 173.92,
+       "points": 173.92,
+       "glider": "SKYWALK Mint",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:TomiTorkos/7.06.2026/10:16"
+      },
+      {
+       "date": "2026-07-17",
+       "takeoff": "Orosháza",
+       "type": "FAI_TRIANGLE",
+       "km": 71.71,
+       "points": 143.43,
+       "glider": "SKYWALK Mint",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:TomiTorkos/17.07.2026/10:46"
+      },
+      {
+       "date": "2026-05-28",
+       "takeoff": "?",
+       "type": "FREE_FLIGHT",
+       "km": 134.21,
+       "points": 134.21,
+       "glider": "ADVANCE Sigma 11",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:TomiTorkos/28.05.2026/09:53"
+      },
+      {
+       "date": "2026-05-29",
+       "takeoff": "Nyikom",
+       "type": "FREE_FLIGHT",
+       "km": 116.64,
+       "points": 116.64,
+       "glider": "ADVANCE Sigma 11",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:TomiTorkos/29.05.2026/11:08"
+      }
+     ]
+    },
+    {
+     "place": 2,
+     "name": "Gergő Pintér",
+     "username": "PinterGergo",
+     "club": "KEMRSE",
+     "points": 464.91,
+     "flights": [
+      {
+       "date": "2026-05-20",
+       "takeoff": "Csörlő Billeg",
+       "type": "FREE_FLIGHT",
+       "km": 201.43,
+       "points": 201.43,
+       "glider": "OZONE Alpina 3",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:PinterGergo/20.05.2026/11:06"
+      },
+      {
+       "date": "2026-08-16",
+       "takeoff": "Csobánc",
+       "type": "FREE_FLIGHT",
+       "km": 105.17,
+       "points": 105.17,
+       "glider": "OZONE Alpina 3",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:PinterGergo/16.08.2026/09:26"
+      },
+      {
+       "date": "2026-06-02",
+       "takeoff": "Vértesszőlős",
+       "type": "FREE_TRIANGLE",
+       "km": 57.15,
+       "points": 102.88,
+       "glider": "OZONE Alpina 3",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:PinterGergo/2.06.2026/10:31"
+      },
+      {
+       "date": "2026-05-09",
+       "takeoff": "Vértesszőlős",
+       "type": "FREE_FLIGHT",
+       "km": 55.42,
+       "points": 55.43,
+       "glider": "OZONE Alpina 3",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:PinterGergo/9.05.2026/14:07"
+      }
+     ]
+    }
+   ]
+  },
+  "senior": {
+   "name": "PG Senior",
+   "count": 9,
+   "rows": [
+    {
+     "place": 1,
+     "name": "Árpád Detki",
+     "username": "karip",
+     "club": "KEMRSE",
+     "points": 809.75,
+     "flights": [
+      {
+       "date": "2026-06-12",
+       "takeoff": "Csörlő Billeg",
+       "type": "FREE_FLIGHT",
+       "km": 244.0,
+       "points": 244,
+       "glider": "SKYWALK Mint",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:karip/12.06.2026/09:27"
+      },
+      {
+       "date": "2026-05-20",
+       "takeoff": "Csörlő Billeg",
+       "type": "FREE_FLIGHT",
+       "km": 221.02,
+       "points": 221.02,
+       "glider": "SKYWALK Mint",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:karip/20.05.2026/10:27"
+      },
+      {
+       "date": "2026-06-24",
+       "takeoff": "Magashegy",
+       "type": "FREE_FLIGHT",
+       "km": 178.0,
+       "points": 178,
+       "glider": "SKYWALK Mint",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:karip/24.06.2026/10:56"
+      },
+      {
+       "date": "2026-07-04",
+       "takeoff": "Vértesszőlős",
+       "type": "FREE_FLIGHT",
+       "km": 166.73,
+       "points": 166.73,
+       "glider": "SKYWALK Mint",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:karip/4.07.2026/10:53"
+      }
+     ]
+    },
+    {
+     "place": 2,
+     "name": "Sanya Csabai",
+     "username": "CsabaiSanya",
+     "club": "Szat-Air",
+     "points": 529.72,
+     "flights": [
+      {
+       "date": "2026-07-17",
+       "takeoff": "Orosháza",
+       "type": "FAI_TRIANGLE",
+       "km": 80.93,
+       "points": 161.87,
+       "glider": "ADVANCE Sigma 11",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:CsabaiSanya/17.07.2026/09:02"
+      },
+      {
+       "date": "2026-07-25",
+       "takeoff": "Orosháza",
+       "type": "FAI_TRIANGLE",
+       "km": 78.88,
+       "points": 157.76,
+       "glider": "ADVANCE Sigma 11",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:CsabaiSanya/25.07.2026/09:22"
+      },
+      {
+       "date": "2026-09-16",
+       "takeoff": "Orosháza",
+       "type": "FREE_FLIGHT",
+       "km": 118.64,
+       "points": 118.64,
+       "glider": "ADVANCE Sigma 11",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:CsabaiSanya/16.09.2026/10:06"
+      },
+      {
+       "date": "2026-08-21",
+       "takeoff": "Orosháza",
+       "type": "FREE_FLIGHT",
+       "km": 91.45,
+       "points": 91.45,
+       "glider": "ADVANCE Sigma 11",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:CsabaiSanya/21.08.2026/11:04"
+      }
+     ]
+    },
+    {
+     "place": 3,
+     "name": "Gyula Horák",
+     "username": "horakgyuszibacsi",
+     "club": "Blue Sky SE",
+     "points": 506.14,
+     "flights": [
+      {
+       "date": "2026-05-27",
+       "takeoff": "Szokolya",
+       "type": "FREE_FLIGHT",
+       "km": 157.81,
+       "points": 157.81,
+       "glider": "OZONE Rush 6",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:horakgyuszibacsi/27.05.2026/10:12"
+      },
+      {
+       "date": "2026-06-07",
+       "takeoff": "Nyikom",
+       "type": "FREE_FLIGHT",
+       "km": 125.78,
+       "points": 125.78,
+       "glider": "OZONE Rush 6",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:horakgyuszibacsi/7.06.2026/10:16"
+      },
+      {
+       "date": "2026-09-03",
+       "takeoff": "Vértesszőlős",
+       "type": "FREE_FLIGHT",
+       "km": 115.92,
+       "points": 115.92,
+       "glider": "OZONE Rush 6",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:horakgyuszibacsi/3.09.2026/10:38"
+      },
+      {
+       "date": "2026-06-12",
+       "takeoff": "Csobánc",
+       "type": "FREE_FLIGHT",
+       "km": 106.63,
+       "points": 106.63,
+       "glider": "OZONE Rush 6",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:horakgyuszibacsi/12.06.2026/10:43"
+      }
+     ]
+    },
+    {
+     "place": 4,
+     "name": "Sándor Fülöp",
+     "username": "Smelakz37",
+     "club": "Hajdúszoboszló",
+     "points": 451.56,
+     "flights": [
+      {
+       "date": "2026-08-15",
+       "takeoff": "Orosháza",
+       "type": "FREE_FLIGHT",
+       "km": 168.5,
+       "points": 168.5,
+       "glider": "SKYWALK Chili 4",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Smelakz37/15.08.2026/10:09"
+      },
+      {
+       "date": "2026-07-25",
+       "takeoff": "Orosháza",
+       "type": "FAI_TRIANGLE",
+       "km": 59.57,
+       "points": 119.14,
+       "glider": "SKYWALK Chili 4",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Smelakz37/25.07.2026/09:37"
+      },
+      {
+       "date": "2026-04-05",
+       "takeoff": "Hajdúszoboszló",
+       "type": "FREE_FLIGHT",
+       "km": 85.89,
+       "points": 85.89,
+       "glider": "SKYWALK Chili 4",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Smelakz37/5.04.2026/10:42"
+      },
+      {
+       "date": "2026-05-20",
+       "takeoff": "Hajdúszoboszló",
+       "type": "FREE_FLIGHT",
+       "km": 78.03,
+       "points": 78.03,
+       "glider": "SKYWALK Chili 4",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Smelakz37/20.05.2026/09:45"
+      }
+     ]
+    },
+    {
+     "place": 5,
+     "name": "Ferenc Resch",
+     "username": "freesch",
+     "club": "Sirius SE",
+     "points": 416.05,
+     "flights": [
+      {
+       "date": "2026-08-16",
+       "takeoff": "Szársomlyó",
+       "type": "FREE_FLIGHT",
+       "km": 123.04,
+       "points": 123.04,
+       "glider": "PHI Maestro 2",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:freesch/16.08.2026/10:41"
+      },
+      {
+       "date": "2026-08-23",
+       "takeoff": "Nyikom",
+       "type": "FREE_FLIGHT",
+       "km": 114.23,
+       "points": 114.23,
+       "glider": "PHI Maestro 2",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:freesch/23.08.2026/10:39"
+      },
+      {
+       "date": "2026-09-03",
+       "takeoff": "Vértesszőlős",
+       "type": "FREE_FLIGHT",
+       "km": 95.1,
+       "points": 95.1,
+       "glider": "PHI Maestro 2",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:freesch/3.09.2026/10:40"
+      },
+      {
+       "date": "2026-09-27",
+       "takeoff": "Kalocsa",
+       "type": "FAI_TRIANGLE",
+       "km": 41.84,
+       "points": 83.68,
+       "glider": "PHI Maestro 2",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:freesch/27.09.2026/10:22"
+      }
+     ]
+    },
+    {
+     "place": 6,
+     "name": "Zoltán Mohola",
+     "username": "mzes",
+     "club": "Siresz",
+     "points": 144.55,
+     "flights": [
+      {
+       "date": "2026-06-07",
+       "takeoff": "Kalocsa",
+       "type": "FREE_FLIGHT",
+       "km": 114.71,
+       "points": 114.71,
+       "glider": "TRIPLE SEVEN Rook 2",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:mzes/7.06.2026/10:38"
+      },
+      {
+       "date": "2026-09-27",
+       "takeoff": "Orosháza",
+       "type": "FREE_FLIGHT",
+       "km": 29.84,
+       "points": 29.84,
+       "glider": "TRIPLE SEVEN Rook 2",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:mzes/27.09.2026/10:46"
+      }
+     ]
+    },
+    {
+     "place": 7,
+     "name": "Imre Árvai",
+     "username": "Imi60",
+     "club": "Blue Sky SE",
+     "points": 108.84,
+     "flights": [
+      {
+       "date": "2026-05-29",
+       "takeoff": "Kalocsa",
+       "type": "FREE_FLIGHT",
+       "km": 56.76,
+       "points": 56.76,
+       "glider": "NOVA MENTOR 7",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Imi60/29.05.2026/11:37"
+      },
+      {
+       "date": "2026-03-25",
+       "takeoff": "Szársomlyó",
+       "type": "FREE_FLIGHT",
+       "km": 21.04,
+       "points": 21.04,
+       "glider": "NOVA MENTOR 7",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Imi60/25.03.2026/11:06"
+      },
+      {
+       "date": "2026-04-12",
+       "takeoff": "Szársomlyó",
+       "type": "FREE_FLIGHT",
+       "km": 19.31,
+       "points": 19.31,
+       "glider": "NOVA MENTOR 7",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Imi60/12.04.2026/10:34"
+      },
+      {
+       "date": "2026-05-04",
+       "takeoff": "Szársomlyó",
+       "type": "FREE_FLIGHT",
+       "km": 11.73,
+       "points": 11.73,
+       "glider": "NOVA MENTOR 7",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Imi60/4.05.2026/10:47"
+      }
+     ]
+    },
+    {
+     "place": 8,
+     "name": "László Papp",
+     "username": "palaci",
+     "club": "Amatőr SE",
+     "points": 47.68,
+     "flights": [
+      {
+       "date": "2026-03-14",
+       "takeoff": "Szársomlyó",
+       "type": "FREE_FLIGHT",
+       "km": 25.38,
+       "points": 25.38,
+       "glider": "SKYWALK Chili 5",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:palaci/14.03.2026/12:21"
+      },
+      {
+       "date": "2026-03-13",
+       "takeoff": "Szársomlyó",
+       "type": "FREE_FLIGHT",
+       "km": 22.3,
+       "points": 22.3,
+       "glider": "SKYWALK Chili 5",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:palaci/13.03.2026/12:17"
+      }
+     ]
+    },
+    {
+     "place": 9,
+     "name": "Laszlo Lauko",
+     "username": "llaci",
+     "club": "Fly Away SE",
+     "points": 44.7,
+     "flights": [
+      {
+       "date": "2026-07-10",
+       "takeoff": "Csobánc",
+       "type": "FREE_FLIGHT",
+       "km": 28.95,
+       "points": 28.95,
+       "glider": "SKYWALK Chili 5",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:llaci/10.07.2026/11:13"
+      },
+      {
+       "date": "2026-07-14",
+       "takeoff": "Naszály",
+       "type": "FREE_FLIGHT",
+       "km": 15.75,
+       "points": 15.75,
+       "glider": "SKYWALK Chili 5",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:llaci/14.07.2026/10:20"
+      }
+     ]
+    }
+   ]
+  },
+  "fai1": {
+   "name": "HG FAI-1",
+   "count": 13,
+   "rows": [
+    {
+     "place": 1,
+     "name": "László Ökrös",
+     "username": "okrosl",
+     "club": "Amatőr SE",
+     "points": 821.57,
+     "flights": [
+      {
+       "date": "2026-07-25",
+       "takeoff": "Pipishegy",
+       "type": "FAI_TRIANGLE",
+       "km": 180.18,
+       "points": 360.36,
+       "glider": "Moyes rx3.5",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:okrosl/25.07.2026/11:01"
+      },
+      {
+       "date": "2026-08-30",
+       "takeoff": "Pipishegy",
+       "type": "FREE_TRIANGLE",
+       "km": 109.01,
+       "points": 196.22,
+       "glider": "Moyes rx3.5 pro",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:okrosl/30.08.2026/11:52"
+      },
+      {
+       "date": "2026-05-02",
+       "takeoff": "Zalaegerszeg",
+       "type": "FREE_FLIGHT",
+       "km": 148.67,
+       "points": 148.67,
+       "glider": "Moyes rx3.5 pro",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:okrosl/2.05.2026/11:24"
+      },
+      {
+       "date": "2026-04-22",
+       "takeoff": "Nyikom",
+       "type": "FREE_TRIANGLE",
+       "km": 64.62,
+       "points": 116.32,
+       "glider": "Moyes rx3.5 pro",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:okrosl/22.04.2026/12:14"
+      }
+     ]
+    },
+    {
+     "place": 2,
+     "name": "Balazs Ujhelyi",
+     "username": "ubalika",
+     "club": "Amatőr SE",
+     "points": 744.2,
+     "flights": [
+      {
+       "date": "2026-06-28",
+       "takeoff": "Báránybérc",
+       "type": "FREE_TRIANGLE",
+       "km": 233.26,
+       "points": 419.88,
+       "glider": "Moyes Rx3.5pro",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:ubalika/28.06.2026/10:10"
+      },
+      {
+       "date": "2026-05-02",
+       "takeoff": "Zalaegerszeg",
+       "type": "FREE_FLIGHT",
+       "km": 151.67,
+       "points": 151.67,
+       "glider": "Moyes Rx3.5pro",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:ubalika/2.05.2026/11:15"
+      },
+      {
+       "date": "2026-05-01",
+       "takeoff": "Zalaegerszeg",
+       "type": "FREE_FLIGHT",
+       "km": 96.22,
+       "points": 96.22,
+       "glider": "Moyes Rx 3.5pro",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:ubalika/1.05.2026/11:58"
+      },
+      {
+       "date": "2026-05-03",
+       "takeoff": "Zalaegerszeg",
+       "type": "FREE_FLIGHT",
+       "km": 76.43,
+       "points": 76.43,
+       "glider": "Moyes Rx3.5pro",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:ubalika/3.05.2026/11:26"
+      }
+     ]
+    },
+    {
+     "place": 3,
+     "name": "Elek Czigler",
+     "username": "CZIGLERELEK",
+     "club": "Amatőr SE",
+     "points": 278.92,
+     "flights": [
+      {
+       "date": "2026-05-02",
+       "takeoff": "Zalaegerszeg",
+       "type": "FREE_FLIGHT",
+       "km": 107.88,
+       "points": 107.88,
+       "glider": "Aeros Combat 12.7",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:CZIGLERELEK/2.05.2026/11:32"
+      },
+      {
+       "date": "2026-05-01",
+       "takeoff": "Zalaegerszeg",
+       "type": "FREE_FLIGHT",
+       "km": 97.26,
+       "points": 97.26,
+       "glider": "Aeros Combat 12.7",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:CZIGLERELEK/1.05.2026/12:11"
+      },
+      {
+       "date": "2026-05-03",
+       "takeoff": "Zalaegerszeg",
+       "type": "FREE_FLIGHT",
+       "km": 73.78,
+       "points": 73.78,
+       "glider": "Aeros Combat 12.7",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:CZIGLERELEK/3.05.2026/11:39"
+      }
+     ]
+    },
+    {
+     "place": 4,
+     "name": "Attila Kis",
+     "username": "kisattila",
+     "club": "Amatőr SE",
+     "points": 187.05,
+     "flights": [
+      {
+       "date": "2026-09-26",
+       "takeoff": "Zalaegerszeg",
+       "type": "FREE_TRIANGLE",
+       "km": 37.58,
+       "points": 67.65,
+       "glider": "Moyes 3.5pro",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:kisattila/26.09.2026/11:34"
+      },
+      {
+       "date": "2026-09-06",
+       "takeoff": "Zalaegerszeg",
+       "type": "FAI_TRIANGLE",
+       "km": 30.5,
+       "points": 61,
+       "glider": "Moyes 3.5 pro.",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:kisattila/6.09.2026/12:30"
+      },
+      {
+       "date": "2026-08-23",
+       "takeoff": "Zalaegerszeg",
+       "type": "FAI_TRIANGLE",
+       "km": 29.2,
+       "points": 58.4,
+       "glider": "Moyes 3.5 pro",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:kisattila/23.08.2026/11:31"
+      }
+     ]
+    },
+    {
+     "place": 5,
+     "name": "Horváth Zoltán",
+     "username": "zoli64",
+     "club": "Amatőr SE",
+     "points": 169.99,
+     "flights": [
+      {
+       "date": "2026-08-20",
+       "takeoff": "Zalaegerszeg",
+       "type": "FREE_FLIGHT",
+       "km": 55.48,
+       "points": 55.48,
+       "glider": "Moyes Litespeed RX-4PRO",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:zoli64/20.08.2026/12:13"
+      },
+      {
+       "date": "2026-05-02",
+       "takeoff": "Zalaegerszeg",
+       "type": "FREE_FLIGHT",
+       "km": 42.03,
+       "points": 42.03,
+       "glider": "Moyes Litespeed LS 4,5S",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:zoli64/2.05.2026/11:56"
+      },
+      {
+       "date": "2026-05-01",
+       "takeoff": "Zalaegerszeg",
+       "type": "FREE_FLIGHT",
+       "km": 41.22,
+       "points": 41.22,
+       "glider": "Moyes Litespeed LS 4,5S",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:zoli64/1.05.2026/12:05"
+      },
+      {
+       "date": "2026-05-03",
+       "takeoff": "Zalaegerszeg",
+       "type": "FREE_FLIGHT",
+       "km": 31.25,
+       "points": 31.26,
+       "glider": "Moyes Litespeed LS 4,5S",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:zoli64/3.05.2026/13:53"
+      }
+     ]
+    },
+    {
+     "place": 6,
+     "name": "József Nagy",
+     "username": "Bigdzso",
+     "club": "Zalaegerszegi SRK",
+     "points": 152.97,
+     "flights": [
+      {
+       "date": "2026-05-02",
+       "takeoff": "Zalaegerszeg",
+       "type": "FREE_FLIGHT",
+       "km": 59.25,
+       "points": 59.25,
+       "glider": "Bautek Kite",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Bigdzso/2.05.2026/12:11"
+      },
+      {
+       "date": "2026-05-03",
+       "takeoff": "Zalaegerszeg",
+       "type": "FREE_FLIGHT",
+       "km": 41.81,
+       "points": 41.81,
+       "glider": "Bautek Kite",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Bigdzso/3.05.2026/12:59"
+      },
+      {
+       "date": "2026-05-01",
+       "takeoff": "Zalaegerszeg",
+       "type": "FREE_FLIGHT",
+       "km": 32.08,
+       "points": 32.08,
+       "glider": "Bautek Kite",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Bigdzso/1.05.2026/11:54"
+      },
+      {
+       "date": "2026-09-06",
+       "takeoff": "Zalaegerszeg",
+       "type": "FREE_TRIANGLE",
+       "km": 11.02,
+       "points": 19.83,
+       "glider": "Bautek Kite",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Bigdzso/6.09.2026/12:26"
+      }
+     ]
+    },
+    {
+     "place": 7,
+     "name": "Sándor Czinege",
+     "username": "sundi",
+     "club": "Amatőr SE",
+     "points": 135.65,
+     "flights": [
+      {
+       "date": "2026-06-02",
+       "takeoff": "Kiskunfélegyháza",
+       "type": "FREE_TRIANGLE",
+       "km": 27.94,
+       "points": 50.3,
+       "glider": "Discus C",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:sundi/2.06.2026/12:30"
+      },
+      {
+       "date": "2026-06-20",
+       "takeoff": "Kiskunfélegyháza",
+       "type": "FREE_FLIGHT",
+       "km": 29.6,
+       "points": 29.6,
+       "glider": "Discus C",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:sundi/20.06.2026/12:38"
+      },
+      {
+       "date": "2026-05-25",
+       "takeoff": "Kiskunfélegyháza",
+       "type": "FREE_TRIANGLE",
+       "km": 16.25,
+       "points": 29.25,
+       "glider": "Discus C",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:sundi/25.05.2026/13:41"
+      },
+      {
+       "date": "2026-06-26",
+       "takeoff": "Kiskunfélegyháza",
+       "type": "FREE_FLIGHT",
+       "km": 26.5,
+       "points": 26.5,
+       "glider": "Discus C",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:sundi/26.06.2026/11:51"
+      }
+     ]
+    },
+    {
+     "place": 8,
+     "name": "Dávid Maradics",
+     "username": "Maro",
+     "club": "Zalaegerszegi SRK",
+     "points": 98.98,
+     "flights": [
+      {
+       "date": "2026-08-30",
+       "takeoff": "Zalaegerszeg",
+       "type": "FAI_TRIANGLE",
+       "km": 19.14,
+       "points": 38.29,
+       "glider": "Icaro Laminar 14R",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Maro/30.08.2026/11:31"
+      },
+      {
+       "date": "2026-08-23",
+       "takeoff": "Zalaegerszeg",
+       "type": "FAI_TRIANGLE",
+       "km": 18.98,
+       "points": 37.96,
+       "glider": "Icaro Laminar 14R",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Maro/23.08.2026/12:53"
+      },
+      {
+       "date": "2026-08-08",
+       "takeoff": "Zalaegerszeg",
+       "type": "FREE_TRIANGLE",
+       "km": 12.63,
+       "points": 22.73,
+       "glider": "Icaro Laminar 14R",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Maro/8.08.2026/16:35"
+      }
+     ]
+    },
+    {
+     "place": 9,
+     "name": "Áron Nyíri",
+     "username": "Pursuit",
+     "club": "NagyLufi SE",
+     "points": 32.68,
+     "flights": [
+      {
+       "date": "2026-05-02",
+       "takeoff": "Zalaegerszeg",
+       "type": "FREE_FLIGHT",
+       "km": 20.14,
+       "points": 20.14,
+       "glider": "funfex ",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Pursuit/2.05.2026/12:47"
+      },
+      {
+       "date": "2026-05-03",
+       "takeoff": "Zalaegerszeg",
+       "type": "FREE_FLIGHT",
+       "km": 12.54,
+       "points": 12.54,
+       "glider": "funfex",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Pursuit/3.05.2026/13:14"
+      }
+     ]
+    },
+    {
+     "place": 10,
+     "name": "Eisenberg Peter",
+     "username": "eisike",
+     "club": "Amatőr SE",
+     "points": 29.64,
+     "flights": [
+      {
+       "date": "2026-04-25",
+       "takeoff": "Nyikom",
+       "type": "FAI_TRIANGLE",
+       "km": 14.82,
+       "points": 29.64,
+       "glider": "Aeros Combat GT",
+       "link": "https://www.xcontest.org/hungary/repulesek/reszletei:eisike/25.04.2026/13:06"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "clubs": [
+  {
+   "place": 1,
+   "name": "Eged Eagles SE",
+   "points": 4356.21,
+   "members": [
+    {
+     "name": "Richard Dósa",
+     "username": "dosa.richard",
+     "points": 975.36
+    },
+    {
+     "name": "Zoltán Szalóki",
+     "username": "Zale",
+     "points": 931.73
+    },
+    {
+     "name": "László Mlinkó",
+     "username": "mlinko",
+     "points": 887.43
+    },
+    {
+     "name": "Zoltán Varga",
+     "username": "Vargaz",
+     "points": 803.71
+    },
+    {
+     "name": "Péter Kocsis",
+     "username": "Kojak",
+     "points": 757.98
+    }
+   ]
+  },
+  {
+   "place": 2,
+   "name": "Sirius SE",
+   "points": 3988.67,
+   "members": [
+    {
+     "name": "Jani Barna",
+     "username": "janibar",
+     "points": 1003.26
+    },
+    {
+     "name": "Miklós Bartos",
+     "username": "Miko27",
+     "points": 944.3
+    },
+    {
+     "name": "Szabolcs Szalai",
+     "username": "szabbbolcs",
+     "points": 819.84
+    },
+    {
+     "name": "Páll Csaba",
+     "username": "WingsOfFury",
+     "points": 760.85
+    },
+    {
+     "name": "Istvan Katai",
+     "username": "stevenso",
+     "points": 460.42
+    }
+   ]
+  },
+  {
+   "place": 3,
+   "name": "Winchflyer SE",
+   "points": 3767.86,
+   "members": [
+    {
+     "name": "Ata B",
+     "username": "Wmpilot",
+     "points": 1225.12
+    },
+    {
+     "name": "Botond Nyiri",
+     "username": "boti",
+     "points": 993.59
+    },
+    {
+     "name": "Csaba Földi",
+     "username": "Onesto",
+     "points": 847.82
+    },
+    {
+     "name": "Zoltán Palaga",
+     "username": "palaga",
+     "points": 545.11
+    },
+    {
+     "name": "Attila Ács",
+     "username": "acsa",
+     "points": 156.22
+    }
+   ]
+  },
+  {
+   "place": 4,
+   "name": "KEMRSE",
+   "points": 3399.01,
+   "members": [
+    {
+     "name": "Gábor Szalai",
+     "username": "gszala",
+     "points": 938.5
+    },
+    {
+     "name": "Ábel Varga",
+     "username": "VargaAbel",
+     "points": 885.1
+    },
+    {
+     "name": "Árpád Detki",
+     "username": "karip",
+     "points": 809.75
+    },
+    {
+     "name": "Gergő Pintér",
+     "username": "PinterGergo",
+     "points": 464.91
+    },
+    {
+     "name": "Péter Endrődi",
+     "username": "EPeter",
+     "points": 300.75
+    }
+   ]
+  },
+  {
+   "place": 5,
+   "name": "Amatőr SE",
+   "points": 2905.83,
+   "members": [
+    {
+     "name": "Balazs Racz",
+     "username": "ENAIRGY",
+     "points": 1211.62
+    },
+    {
+     "name": "Pál Takáts",
+     "username": "PalTakats",
+     "points": 972.81
+    },
+    {
+     "name": "Gergely Varga",
+     "username": "Gergely77",
+     "points": 487.88
+    },
+    {
+     "name": "Regina Ludányi",
+     "username": "lregina",
+     "points": 130.48
+    },
+    {
+     "name": "Göndös Ferenc🪂",
+     "username": "Gondos",
+     "points": 103.04
+    }
+   ]
+  },
+  {
+   "place": 6,
+   "name": "Fly Away SE",
+   "points": 2902.59,
+   "members": [
+    {
+     "name": "Dávid Kerényi",
+     "username": "kerenyid",
+     "points": 1012.16
+    },
+    {
+     "name": "Imre Urbán",
+     "username": "Urbusz",
+     "points": 652.64
+    },
+    {
+     "name": "György Réthy",
+     "username": "Parmeggiorgo",
+     "points": 452.84
+    },
+    {
+     "name": "Zé Fördős",
+     "username": "zfordos",
+     "points": 400.93
+    },
+    {
+     "name": "Szilard Dombi",
+     "username": "Szili",
+     "points": 384.02
+    }
+   ]
+  },
+  {
+   "place": 7,
+   "name": "Griff SC",
+   "points": 2835.24,
+   "members": [
+    {
+     "name": "Tasi Péter",
+     "username": "Tasipepo",
+     "points": 1173.92
+    },
+    {
+     "name": "Csaba Somfai",
+     "username": "Furge",
+     "points": 734.32
+    },
+    {
+     "name": "Ádám Barát",
+     "username": "BaratAdi",
+     "points": 542.86
+    },
+    {
+     "name": "Zsolt Erő",
+     "username": "zsero",
+     "points": 261.42
+    },
+    {
+     "name": "József Szabó",
+     "username": "szabojoe",
+     "points": 122.72
+    }
+   ]
+  },
+  {
+   "place": 8,
+   "name": "Cloudbase",
+   "points": 2791.43,
+   "members": [
+    {
+     "name": "László Lugosi",
+     "username": "cbleslie",
+     "points": 820.32
+    },
+    {
+     "name": "Claudiu Pista",
+     "username": "CLOUDiu",
+     "points": 625.02
+    },
+    {
+     "name": "David Hargitai",
+     "username": "ikarusz",
+     "points": 496.18
+    },
+    {
+     "name": "Zsolt Takács",
+     "username": "Doto",
+     "points": 433.94
+    },
+    {
+     "name": "Balazs Bruszniczky",
+     "username": "BBR",
+     "points": 415.97
+    }
+   ]
+  },
+  {
+   "place": 9,
+   "name": "Blue Sky SE",
+   "points": 2216.3,
+   "members": [
+    {
+     "name": "Miklós Turán",
+     "username": "majky",
+     "points": 528.04
+    },
+    {
+     "name": "Gyula Horák",
+     "username": "horakgyuszibacsi",
+     "points": 506.14
+    },
+    {
+     "name": "Kereki Viktor",
+     "username": "Viktor_fly",
+     "points": 407.32
+    },
+    {
+     "name": "Tamás Várnai",
+     "username": "TomiFlow",
+     "points": 405.19
+    },
+    {
+     "name": "Szilárd Farkas",
+     "username": "lupus78",
+     "points": 369.61
+    }
+   ]
+  },
+  {
+   "place": 10,
+   "name": "Napmadár SE",
+   "points": 2152.78,
+   "members": [
+    {
+     "name": "Tamás Torkos",
+     "username": "TomiTorkos",
+     "points": 568.2
+    },
+    {
+     "name": "Zoltán Máté",
+     "username": "homokipisztrang",
+     "points": 520.05
+    },
+    {
+     "name": "Zoltán Rakovits",
+     "username": "Rakovits",
+     "points": 473.15
+    },
+    {
+     "name": "Mátyás Marik",
+     "username": "marikmatyas",
+     "points": 313.49
+    },
+    {
+     "name": "Attila Bacskai",
+     "username": "bacskaiattila",
+     "points": 277.89
+    }
+   ]
+  }
+ ],
+ "kmk": {
+  "kmk100": [
+   {
+    "place": 1,
+    "name": "Csaba Földi",
+    "username": "Onesto",
+    "club": "Winchflyer SE",
+    "count": 13,
+    "longest": 185.9,
+    "flights": [
+     {
+      "date": "2026-06-07",
+      "takeoff": "Nyikom",
+      "type": "FREE_FLIGHT",
+      "km": 185.9,
+      "points": 185.9,
+      "glider": "SKYWALK Mint",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Onesto/7.06.2026/09:49"
+     },
+     {
+      "date": "2026-04-04",
+      "takeoff": "Eged",
+      "type": "FREE_FLIGHT",
+      "km": 181.82,
+      "points": 181.82,
+      "glider": "OZONE Delta 3",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Onesto/4.04.2026/09:26"
+     },
+     {
+      "date": "2026-08-15",
+      "takeoff": "Orosháza",
+      "type": "FREE_FLIGHT",
+      "km": 179.72,
+      "points": 179.72,
+      "glider": "SKYWALK Mint",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Onesto/15.08.2026/10:06"
+     },
+     {
+      "date": "2026-09-16",
+      "takeoff": "Orosháza",
+      "type": "FREE_FLIGHT",
+      "km": 154.46,
+      "points": 154.46,
+      "glider": "SKYWALK Mint",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Onesto/16.09.2026/09:48"
+     },
+     {
+      "date": "2026-05-31",
+      "takeoff": "Nyikom",
+      "type": "FREE_FLIGHT",
+      "km": 129.79,
+      "points": 129.79,
+      "glider": "OZONE Swiftmax",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Onesto/31.05.2026/11:03"
+     },
+     {
+      "date": "2026-05-14",
+      "takeoff": "Körösladány",
+      "type": "FREE_FLIGHT",
+      "km": 128.08,
+      "points": 128.08,
+      "glider": "SKYWALK Mint",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Onesto/14.05.2026/09:20"
+     },
+     {
+      "date": "2026-04-19",
+      "takeoff": "Hajdúszoboszló",
+      "type": "FREE_FLIGHT",
+      "km": 120.46,
+      "points": 120.46,
+      "glider": "OZONE Delta 3",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Onesto/19.04.2026/11:49"
+     },
+     {
+      "date": "2026-07-25",
+      "takeoff": "Orosháza",
+      "type": "FAI_TRIANGLE",
+      "km": 120.4,
+      "points": 224.92,
+      "glider": "SKYWALK Mint",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Onesto/25.07.2026/09:02"
+     },
+     {
+      "date": "2026-05-28",
+      "takeoff": "Nyikom",
+      "type": "FREE_FLIGHT",
+      "km": 117.32,
+      "points": 117.32,
+      "glider": "SKYWALK Mint",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Onesto/28.05.2026/09:48"
+     },
+     {
+      "date": "2026-07-17",
+      "takeoff": "Orosháza",
+      "type": "FAI_TRIANGLE",
+      "km": 115.36,
+      "points": 221.15,
+      "glider": "OZONE Swiftmax",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Onesto/17.07.2026/09:32"
+     },
+     {
+      "date": "2026-06-29",
+      "takeoff": "Hajdúszoboszló",
+      "type": "FAI_TRIANGLE",
+      "km": 106.71,
+      "points": 202.45,
+      "glider": "OZONE Swiftmax",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Onesto/29.06.2026/09:32"
+     },
+     {
+      "date": "2026-05-24",
+      "takeoff": "Hajdúszoboszló",
+      "type": "FREE_FLIGHT",
+      "km": 105.37,
+      "points": 105.37,
+      "glider": "SKYWALK Mint",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Onesto/24.05.2026/10:37"
+     },
+     {
+      "date": "2026-09-15",
+      "takeoff": "Orosháza",
+      "type": "FAI_TRIANGLE",
+      "km": 101.06,
+      "points": 199.3,
+      "glider": "SKYWALK Mint",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Onesto/15.09.2026/09:25"
+     }
+    ]
+   },
+   {
+    "place": 2,
+    "name": "Dávid Kerényi",
+    "username": "kerenyid",
+    "club": "Fly Away SE",
+    "count": 9,
+    "longest": 241.06,
+    "flights": [
+     {
+      "date": "2026-06-07",
+      "takeoff": "Csörlő Billeg",
+      "type": "FREE_FLIGHT",
+      "km": 241.06,
+      "points": 241.06,
+      "glider": "GIN GLIDERS Bonanza 2",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:kerenyid/7.06.2026/10:09"
+     },
+     {
+      "date": "2026-05-19",
+      "takeoff": "Vértesszőlős",
+      "type": "FREE_FLIGHT",
+      "km": 190.66,
+      "points": 190.66,
+      "glider": "GIN GLIDERS Bonanza 2",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:kerenyid/19.05.2026/10:31"
+     },
+     {
+      "date": "2026-07-25",
+      "takeoff": "Orosháza",
+      "type": "FAI_TRIANGLE",
+      "km": 158.45,
+      "points": 313.9,
+      "glider": "GIN GLIDERS Bonanza 2",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:kerenyid/25.07.2026/08:45"
+     },
+     {
+      "date": "2026-09-26",
+      "takeoff": "Orosháza",
+      "type": "FAI_TRIANGLE",
+      "km": 125.11,
+      "points": 240.36,
+      "glider": "GIN GLIDERS Bonanza 2",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:kerenyid/26.09.2026/09:34"
+     },
+     {
+      "date": "2026-05-01",
+      "takeoff": "Magashegy",
+      "type": "FREE_FLIGHT",
+      "km": 123.43,
+      "points": 123.43,
+      "glider": "GIN GLIDERS Bonanza 2",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:kerenyid/1.05.2026/10:52"
+     },
+     {
+      "date": "2026-09-15",
+      "takeoff": "Orosháza",
+      "type": "FAI_TRIANGLE",
+      "km": 118.64,
+      "points": 216.84,
+      "glider": "GIN GLIDERS Bonanza 2",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:kerenyid/15.09.2026/09:12"
+     },
+     {
+      "date": "2026-04-08",
+      "takeoff": "Nyikom",
+      "type": "FREE_FLIGHT",
+      "km": 118.08,
+      "points": 118.08,
+      "glider": "GIN GLIDERS Bonanza 2",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:kerenyid/8.04.2026/10:47"
+     },
+     {
+      "date": "2026-06-25",
+      "takeoff": "Kalocsa",
+      "type": "FAI_TRIANGLE",
+      "km": 112.94,
+      "points": 213.94,
+      "glider": "GIN GLIDERS Bonanza 2",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:kerenyid/25.06.2026/09:51"
+     },
+     {
+      "date": "2026-06-19",
+      "takeoff": "Orosháza",
+      "type": "FAI_TRIANGLE",
+      "km": 107.44,
+      "points": 203.16,
+      "glider": "GIN GLIDERS Bonanza 2",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:kerenyid/19.06.2026/10:10"
+     }
+    ]
+   },
+   {
+    "place": 2,
+    "name": "Botond Nyiri",
+    "username": "boti",
+    "club": "Winchflyer SE",
+    "count": 9,
+    "longest": 232.59,
+    "flights": [
+     {
+      "date": "2026-05-28",
+      "takeoff": "Nyikom",
+      "type": "FREE_FLIGHT",
+      "km": 232.59,
+      "points": 232.59,
+      "glider": "OZONE Photon",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:boti/28.05.2026/09:57"
+     },
+     {
+      "date": "2026-06-07",
+      "takeoff": "Nyikom",
+      "type": "FREE_FLIGHT",
+      "km": 222.84,
+      "points": 222.84,
+      "glider": "OZONE Photon",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:boti/7.06.2026/09:50"
+     },
+     {
+      "date": "2026-04-04",
+      "takeoff": "Eged",
+      "type": "FREE_FLIGHT",
+      "km": 184.75,
+      "points": 184.75,
+      "glider": "OZONE Photon",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:boti/4.04.2026/09:29"
+     },
+     {
+      "date": "2026-06-27",
+      "takeoff": "Kiskunhalas reptér",
+      "type": "FAI_TRIANGLE",
+      "km": 140.48,
+      "points": 272.86,
+      "glider": "OZONE Photon",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:boti/27.06.2026/09:31"
+     },
+     {
+      "date": "2026-07-25",
+      "takeoff": "Orosháza",
+      "type": "FAI_TRIANGLE",
+      "km": 139.28,
+      "points": 261.09,
+      "glider": "OZONE Photon",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:boti/25.07.2026/09:03"
+     },
+     {
+      "date": "2026-05-24",
+      "takeoff": "Hajdúszoboszló",
+      "type": "FREE_FLIGHT",
+      "km": 129.4,
+      "points": 129.4,
+      "glider": "OZONE Photon",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:boti/24.05.2026/11:03"
+     },
+     {
+      "date": "2026-07-17",
+      "takeoff": "Orosháza",
+      "type": "FAI_TRIANGLE",
+      "km": 121.91,
+      "points": 227.05,
+      "glider": "OZONE Photon",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:boti/17.07.2026/09:28"
+     },
+     {
+      "date": "2026-04-19",
+      "takeoff": "?",
+      "type": "FREE_FLIGHT",
+      "km": 117.1,
+      "points": 117.1,
+      "glider": "OZONE Photon",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:boti/19.04.2026/12:44"
+     },
+     {
+      "date": "2026-06-19",
+      "takeoff": "Hajdúszoboszló",
+      "type": "FREE_TRIANGLE",
+      "km": 105.3,
+      "points": 183.6,
+      "glider": "OZONE Photon",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:boti/19.06.2026/09:26"
+     }
+    ]
+   },
+   {
+    "place": 2,
+    "name": "László Lugosi",
+    "username": "cbleslie",
+    "club": "Cloudbase",
+    "count": 9,
+    "longest": 213.34,
+    "flights": [
+     {
+      "date": "2026-05-28",
+      "takeoff": "Nyikom",
+      "type": "FREE_FLIGHT",
+      "km": 213.34,
+      "points": 213.34,
+      "glider": "SKYWALK Mint",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:cbleslie/28.05.2026/09:57"
+     },
+     {
+      "date": "2026-04-18",
+      "takeoff": "Márkó",
+      "type": "FREE_FLIGHT",
+      "km": 123.86,
+      "points": 123.86,
+      "glider": "SKYWALK Mint",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:cbleslie/18.04.2026/10:31"
+     },
+     {
+      "date": "2026-05-31",
+      "takeoff": "Nyikom",
+      "type": "FREE_FLIGHT",
+      "km": 117.42,
+      "points": 117.42,
+      "glider": "SKYWALK Mint",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:cbleslie/31.05.2026/10:08"
+     },
+     {
+      "date": "2026-06-26",
+      "takeoff": "Kalocsa",
+      "type": "FAI_TRIANGLE",
+      "km": 115.19,
+      "points": 228.28,
+      "glider": "SKYWALK Mint",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:cbleslie/26.06.2026/10:21"
+     },
+     {
+      "date": "2026-05-01",
+      "takeoff": "Vértesszőlős",
+      "type": "FREE_FLIGHT",
+      "km": 110.81,
+      "points": 110.81,
+      "glider": "SKYWALK Mint",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:cbleslie/1.05.2026/12:37"
+     },
+     {
+      "date": "2026-05-14",
+      "takeoff": "Szeged",
+      "type": "FREE_FLIGHT",
+      "km": 109.23,
+      "points": 109.24,
+      "glider": "SKYWALK Mint",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:cbleslie/14.05.2026/10:23"
+     },
+     {
+      "date": "2026-05-09",
+      "takeoff": "Vértesszőlős",
+      "type": "FREE_FLIGHT",
+      "km": 103.98,
+      "points": 103.98,
+      "glider": "SKYWALK Mint",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:cbleslie/9.05.2026/10:36"
+     },
+     {
+      "date": "2026-06-27",
+      "takeoff": "Kalocsa",
+      "type": "FAI_TRIANGLE",
+      "km": 103.18,
+      "points": 193.89,
+      "glider": "SKYWALK Mint",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:cbleslie/27.06.2026/09:24"
+     },
+     {
+      "date": "2026-04-11",
+      "takeoff": "Nyikom",
+      "type": "FAI_TRIANGLE",
+      "km": 101.23,
+      "points": 184.81,
+      "glider": "SKYWALK Mint",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:cbleslie/11.04.2026/11:26"
+     }
+    ]
+   },
+   {
+    "place": 2,
+    "name": "Dániel Reményi",
+    "username": "remenyidani",
+    "club": "ASE Solaris",
+    "count": 9,
+    "longest": 172.67,
+    "flights": [
+     {
+      "date": "2026-06-28",
+      "takeoff": "Szársomlyó",
+      "type": "FREE_FLIGHT",
+      "km": 172.67,
+      "points": 172.67,
+      "glider": "OZONE Delta 4",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:remenyidani/28.06.2026/11:01"
+     },
+     {
+      "date": "2026-08-15",
+      "takeoff": "Szársomlyó",
+      "type": "FREE_FLIGHT",
+      "km": 163.5,
+      "points": 163.5,
+      "glider": "OZONE Delta 4",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:remenyidani/15.08.2026/10:38"
+     },
+     {
+      "date": "2026-08-23",
+      "takeoff": "Nyikom",
+      "type": "FREE_FLIGHT",
+      "km": 153.75,
+      "points": 153.74,
+      "glider": "OZONE Delta 4",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:remenyidani/23.08.2026/10:23"
+     },
+     {
+      "date": "2026-06-07",
+      "takeoff": "Vértesszőlős",
+      "type": "FREE_FLIGHT",
+      "km": 148.09,
+      "points": 148.09,
+      "glider": "OZONE Delta 4",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:remenyidani/7.06.2026/09:29"
+     },
+     {
+      "date": "2026-08-01",
+      "takeoff": "Szársomlyó",
+      "type": "FREE_FLIGHT",
+      "km": 147.01,
+      "points": 147.02,
+      "glider": "OZONE Delta 4",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:remenyidani/1.08.2026/10:27"
+     },
+     {
+      "date": "2026-07-26",
+      "takeoff": "Szársomlyó",
+      "type": "FREE_FLIGHT",
+      "km": 140.82,
+      "points": 140.82,
+      "glider": "OZONE Delta 4",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:remenyidani/26.07.2026/10:55"
+     },
+     {
+      "date": "2026-05-23",
+      "takeoff": "Márkó",
+      "type": "FREE_FLIGHT",
+      "km": 133.6,
+      "points": 133.6,
+      "glider": "OZONE Delta 4",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:remenyidani/23.05.2026/11:31"
+     },
+     {
+      "date": "2026-06-27",
+      "takeoff": "Sárhegy",
+      "type": "FAI_TRIANGLE",
+      "km": 124.43,
+      "points": 245.82,
+      "glider": "OZONE Delta 4",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:remenyidani/27.06.2026/09:26"
+     },
+     {
+      "date": "2026-06-20",
+      "takeoff": "Csobánc",
+      "type": "FREE_FLIGHT",
+      "km": 111.32,
+      "points": 111.32,
+      "glider": "OZONE Delta 4",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:remenyidani/20.06.2026/10:43"
+     }
+    ]
+   },
+   {
+    "place": 6,
+    "name": "Miklós Bartos",
+    "username": "Miko27",
+    "club": "Sirius SE",
+    "count": 8,
+    "longest": 263.28,
+    "flights": [
+     {
+      "date": "2026-08-13",
+      "takeoff": "Magashegy",
+      "type": "FREE_FLIGHT",
+      "km": 263.28,
+      "points": 263.28,
+      "glider": "FLOW PARAGLIDERS Fusion Light",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Miko27/13.08.2026/09:31"
+     },
+     {
+      "date": "2026-08-04",
+      "takeoff": "Szársomlyó",
+      "type": "FREE_FLIGHT",
+      "km": 216.0,
+      "points": 216,
+      "glider": "FLOW PARAGLIDERS Fusion Light",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Miko27/4.08.2026/10:24"
+     },
+     {
+      "date": "2026-06-23",
+      "takeoff": "Csörlő Billeg",
+      "type": "FREE_FLIGHT",
+      "km": 208.33,
+      "points": 208.33,
+      "glider": "SKYWALK Spice 2",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Miko27/23.06.2026/09:46"
+     },
+     {
+      "date": "2026-05-22",
+      "takeoff": "Bersekbánya",
+      "type": "FREE_FLIGHT",
+      "km": 156.65,
+      "points": 156.65,
+      "glider": "FLOW PARAGLIDERS Fusion Light",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Miko27/22.05.2026/11:00"
+     },
+     {
+      "date": "2026-05-14",
+      "takeoff": "Szársomlyó",
+      "type": "FREE_FLIGHT",
+      "km": 150.12,
+      "points": 150.12,
+      "glider": "FLOW PARAGLIDERS Fusion Light",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Miko27/14.05.2026/10:29"
+     },
+     {
+      "date": "2026-07-31",
+      "takeoff": "Sárhegy",
+      "type": "FAI_TRIANGLE",
+      "km": 129.89,
+      "points": 256.69,
+      "glider": "FLOW PARAGLIDERS Fusion Light",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Miko27/31.07.2026/09:28"
+     },
+     {
+      "date": "2026-04-18",
+      "takeoff": "Vértesszőlős",
+      "type": "FREE_FLIGHT",
+      "km": 125.34,
+      "points": 125.34,
+      "glider": "FLOW PARAGLIDERS Fusion Light",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Miko27/18.04.2026/10:45"
+     },
+     {
+      "date": "2026-06-27",
+      "takeoff": "Kalocsa",
+      "type": "FAI_TRIANGLE",
+      "km": 100.96,
+      "points": 200.37,
+      "glider": "SKYWALK Spice 2",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Miko27/27.06.2026/11:05"
+     }
+    ]
+   },
+   {
+    "place": 6,
+    "name": "Ata B",
+    "username": "Wmpilot",
+    "club": "Winchflyer SE",
+    "count": 8,
+    "longest": 182.01,
+    "flights": [
+     {
+      "date": "2026-07-31",
+      "takeoff": "Sárhegy",
+      "type": "FAI_TRIANGLE",
+      "km": 182.01,
+      "points": 361.4,
+      "glider": "OZONE Enzo 3",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Wmpilot/31.07.2026/09:24"
+     },
+     {
+      "date": "2026-06-27",
+      "takeoff": "?",
+      "type": "FAI_TRIANGLE",
+      "km": 168.89,
+      "points": 329.39,
+      "glider": "OZONE Enzo 3",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Wmpilot/27.06.2026/09:07"
+     },
+     {
+      "date": "2026-07-17",
+      "takeoff": "Orosháza",
+      "type": "FAI_TRIANGLE",
+      "km": 153.96,
+      "points": 208.84,
+      "glider": "OZONE Enzo 3",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Wmpilot/17.07.2026/09:40"
+     },
+     {
+      "date": "2026-06-20",
+      "takeoff": "?",
+      "type": "FAI_TRIANGLE",
+      "km": 143.92,
+      "points": 287.24,
+      "glider": "OZONE Enzo 3",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Wmpilot/20.06.2026/10:25"
+     },
+     {
+      "date": "2026-08-06",
+      "takeoff": "Kiskunhalas",
+      "type": "FAI_TRIANGLE",
+      "km": 138.29,
+      "points": 247.09,
+      "glider": "OZONE Enzo 3",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Wmpilot/6.08.2026/10:13"
+     },
+     {
+      "date": "2026-06-19",
+      "takeoff": "Hajdúszoboszló",
+      "type": "FAI_TRIANGLE",
+      "km": 126.73,
+      "points": 240.07,
+      "glider": "OZONE Enzo 3",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Wmpilot/19.06.2026/09:52"
+     },
+     {
+      "date": "2026-08-10",
+      "takeoff": "Halas",
+      "type": "FAI_TRIANGLE",
+      "km": 123.16,
+      "points": 241.46,
+      "glider": "OZONE Enzo 3",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Wmpilot/10.08.2026/10:00"
+     },
+     {
+      "date": "2026-06-08",
+      "takeoff": "Kalocsa",
+      "type": "FREE_TRIANGLE",
+      "km": 113.91,
+      "points": 199.47,
+      "glider": "OZONE Enzo 3",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Wmpilot/8.06.2026/10:12"
+     }
+    ]
+   },
+   {
+    "place": 6,
+    "name": "Tasi Péter",
+    "username": "Tasipepo",
+    "club": "Griff SC",
+    "count": 8,
+    "longest": 167.46,
+    "flights": [
+     {
+      "date": "2026-06-27",
+      "takeoff": "Kiskunhalas",
+      "type": "FAI_TRIANGLE",
+      "km": 167.46,
+      "points": 321.5,
+      "glider": "OZONE Photon",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Tasipepo/27.06.2026/09:13"
+     },
+     {
+      "date": "2026-06-25",
+      "takeoff": "Kalocsa",
+      "type": "FAI_TRIANGLE",
+      "km": 162.94,
+      "points": 324.09,
+      "glider": "OZONE Photon",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Tasipepo/25.06.2026/09:29"
+     },
+     {
+      "date": "2026-07-17",
+      "takeoff": "Orosháza",
+      "type": "FAI_TRIANGLE",
+      "km": 150.91,
+      "points": 207.83,
+      "glider": "OZONE Photon",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Tasipepo/17.07.2026/09:47"
+     },
+     {
+      "date": "2026-06-20",
+      "takeoff": "Kiskunhalas",
+      "type": "FAI_TRIANGLE",
+      "km": 144.19,
+      "points": 287.67,
+      "glider": "OZONE Photon",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Tasipepo/20.06.2026/09:45"
+     },
+     {
+      "date": "2026-08-10",
+      "takeoff": "Kiskunhalas",
+      "type": "FAI_TRIANGLE",
+      "km": 121.69,
+      "points": 240.66,
+      "glider": "OZONE Photon",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Tasipepo/10.08.2026/10:10"
+     },
+     {
+      "date": "2026-08-06",
+      "takeoff": "Kiskuhalas",
+      "type": "FREE_FLIGHT",
+      "km": 121.46,
+      "points": 121.46,
+      "glider": "OZONE Photon",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Tasipepo/6.08.2026/10:31"
+     },
+     {
+      "date": "2026-06-08",
+      "takeoff": "Kalocsa",
+      "type": "FAI_TRIANGLE",
+      "km": 110.14,
+      "points": 195.74,
+      "glider": "OZONE Photon",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Tasipepo/8.06.2026/09:55"
+     },
+     {
+      "date": "2026-06-19",
+      "takeoff": "Hajdúszoboszló",
+      "type": "FREE_FLIGHT",
+      "km": 105.29,
+      "points": 105.29,
+      "glider": "OZONE Photon",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Tasipepo/19.06.2026/09:37"
+     }
+    ]
+   },
+   {
+    "place": 9,
+    "name": "Károly Radványi",
+    "username": "Radi",
+    "club": "Tokaj Fly SE",
+    "count": 7,
+    "longest": 245.56,
+    "flights": [
+     {
+      "date": "2026-08-13",
+      "takeoff": "Magashegy",
+      "type": "FREE_FLIGHT",
+      "km": 245.56,
+      "points": 245.56,
+      "glider": "FLOW PARAGLIDERS Mystic",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Radi/13.08.2026/09:28"
+     },
+     {
+      "date": "2026-06-07",
+      "takeoff": "Nyikom",
+      "type": "FREE_FLIGHT",
+      "km": 203.34,
+      "points": 203.35,
+      "glider": "FLOW PARAGLIDERS Mystic",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Radi/7.06.2026/09:51"
+     },
+     {
+      "date": "2026-06-24",
+      "takeoff": "Magashegy",
+      "type": "FREE_FLIGHT",
+      "km": 193.39,
+      "points": 193.39,
+      "glider": "FLOW PARAGLIDERS Mystic",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Radi/24.06.2026/09:41"
+     },
+     {
+      "date": "2026-04-22",
+      "takeoff": "Magashegy",
+      "type": "FREE_FLIGHT",
+      "km": 186.51,
+      "points": 186.51,
+      "glider": "FLOW PARAGLIDERS Mystic",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Radi/22.04.2026/10:57"
+     },
+     {
+      "date": "2026-08-16",
+      "takeoff": "Orosháza",
+      "type": "FREE_FLIGHT",
+      "km": 146.02,
+      "points": 146.02,
+      "glider": "FLOW PARAGLIDERS Mystic",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Radi/16.08.2026/11:05"
+     },
+     {
+      "date": "2026-05-28",
+      "takeoff": "Hajdúnánás",
+      "type": "FREE_FLIGHT",
+      "km": 144.94,
+      "points": 144.94,
+      "glider": "FLOW PARAGLIDERS Mystic",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Radi/28.05.2026/10:21"
+     },
+     {
+      "date": "2026-05-24",
+      "takeoff": "Magashegy",
+      "type": "FREE_FLIGHT",
+      "km": 144.15,
+      "points": 144.15,
+      "glider": "FLOW PARAGLIDERS Mystic",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Radi/24.05.2026/10:49"
+     }
+    ]
+   },
+   {
+    "place": 9,
+    "name": "Balazs Racz",
+    "username": "ENAIRGY",
+    "club": "Amatőr SE",
+    "count": 7,
+    "longest": 211.66,
+    "flights": [
+     {
+      "date": "2026-05-31",
+      "takeoff": "Csörlő Billeg",
+      "type": "FREE_FLIGHT",
+      "km": 211.66,
+      "points": 211.67,
+      "glider": "OZONE Enzo 3",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:ENAIRGY/31.05.2026/10:21"
+     },
+     {
+      "date": "2026-06-27",
+      "takeoff": "Kalocsa",
+      "type": "FAI_TRIANGLE",
+      "km": 181.67,
+      "points": 351.44,
+      "glider": "OZONE Enzo 3",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:ENAIRGY/27.06.2026/09:18"
+     },
+     {
+      "date": "2026-06-25",
+      "takeoff": "Kalocsa",
+      "type": "FAI_TRIANGLE",
+      "km": 162.95,
+      "points": 324.46,
+      "glider": "OZONE Enzo 3",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:ENAIRGY/25.06.2026/09:18"
+     },
+     {
+      "date": "2026-06-26",
+      "takeoff": "Kalocsa",
+      "type": "FAI_TRIANGLE",
+      "km": 157.05,
+      "points": 300.18,
+      "glider": "OZONE Enzo 3",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:ENAIRGY/26.06.2026/09:39"
+     },
+     {
+      "date": "2026-06-20",
+      "takeoff": "Kalocsa",
+      "type": "FAI_TRIANGLE",
+      "km": 126.11,
+      "points": 235.54,
+      "glider": "OZONE Enzo 3",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:ENAIRGY/20.06.2026/09:14"
+     },
+     {
+      "date": "2026-09-02",
+      "takeoff": "Kalocsa",
+      "type": "FAI_TRIANGLE",
+      "km": 113.63,
+      "points": 224.14,
+      "glider": "OZONE Enzo 3",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:ENAIRGY/2.09.2026/10:14"
+     },
+     {
+      "date": "2026-06-04",
+      "takeoff": "Csörlő Billeg",
+      "type": "FREE_FLIGHT",
+      "km": 100.8,
+      "points": 100.8,
+      "glider": "OZONE Enzo 3",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:ENAIRGY/4.06.2026/11:30"
+     }
+    ]
+   }
+  ],
+  "kmk200": [
+   {
+    "place": 1,
+    "name": "Gábor Szalai",
+    "username": "gszala",
+    "club": "KEMRSE",
+    "count": 4,
+    "longest": 275.88,
+    "flights": [
+     {
+      "date": "2026-07-28",
+      "takeoff": "Vértesszőlős",
+      "type": "FREE_FLIGHT",
+      "km": 275.88,
+      "points": 275.88,
+      "glider": "ZOOM PARAGLIDERS X2C",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:gszala/28.07.2026/09:38"
+     },
+     {
+      "date": "2026-07-10",
+      "takeoff": "Vértesszőlős",
+      "type": "FREE_FLIGHT",
+      "km": 247.38,
+      "points": 247.38,
+      "glider": "ZOOM PARAGLIDERS X2C",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:gszala/10.07.2026/09:30"
+     },
+     {
+      "date": "2026-08-01",
+      "takeoff": "Szársomlyó",
+      "type": "FREE_FLIGHT",
+      "km": 212.2,
+      "points": 212.2,
+      "glider": "ZOOM PARAGLIDERS X2C",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:gszala/1.08.2026/09:35"
+     },
+     {
+      "date": "2026-08-12",
+      "takeoff": "Vértesszőlős",
+      "type": "FREE_FLIGHT",
+      "km": 203.04,
+      "points": 203.04,
+      "glider": "ZOOM PARAGLIDERS X2C",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:gszala/12.08.2026/10:13"
+     }
+    ]
+   },
+   {
+    "place": 2,
+    "name": "Miklós Bartos",
+    "username": "Miko27",
+    "club": "Sirius SE",
+    "count": 3,
+    "longest": 263.28,
+    "flights": [
+     {
+      "date": "2026-08-13",
+      "takeoff": "Magashegy",
+      "type": "FREE_FLIGHT",
+      "km": 263.28,
+      "points": 263.28,
+      "glider": "FLOW PARAGLIDERS Fusion Light",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Miko27/13.08.2026/09:31"
+     },
+     {
+      "date": "2026-08-04",
+      "takeoff": "Szársomlyó",
+      "type": "FREE_FLIGHT",
+      "km": 216.0,
+      "points": 216,
+      "glider": "FLOW PARAGLIDERS Fusion Light",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Miko27/4.08.2026/10:24"
+     },
+     {
+      "date": "2026-06-23",
+      "takeoff": "Csörlő Billeg",
+      "type": "FREE_FLIGHT",
+      "km": 208.33,
+      "points": 208.33,
+      "glider": "SKYWALK Spice 2",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Miko27/23.06.2026/09:46"
+     }
+    ]
+   },
+   {
+    "place": 3,
+    "name": "Ábel Varga",
+    "username": "VargaAbel",
+    "club": "KEMRSE",
+    "count": 2,
+    "longest": 257.33,
+    "flights": [
+     {
+      "date": "2026-04-22",
+      "takeoff": "Magashegy",
+      "type": "FREE_FLIGHT",
+      "km": 257.33,
+      "points": 257.33,
+      "glider": "BGD Diva 2",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:VargaAbel/22.04.2026/10:28"
+     },
+     {
+      "date": "2026-07-31",
+      "takeoff": "Sárhegy",
+      "type": "FAI_TRIANGLE",
+      "km": 207.55,
+      "points": 410.52,
+      "glider": "BGD Diva 2",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:VargaAbel/31.07.2026/08:46"
+     }
+    ]
+   },
+   {
+    "place": 3,
+    "name": "Károly Radványi",
+    "username": "Radi",
+    "club": "Tokaj Fly SE",
+    "count": 2,
+    "longest": 245.56,
+    "flights": [
+     {
+      "date": "2026-08-13",
+      "takeoff": "Magashegy",
+      "type": "FREE_FLIGHT",
+      "km": 245.56,
+      "points": 245.56,
+      "glider": "FLOW PARAGLIDERS Mystic",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Radi/13.08.2026/09:28"
+     },
+     {
+      "date": "2026-06-07",
+      "takeoff": "Nyikom",
+      "type": "FREE_FLIGHT",
+      "km": 203.34,
+      "points": 203.35,
+      "glider": "FLOW PARAGLIDERS Mystic",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Radi/7.06.2026/09:51"
+     }
+    ]
+   },
+   {
+    "place": 3,
+    "name": "Árpád Detki",
+    "username": "karip",
+    "club": "KEMRSE",
+    "count": 2,
+    "longest": 244.0,
+    "flights": [
+     {
+      "date": "2026-06-12",
+      "takeoff": "Csörlő Billeg",
+      "type": "FREE_FLIGHT",
+      "km": 244.0,
+      "points": 244,
+      "glider": "SKYWALK Mint",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:karip/12.06.2026/09:27"
+     },
+     {
+      "date": "2026-05-20",
+      "takeoff": "Csörlő Billeg",
+      "type": "FREE_FLIGHT",
+      "km": 221.02,
+      "points": 221.02,
+      "glider": "SKYWALK Mint",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:karip/20.05.2026/10:27"
+     }
+    ]
+   },
+   {
+    "place": 3,
+    "name": "Botond Nyiri",
+    "username": "boti",
+    "club": "Winchflyer SE",
+    "count": 2,
+    "longest": 232.59,
+    "flights": [
+     {
+      "date": "2026-05-28",
+      "takeoff": "Nyikom",
+      "type": "FREE_FLIGHT",
+      "km": 232.59,
+      "points": 232.59,
+      "glider": "OZONE Photon",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:boti/28.05.2026/09:57"
+     },
+     {
+      "date": "2026-06-07",
+      "takeoff": "Nyikom",
+      "type": "FREE_FLIGHT",
+      "km": 222.84,
+      "points": 222.84,
+      "glider": "OZONE Photon",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:boti/7.06.2026/09:50"
+     }
+    ]
+   },
+   {
+    "place": 3,
+    "name": "Péter Kocsis",
+    "username": "Kojak",
+    "club": "Eged Eagles SE",
+    "count": 2,
+    "longest": 221.44,
+    "flights": [
+     {
+      "date": "2026-06-07",
+      "takeoff": "Nyikom",
+      "type": "FREE_FLIGHT",
+      "km": 221.44,
+      "points": 221.44,
+      "glider": "NOVA MENTOR 7",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Kojak/7.06.2026/09:50"
+     },
+     {
+      "date": "2026-05-31",
+      "takeoff": "Nyikom",
+      "type": "FREE_FLIGHT",
+      "km": 212.38,
+      "points": 212.38,
+      "glider": "NOVA MENTOR 7",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Kojak/31.05.2026/09:53"
+     }
+    ]
+   },
+   {
+    "place": 3,
+    "name": "Zoltán Szalóki",
+    "username": "Zale",
+    "club": "Eged Eagles SE",
+    "count": 2,
+    "longest": 221.24,
+    "flights": [
+     {
+      "date": "2026-06-07",
+      "takeoff": "Nyikom",
+      "type": "FREE_FLIGHT",
+      "km": 221.24,
+      "points": 221.24,
+      "glider": "OZONE Delta 5",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Zale/7.06.2026/09:48"
+     },
+     {
+      "date": "2026-05-31",
+      "takeoff": "Nyikom",
+      "type": "FREE_FLIGHT",
+      "km": 206.91,
+      "points": 206.91,
+      "glider": "OZONE Delta 5",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:Zale/31.05.2026/09:52"
+     }
+    ]
+   },
+   {
+    "place": 9,
+    "name": "Dávid Kerényi",
+    "username": "kerenyid",
+    "club": "Fly Away SE",
+    "count": 1,
+    "longest": 241.06,
+    "flights": [
+     {
+      "date": "2026-06-07",
+      "takeoff": "Csörlő Billeg",
+      "type": "FREE_FLIGHT",
+      "km": 241.06,
+      "points": 241.06,
+      "glider": "GIN GLIDERS Bonanza 2",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:kerenyid/7.06.2026/10:09"
+     }
+    ]
+   },
+   {
+    "place": 9,
+    "name": "Pál Takáts",
+    "username": "PalTakats",
+    "club": "Amatőr SE",
+    "count": 1,
+    "longest": 236.38,
+    "flights": [
+     {
+      "date": "2026-07-31",
+      "takeoff": "Sárhegy",
+      "type": "FAI_TRIANGLE",
+      "km": 236.38,
+      "points": 470.53,
+      "glider": "OZONE Enzo 3",
+      "link": "https://www.xcontest.org/hungary/repulesek/reszletei:PalTakats/31.07.2026/08:45"
+     }
+    ]
+   }
+  ]
+ }
+}

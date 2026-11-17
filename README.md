@@ -1,26 +1,65 @@
-# MKK 2026 díjátadó
+# MKK 2026 award ceremony slides
 
-Diavetítés a 2026-os MKK díjátadóra (2026. november 20.), [reveal.js](https://revealjs.com/) alapon.
+The slide deck of the MKK 2026 award ceremony (Magyar Köztársaság Kupa, Hungarian XContest paragliding league; ceremony 2026-11-20). Plain HTML with [reveal.js](https://revealjs.com/), no server, no internet needed.
 
-- Online: https://hyperknot.github.io/mkk-dijatado-2026/
-- Offline (pendrive): az egész mappát kell másolni, és az `index.html`-t megnyitni böngészőben. Internet nem kell, minden fájl helyben van.
+- Online: https://hyperknot.github.io/mkk-dijatado-2026/ (GitHub Pages from `main`, live about a minute after a push)
+- Offline (USB stick): copy the whole folder, open `index.html` in a browser.
+- Presenting: arrow keys / space / clicker, `F` full screen, `Esc` overview, `S` speaker view. `#/12` in the URL is slide 13 (0-based).
 
-## Vetítés
+## Layout
 
-- Lapozás: nyilak, szóköz, PageUp/PageDown (prezenter távirányító is megy)
-- `F`: teljes képernyő, `Esc`: áttekintő nézet, `S`: előadói nézet (jegyzetek, óra)
-- A cím (`#/12`) az aktuális diát mutatja, így egy diára linkelni is lehet.
+```
+index.html            GENERATED, never edit by hand
+src/build.py          builds index.html: DECK (slide order), name/photo/takeoff fixes, result slide HTML
+src/slides/*.html     hand-written slides, one or more <section> per file
+src/results.json      the results data (rankings, flights, clubs, KMK), from export_results.py
+src/template.html     the page around the slides (reveal.js setup)
+src/export_results.py makes results.json; runs only in the private validation repo (see the file)
+assets/css/style.css  all styling; slides are a 1920x1080 canvas, reveal.js scales it
+assets/img/photos/    pilot photos, <xcontest username>.jpg
+assets/img/logos/, assets/img/charts/, assets/img/bg.jpg, assets/fonts/ (Raleway), vendor/reveal/
+```
 
-## Szerkesztés
+## Workflow
 
-- Minden dia az `index.html`-ben van, egy `<section>` egy dia. GitHubon a ceruza ikonnal közvetlenül szerkeszthető.
-- Képek: `assets/img/photos/<xcontest felhasználónév>.jpg`. Csere: ugyanazzal a névvel felülírni. Ha az arc nem középen van, a képen a `style="object-position: 80% 40%"` állítja a kivágást (vízszintes, függőleges).
-- Megjelenés: `assets/css/style.css`.
-- A régi vagy hiányzó adatokat vastag piros keret és felirat jelöli (`class="stale" data-warn="..."`). Frissítés után a `stale` osztályt törölni kell. Ami nincs pirossal jelölve, az a 2026-os végeredményből vagy a 2026-os szezon adataiból van.
+1. `git pull` first; others edit too.
+2. Edit `src/` (or `assets/`).
+3. Run `./src/build.py` (needs only `uv`; or `python3 src/build.py`, standard library only).
+4. Check the changed slides (below), then commit `src/` and `index.html` together and push.
 
-## Források
+A merge conflict in `index.html`: resolve `src/`, then rebuild instead of merging `index.html`.
 
-- Eredmények: a saját validálásunk (2026-10-15, `eredmenyek_2026.md`), a gravírozott nevek a serlegrendelésből.
-- Fotók: a pilóta XContest profilképe (2026-11-17), ha az arcát mutatja; különben a 2025-ös díjátadó diájáról az ő képe. Akinek egyik sincs, annál monogram szerepel.
-- Költségvetés és statisztika grafikonok: a 2026-os Google Slides diáiról (még a 2025-ös adatok).
-- Rekordok: https://szakbizottsag.hu/rekordok/
+Common changes:
+
+- **Text of a hand-written slide** (title, sponsors, budget, stats, special prizes, records, thanks): edit its file in `src/slides/`.
+- **New slide**: add `src/slides/<name>.html` with `<section>...</section>` and put `'<name>'` into `DECK` in `src/build.py` at its place. Use the existing classes (`cover`, `panel`, `card`, `fact`, `two-col`, ...) from `style.css`.
+- **Result slides** (categories, KMK, clubs) are generated from `src/results.json`; change the generator in `src/build.py`, not the output.
+- **Pilot photo**: put `assets/img/photos/<username>.jpg` (about 1000 px, JPEG). Without a photo the slide shows the initials. If the face is cut off, add the username to `FOCUS` in `build.py` (CSS `object-position`, e.g. `'70% 30%'`).
+- **Pilot name**: podium slides use `HU` in `build.py` (the names engraved on the cups, Hungarian order); everyone else keeps the XContest name.
+- **Takeoff shown as "?"**: add the flight to `TAKEOFF` in `build.py`.
+
+## Rules for content
+
+- **Correct or red.** Every number and name that is not verified and current gets a red frame: wrap it in `<div class="stale" data-warn="RÉGI ADAT: 2025">...</div>` (the label is `data-warn`). Remove the `stale` class only after updating it from a real source. Everything without a red frame must be correct for 2026.
+- Never invent facts, names, expansions of abbreviations or numbers. If there is no source, leave it out or mark it red.
+- Slide text is Hungarian, short, no emojis.
+- Photos: the pilot's XContest profile photo if it shows the face, else the pilot's own photo from an earlier MKK deck (2025 Google Slides "MKK 2025"; the 2026 Google Slides copy had other people's photos under new names, don't use it).
+
+## Sources
+
+- Results: our own validation of all flights (final, 2026-10-15; objection period closed 10-28). Names on the podium: the cup order.
+- Stats slide: the XContest MKK pilot list (https://www.xcontest.org/hungary/pilotak/ and `/2025/hungary/pilotak/`), 2026-11-17; the chart (2007–2025) and the budget slide are from the 2025 deck and still red.
+- Records and Repülés Éjszakája: https://szakbizottsag.hu/rekordok/ and https://szakbizottsag.hu/
+- Route type colors follow XContest: FAI triangle blue, flat triangle green, free distance orange.
+
+## Checking slides
+
+Open `index.html` and go through the changed slides. Headless screenshot of one slide (macOS Chrome):
+
+```sh
+"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless=new --hide-scrollbars \
+  --window-size=1920,1080 --virtual-time-budget=2500 --screenshot=/tmp/slide.png \
+  "file://$PWD/index.html#/13"
+```
+
+Look for text overflowing a card, overlapping red labels, and cropped faces.
