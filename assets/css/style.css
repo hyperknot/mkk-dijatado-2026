@@ -360,6 +360,137 @@ section.ranking {
   color: #fff;
 }
 
+/* ---- top 10 of a category: the top 3 on steps, 4-10 in rows ---- */
+
+section.stage {
+  gap: 20px;
+}
+
+.stage h2 {
+  font-size: 64px;
+}
+
+.stairs {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 30px;
+}
+
+.step {
+  width: 440px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.step .photo {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  border-width: 6px;
+  margin-bottom: 12px;
+}
+
+.step.p1 .photo {
+  width: 210px;
+  height: 210px;
+}
+
+.step .photo.none {
+  font-size: 70px;
+}
+
+.step.p2 .photo {
+  border-color: var(--silver);
+}
+.step.p1 .photo {
+  border-color: var(--gold);
+}
+.step.p3 .photo {
+  border-color: var(--bronze);
+}
+
+.step-name {
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 1.1;
+  text-shadow:
+    0 3px 6px rgba(0, 0, 0, 0.6),
+    0 0 24px rgba(0, 0, 0, 0.4);
+}
+
+.step-club {
+  margin-top: 4px;
+  font-size: 26px;
+  font-weight: 600;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.step .block {
+  width: 100%;
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px 16px 0 0;
+  color: var(--ink);
+  box-shadow: var(--shadow);
+}
+
+.step.p1 .block {
+  height: 140px;
+  background: linear-gradient(160deg, #ffe58a, var(--gold));
+}
+.step.p2 .block {
+  height: 105px;
+  background: linear-gradient(160deg, #fff, var(--silver));
+}
+.step.p3 .block {
+  height: 75px;
+  background: linear-gradient(160deg, #f4c08e, var(--bronze));
+}
+
+.step-place {
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.step-pts {
+  font-size: 26px;
+  font-weight: 800;
+}
+
+.step.p3 .block {
+  flex-direction: row;
+  gap: 20px;
+}
+
+.stage .card {
+  padding: 8px 34px;
+}
+
+.stage table.list {
+  font-size: 28px;
+}
+
+.stage table.list td {
+  padding: 4px 14px;
+}
+
+.stage .rank {
+  width: 40px;
+  height: 40px;
+  font-size: 23px;
+}
+
+.stage .bar {
+  height: 22px;
+}
+
 /* ---- clubs ---- */
 
 .club-members {

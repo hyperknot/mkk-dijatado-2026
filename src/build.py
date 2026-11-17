@@ -106,7 +106,7 @@ def class_slides(c, prizes, photos):
     out = [cover(c['name'], f'{c["count"]} pilóta')]
     for r in reversed([r for r in c['rows'] if r['place'] <= prizes]):
         out.append(podium(c['name'], r, photos))
-    out.append(ranking(c['name'], c['rows']))
+    out.append(ranking(c['name'], c['rows'], photos))
     return out
 
 
@@ -140,24 +140,40 @@ def podium(category, r, photos):
 </section>'''
 
 
-def ranking(title, rows):
+def ranking(title, rows, photos):
+    # the top 3 on a podium (II., I., III. from left to right) with photos, 4-10 in rows below
     top = rows[0]['points']
+    steps = '\n'.join(
+        f'''    <div class="step p{r["place"]}">
+      {photo(r["username"], name(r), photos)}
+      <div class="step-name">{name(r)}</div>
+      <div class="step-club">{escape(r["club"])}</div>
+      <div class="block"><span class="step-place">{r["place"]}.</span><span class="step-pts">{r["points"]:.2f} p.</span></div>
+    </div>'''
+        for r in [rows[i] for i in (1, 0, 2) if i < len(rows)]
+    )
     body = '\n'.join(
         f'        <tr><td><span class="rank p{r["place"]}">{r["place"]}</span></td>'
         f'<td class="who"><b>{escape(r["name"])}</b> <i>[{escape(r["username"])}]</i>'
         f'<span class="club">{escape(r["club"])}</span></td>'
         f'<td class="num pts">{r["points"]:.2f}</td><td>{bar(r["points"], top)}</td></tr>'
-        for r in rows
+        for r in rows[3:]
     )
-    return f'''<section class="ranking">
-  <h2>{title}</h2>
+    table = ''
+    if body:
+        table = f'''
   <div class="card">
     <table class="list">
       <tbody>
 {body}
       </tbody>
     </table>
-  </div>
+  </div>'''
+    return f'''<section class="ranking stage">
+  <h2>{title}</h2>
+  <div class="stairs">
+{steps}
+  </div>{table}
 </section>'''
 
 
