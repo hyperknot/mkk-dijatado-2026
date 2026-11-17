@@ -906,3 +906,33 @@ section.liga-fun {
   font-weight: 800;
   color: var(--orange);
 }
+
+/* the turn direction chart (src/slides/liga-turns.html, from the liga IGC analysis): title and note
+   in a narrow left column, the chart at full slide height (rendered at exactly 1340x1020 so it isn't scaled) */
+section.liga-turns {
+  display: grid !important;
+  grid-template-columns: 1fr 1340px;
+  align-items: center;
+  gap: 40px;
+  padding: 30px !important;
+}
+
+.liga-turns h2 {
+  font-size: 68px;
+}
+
+.liga-turns img {
+  display: block;
+  width: 1340px;
+  height: 1020px;
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+}
+
+.liga-turns .card {
+  margin-top: 50px;
+  padding: 30px 36px;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 1.35;
+}

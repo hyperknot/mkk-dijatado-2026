@@ -42,6 +42,7 @@ DECK = [
     ('liga', 'women'),
     ('liga-records',),
     ('liga-fun',),
+    'liga-turns',
 ]
 
 # Engraved names (the cup order, Hungarian order) by XContest username; others keep the XContest name
