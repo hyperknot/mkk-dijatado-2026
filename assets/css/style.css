@@ -283,11 +283,12 @@ table.list td.pts {
 .type.FREE_FLIGHT {
   background: #e8761c;
 }
+/* the colors of the XContest route icons */
 .type.FREE_TRIANGLE {
-  background: #2e8bc0;
+  background: #2fa84f;
 }
 .type.FAI_TRIANGLE {
-  background: #3f7d3a;
+  background: #2e8bc0;
 }
 
 /* ---- ranking (top 10) ---- */
