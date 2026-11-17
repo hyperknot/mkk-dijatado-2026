@@ -47,7 +47,7 @@ HU = {
     'Kojak': 'Kocsis Péter', 'Furge': 'Somfai Csaba', 'Onesto': 'Földi Csaba',
     'homokipisztrang': 'Máté Zoltán', 'Doto': 'Takács Zsolt', 'karip': 'Detki Árpád',
     'CsabaiSanya': 'Csabai Sanya', 'horakgyuszibacsi': 'Horák Gyula',
-    'TomiTorkos': 'ifj. Torkos Tamás', 'PinterGergo': 'Pintér Gergő', 'gszala': 'Szalai Gábor',
+    'TomiTorkos': 'ifj. Torkos Tamás', 'gszala': 'Szalai Gábor',
     'dosa.richard': 'Dósa Richárd', 'Zale': 'Szalóki Zoltán', 'mlinko': 'Mlinkó László',
     'Vargaz': 'Varga Zoltán', 'Miko27': 'Bartos Miklós', 'szabbbolcs': 'Szalai Szabolcs',
     'stevenso': 'Kátai István', 'boti': 'Nyíri Botond', 'palaga': 'Palaga Zoltán',
@@ -70,6 +70,10 @@ TAKEOFF = {
     'TomiTorkos/28.05.2026/09:53': 'Tiszavasvári',
 }
 
+# Places with a prize (podium slide), by class; default 3. PG Ifi had 2 participants: only the 1st
+# place gets a prize (decided after the results post, which said "díjazás nélkül")
+PRIZES = {'juniors': 1}
+
 ROMAN = {1: 'I.', 2: 'II.', 3: 'III.'}
 TYPES = {
     'FREE_FLIGHT': 'Szabadtáv',  # as in the rules (4.1)
@@ -86,7 +90,7 @@ def main():
         if isinstance(entry, str):
             slides.append((SRC / 'slides' / f'{entry}.html').read_text().strip())
         elif entry[0] == 'class':
-            slides += class_slides(data['classes'][entry[1]], photos)
+            slides += class_slides(data['classes'][entry[1]], PRIZES.get(entry[1], 3), photos)
         elif entry[0] == 'kmk':
             slides += kmk_slides(data['kmk'], photos)
         elif entry[0] == 'clubs':
@@ -97,10 +101,10 @@ def main():
     print(f'index.html: {html.count("<section")} slides')
 
 
-def class_slides(c, photos):
-    # cover, the podium from III. to I., the top 10
+def class_slides(c, prizes, photos):
+    # cover, the podium from III. to I. (the places with a prize), the top 10
     out = [cover(c['name'], f'{c["count"]} pilóta')]
-    for r in reversed([r for r in c['rows'] if r['place'] <= 3]):
+    for r in reversed([r for r in c['rows'] if r['place'] <= prizes]):
         out.append(podium(c['name'], r, photos))
     out.append(ranking(c['name'], c['rows']))
     return out
