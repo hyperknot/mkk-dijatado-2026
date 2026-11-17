@@ -41,6 +41,7 @@ DECK = [
     ('liga', 'fun'),
     ('liga', 'women'),
     ('liga-records',),
+    ('liga-fun',),
 ]
 
 # Engraved names (the cup order, Hungarian order) by XContest username; others keep the XContest name
@@ -95,10 +96,18 @@ LIGA = {
 # the height gained for the thermal
 LIGA_RECORDS = {
     'avg_climb_ms': ('Legerősebb termik', 'm/s', 2, True),
-    'speed_kmh': ('Leggyorsabb task', 'km/h', 1, False),
-    'max_ground_speed_kmh': ('Legnagyobb talajsebesség', 'km/h', 0, False),
+    'speed_kmh': ('Legjobb átlagsebesség', 'km/h', 1, False),
+    'max_ground_speed_kmh': ('Legnagyobb föld feletti sebesség', 'km/h', 0, False),
     'max_gps_alt': ('Legnagyobb magasság', 'm', 0, False),
 }
+
+# The fun stats slides (src/season_stats.json 'awards'): which awards, in this order, 5 per slide
+LIGA_FUN = [
+    'Legjobb majdnem gól', 'Legjobb mentés', 'Legkockázatosabb végsiklás',
+    'Legóvatosabb végsiklás', 'Legprecízebb indulás', 'Legtürelmesebb tekerés',
+    'Legtöbb magasság egy tekeréssel', 'Leghosszabb tekerés', 'Leggörbébb repülés',
+    'Legegyenesebb repülés',
+]
 
 # The Liga pilots on the slides, by AirScore ID: (name on the slide, photo name in assets/img/photos/
 # or None). The photo name is the XContest username where the name and the glider match an MKK
@@ -127,6 +136,9 @@ LIGA_PILOTS = {
     88244: ('Kiss-Beck Veronika', 'kiss-beck-veronika'),
     33: ('Jámbor Flóra', None),
     1122: ('Fűrész Dóra', None),
+    7777: ('Radnai András', None),
+    32: ('Hargitai Dávid', None),
+    42: ('Molnar Peter A.', None),
 }
 
 ROMAN = {1: 'I.', 2: 'II.', 3: 'III.'}
@@ -156,6 +168,8 @@ def main():
             slides += liga_slides(liga, entry[1], photos)
         elif entry[0] == 'liga-records':
             slides.append(liga_records_slide(season, liga))
+        elif entry[0] == 'liga-fun':
+            slides += liga_fun_slides(season, liga)
     template = (SRC / 'template.html').read_text()
     html = template.replace('<!-- SLIDES -->', '\n\n'.join(slides))
     (ROOT / 'index.html').write_text(html)
@@ -397,10 +411,8 @@ def liga_podium(category, r, liga, photos):
 
 def liga_records_slide(season, liga):
     # the 4 records of src/season_stats.json (our analysis of the liga IGCs), top 3 each
-    by_civl = {p['civl_id']: p['ID'] for p in liga['results']}
-
     def pilot(row):
-        return LIGA_PILOTS.get(by_civl.get(season['civl_ids'].get(row['pilot'])), (row['pilot'],))[0]
+        return liga_name(row['pilot'], season, liga)
 
     cards = []
     for rec in season['records']:
@@ -425,6 +437,31 @@ def liga_records_slide(season, liga):
   <h2>Liga rekordok</h2>
 {body}
 </section>'''
+
+
+def liga_fun_slides(season, liga):
+    # the awards of LIGA_FUN, one row each: name, then pilot, task and value
+    awards = {a['award']: a for a in season['awards']}
+    rows = [
+        f'''  <div class="card fun">
+    <h3>{escape(a["award"])}</h3>
+    <div class="who"><b>{escape(", ".join(liga_name(p, season, liga) for p in a["pilots"]))}</b><span>T{a["task"]}</span></div>
+    <div class="value">{escape(a["value"])}</div>
+  </div>'''
+        for a in (awards[n] for n in LIGA_FUN)
+    ]
+    return [
+        f'<section data-background-image="{LIGA_BG}" class="liga liga-fun">\n  <h2>Vicces statisztikák</h2>\n'
+        + '\n'.join(rows[i : i + 5])
+        + '\n</section>'
+        for i in range(0, len(rows), 5)
+    ]
+
+
+def liga_name(pilot, season, liga):
+    # the slide name of a pilot of src/season_stats.json (by CIVL ID), else its name there
+    by_civl = {p['civl_id']: p['ID'] for p in liga['results']}
+    return LIGA_PILOTS.get(by_civl.get(season['civl_ids'].get(pilot)), (pilot,))[0]
 
 
 def cover(title, count, cls=''):

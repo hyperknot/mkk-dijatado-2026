@@ -125,7 +125,7 @@
  "left_share": 0.487,
  "awards": [
   {
-   "award": "Hajszálnyira",
+   "award": "Legjobb majdnem gól",
    "pilots": [
     "Tamás Ács"
    ],
@@ -134,31 +134,31 @@
    "meaning": "A legkisebb különbség a task táv és a hivatalos táv között goal nélkül"
   },
   {
-   "award": "Fűszálról vissza",
+   "award": "Legjobb mentés",
    "pilots": [
-    "Tamás Ács"
+    "Dániel Reményi"
    ],
    "task": 3,
-   "value": "kb. 110 m-ről, +188 m",
-   "meaning": "A talajhoz legközelebbről induló termik, amely legalább 100 m-t emelt"
+   "value": "kb. 146 m-ről, +613 m",
+   "meaning": "A talajhoz legközelebbről induló termik, amely legalább 500 m-t emelt"
   },
   {
-   "award": "Hason csúszva goalba",
+   "award": "Legkockázatosabb végsiklás",
    "pilots": [
     "Janos Barna"
    ],
    "task": 2,
-   "value": "kb. 25 m",
+   "value": "AGL ~25 méteren a gólban",
    "meaning": "A legalacsonyabb magasság a talaj felett a goal vonalon"
   },
   {
-   "award": "Minek ennyi magasság?",
+   "award": "Legóvatosabb végsiklás",
    "pilots": [
-    "Róbert Sörös"
+    "Balazs Bruszniczky"
    ],
-   "task": 4,
-   "value": "kb. 895 m",
-   "meaning": "A legnagyobb magasság a talaj felett az ESS-nél"
+   "task": 3,
+   "value": "AGL ~896 méteren a gólban",
+   "meaning": "A legnagyobb magasság a talaj felett a goal vonalon"
   },
   {
    "award": "Hétalvó",
@@ -170,25 +170,25 @@
    "meaning": "A leghosszabb várakozás a start gate nyitása és a tényleges startolás között"
   },
   {
-   "award": "Puskagolyó",
+   "award": "Legprecízebb indulás",
    "pilots": [
     "Tolnai Gergő"
    ],
    "task": 2,
-   "value": "0:02 perc a start gate után",
+   "value": "2 másodperccel a start nyitása után",
    "meaning": "A leggyorsabb startolás a start gate nyitása után"
   },
   {
-   "award": "A türelem termiket terem",
+   "award": "Legtürelmesebb tekerés",
    "pilots": [
     "András Radnai"
    ],
    "task": 1,
-   "value": "0,34 m/s, 119 m-en át",
+   "value": "0,34 m/s, 119 m-en át, 5:54 perc alatt",
    "meaning": "A leggyengébb emelés azon termikek közül, amelyek így is legalább 100 m-t emeltek"
   },
   {
-   "award": "Liftezés",
+   "award": "Legtöbb magasság egy tekeréssel",
    "pilots": [
     "Zsolt Ero"
    ],
@@ -197,7 +197,7 @@
    "meaning": "A legnagyobb magasságnyerés egyetlen termikben"
   },
   {
-   "award": "Körhinta",
+   "award": "Leghosszabb tekerés",
    "pilots": [
     "Peter A. Molnar"
    ],
@@ -206,21 +206,21 @@
    "meaning": "A leghosszabb körözés egyetlen termikben"
   },
   {
-   "award": "Körözésfüggő",
+   "award": "Leggörbébb repülés",
    "pilots": [
     "Dávid Hargitai"
    ],
    "task": 1,
-   "value": "a start utáni repülési idő 50%-a körözéssel",
+   "value": "indulás után az idő 50%-a körözésben",
    "meaning": "A start utáni repülési idő legnagyobb része telt termikben (legalább 30 perc repülés a start után), az ESS-ig érők közül"
   },
   {
-   "award": "Nyílegyenes",
+   "award": "Legegyenesebb repülés",
    "pilots": [
     "Zoltan Szaloki"
    ],
    "task": 3,
-   "value": "a start utáni repülési idő 21%-a körözéssel",
+   "value": "indulás utáni idő 79%-a siklásban",
    "meaning": "A start utáni repülési idő legkisebb része telt termikben (legalább 30 perc repülés a start után), az ESS-ig érők közül"
   },
   {
