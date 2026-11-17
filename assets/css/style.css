@@ -669,3 +669,16 @@ section.records-slide {
   font-weight: 600;
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
 }
+
+.fact i {
+  display: block;
+  margin-top: 6px;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+.big-numbers .fact.wide {
+  grid-column: 1 / 3;
+}
