@@ -36,6 +36,10 @@ DECK = [
     'superhero',
     'records',
     'thanks',
+    ('liga', 'overall'),
+    ('liga', 'sport'),
+    ('liga', 'fun'),
+    ('liga', 'women'),
 ]
 
 # Engraved names (the cup order, Hungarian order) by XContest username; others keep the XContest name
@@ -74,6 +78,47 @@ TAKEOFF = {
 # place gets a prize (decided after the results post, which said "díjazás nélkül")
 PRIZES = {'juniors': 1}
 
+# The Liga rankings of AirScore (src/liga.json): slide title and which pilots are in it, as in its
+# 'rankings' (Sport: certs A, B, C; Fun: A, B; Women: female pilots)
+# The background of the Liga slides (reveal.js draws it over the body background of style.css)
+LIGA_BG = 'assets/img/bg-liga.webp'
+
+LIGA = {
+    'overall': ('Összetett', lambda p: True),
+    'sport': ('Sport', lambda p: p['glider_cert'] in ('A', 'B', 'C')),
+    'fun': ('Fun', lambda p: p['glider_cert'] in ('A', 'B')),
+    'women': ('Női', lambda p: p['sex'] == 'F'),
+}
+
+# The Liga pilots on the slides, by AirScore ID: (name on the slide, photo name in assets/img/photos/
+# or None). The photo name is the XContest username where the name and the glider match an MKK
+# pilot, else a name-based one (pilots without a known XContest username)
+LIGA_PILOTS = {
+    314: ('Rácz Balázs', 'ENAIRGY'),
+    1111: ('Barna János', 'barna-janos'),
+    4: ('Szalóki Zoltán', 'Zale'),
+    125: ('Takács Zsolt', 'takacs-zsolt'),
+    77: ('Dósa Richárd', 'dosa.richard'),
+    485: ('Erő Zsolt', None),
+    1966: ('Sörös Róbert', None),
+    2727: ('Bartos Miklós', 'Miko27'),
+    127: ('Reményi Dániel', None),
+    12: ('Kocsis Péter', 'Kojak'),
+    78: ('Bruszniczky Balázs', None),
+    108: ('Réti Arnold', 'reti-arnold'),
+    8080: ('Huszkó Levente', None),
+    137: ('Ábel Dániel', None),
+    777: ('Ács Tamás', None),
+    927: ('Salamon Dorottya', 'S.Dori'),
+    2525: ('Tóth András', None),
+    417: ('Börcsök Gergő', None),
+    2728: ('Vas Judit', None),
+    744: ('Resch Ferenc', None),
+    88244: ('Kiss-Beck Veronika', 'kiss-beck-veronika'),
+    33: ('Jámbor Flóra', None),
+    1122: ('Fűrész Dóra', None),
+}
+
 ROMAN = {1: 'I.', 2: 'II.', 3: 'III.'}
 TYPES = {
     'FREE_FLIGHT': 'Szabadtáv',  # as in the rules (4.1)
@@ -84,6 +129,7 @@ TYPES = {
 
 def main():
     data = json.loads((SRC / 'results.json').read_text())
+    liga = json.loads((SRC / 'liga.json').read_text())
     photos = {p.stem for p in (ROOT / 'assets/img/photos').glob('*.jpg')}
     slides = []
     for entry in DECK:
@@ -95,6 +141,8 @@ def main():
             slides += kmk_slides(data['kmk'], photos)
         elif entry[0] == 'clubs':
             slides += club_slides(data['clubs'])
+        elif entry[0] == 'liga':
+            slides += liga_slides(liga, entry[1], photos)
     template = (SRC / 'template.html').read_text()
     html = template.replace('<!-- SLIDES -->', '\n\n'.join(slides))
     (ROOT / 'index.html').write_text(html)
@@ -140,23 +188,25 @@ def podium(category, r, photos):
 </section>'''
 
 
-def ranking(title, rows, photos):
-    # the top 3 on a podium (II., I., III. from left to right) with photos, 4-10 in rows below
+def ranking(title, rows, photos, cls=''):
+    # the top 3 on a podium (II., I., III. from left to right) with photos, 4-10 in rows below;
+    # Liga rows have no username or club, their photo name is 'u'
     top = rows[0]['points']
     steps = '\n'.join(
         f'''    <div class="step p{r["place"]}">
-      {photo(r["username"], name(r), photos)}
+      {photo(r.get('username', r.get('u')), name(r), photos)}
       <div class="step-name">{name(r)}</div>
-      <div class="step-club">{escape(r["club"])}</div>
+      <div class="step-club">{escape(r.get("club", ""))}</div>
       <div class="block"><span class="step-place">{r["place"]}.</span><span class="step-pts">{r["points"]:.2f} p.</span></div>
     </div>'''
         for r in [rows[i] for i in (1, 0, 2) if i < len(rows)]
     )
     body = '\n'.join(
         f'        <tr><td><span class="rank p{r["place"]}">{r["place"]}</span></td>'
-        f'<td class="who"><b>{escape(r["name"])}</b> <i>[{escape(r["username"])}]</i>'
-        f'<span class="club">{escape(r["club"])}</span></td>'
-        f'<td class="num pts">{r["points"]:.2f}</td><td>{bar(r["points"], top)}</td></tr>'
+        f'<td class="who"><b>{escape(r["name"])}</b>'
+        + (f' <i>[{escape(r["username"])}]</i>' if r.get('username') else '')
+        + (f'<span class="club">{escape(r["club"])}</span>' if r.get('club') else '')
+        + f'</td><td class="num pts">{r["points"]:.2f}</td><td>{bar(r["points"], top)}</td></tr>'
         for r in rows[3:]
     )
     table = ''
@@ -169,7 +219,7 @@ def ranking(title, rows, photos):
       </tbody>
     </table>
   </div>'''
-    return f'''<section class="ranking stage">
+    return f'''<section class="ranking stage{cls}">
   <h2>{title}</h2>
   <div class="stairs">
 {steps}
@@ -280,12 +330,64 @@ def club_slides(clubs):
     return out
 
 
-def cover(title, count):
-    return f'<section class="cover">\n  <h1>{title}</h1>\n  <div class="count">{count}</div>\n</section>'
+def liga_slides(liga, rank, photos):
+    # cover, the podium from III. to I. with the task scores, the top 10
+    title, member = LIGA[rank]
+    pilots = [p for p in liga['results'] if member(p)]
+    rows, place = [], 0
+    for i, p in enumerate(pilots, 1):
+        if i == 1 or p['score'] != pilots[i - 2]['score']:
+            place = i  # equal scores share the place
+        name, username = LIGA_PILOTS.get(p['ID'], (p['name'], None))
+        rows.append({'place': place, 'name': name, 'points': p['score'], 'pilot': p, 'u': username})
+    out = [cover(title, f'{len(pilots)} pilóta', ' liga')]
+    for r in reversed([r for r in rows if r['place'] <= 3]):
+        out.append(liga_podium(title, r, liga, photos))
+    out.append(ranking(title, rows[:10], photos, ' liga'))
+    return [s.replace('<section ', f'<section data-background-image="{LIGA_BG}" ', 1) for s in out]
+
+
+def liga_podium(category, r, liga, photos):
+    # per task: the place among all pilots, then the points that count for the season ('score', after
+    # AirScore's FTV), with the full task points ('pre') crossed out before them where FTV cut them;
+    # '–' where the pilot has no task points
+    p = r['pilot']
+    rows = []
+    for t in liga['tasks']:
+        res = p['results'][t['task_code']]
+        place = 1 + sum(o['results'][t['task_code']]['pre'] > res['pre'] for o in liga['results'])
+        full = f'<s>{res["pre"]:.1f}</s> ' if res['pre'] != res['score'] else ''
+        rows.append(
+            f'        <tr><td>{t["task_code"]}</td><td>{f"{place}." if res["pre"] else "–"}</td>'
+            f'<td class="num pts">{full}{res["score"]:.1f} p.</td></tr>'
+        )
+    body = '\n'.join(rows)
+    return f'''<section class="podium liga">
+  <div class="head">
+    <div><span class="place p{r["place"]}">{ROMAN[r["place"]]}</span></div>
+    <div class="category">{category}</div>
+    <div class="name">{escape(r["name"])}</div>
+    <div class="glider">{escape(p["glider"])}</div>
+    <div class="points">{r["points"]:.1f} <small>pont</small></div>
+  </div>
+  {photo(r["u"], escape(r["name"]), photos)}
+      <div class="flights card">
+        <table class="list">
+          <thead><tr><th>Feladat</th><th>Helyezés</th><th class="num">Pont (FTV {liga["formula"]["validity_param"]:.0%})</th></tr></thead>
+          <tbody>
+    {body}
+          </tbody>
+        </table>
+      </div>
+</section>'''
+
+
+def cover(title, count, cls=''):
+    return f'<section class="cover{cls}">\n  <h1>{title}</h1>\n  <div class="count">{count}</div>\n</section>'
 
 
 def name(r):
-    return escape(HU.get(r['username'], r['name']))
+    return escape(HU.get(r.get('username'), r['name']))
 
 
 def day(f):
