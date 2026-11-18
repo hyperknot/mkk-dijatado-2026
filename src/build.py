@@ -33,7 +33,7 @@ DECK = [
     'clubs-cover',
     ('clubs',),
     'example-flight',
-    'superhero',
+    # 'superhero',  # Szuperhős különdíj: none in 2026; uncomment to bring the slide back (src/slides/superhero.html)
     'records',
     'thanks',
     ('liga', 'new_comer'),

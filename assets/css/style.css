@@ -979,3 +979,43 @@ section.liga-turns {
   font-weight: 700;
   line-height: 1.35;
 }
+
+/* the Példaértékű repülés winner (src/slides/example-flight.html): title, date and the pilots of the
+   joint flight on the left, the map of the tracks at full slide height on the right */
+section.example-flight {
+  display: grid !important;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 50px;
+}
+
+.example-flight h2 {
+  font-size: 72px;
+}
+
+.example-flight .sub {
+  margin-top: 16px;
+  font-size: 54px;
+  font-weight: 700;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.example-flight .when {
+  margin: 10px 0 40px;
+  font-size: 40px;
+  font-weight: 600;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.example-flight .card + .card {
+  margin-top: 30px;
+}
+
+.example-flight .map {
+  display: block;
+  height: 940px;
+  border: 8px solid #fff;
+  border-radius: 24px;
+  box-sizing: border-box;
+  box-shadow: var(--shadow);
+}
