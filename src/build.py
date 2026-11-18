@@ -36,6 +36,7 @@ DECK = [
     # 'superhero',  # Szuperhős különdíj: none in 2026; uncomment to bring the slide back (src/slides/superhero.html)
     'records',
     'thanks',
+    'liga-cover',
     ('liga', 'new_comer'),
     ('liga', 'women'),
     ('liga', 'fun'),
