@@ -36,10 +36,11 @@ DECK = [
     'superhero',
     'records',
     'thanks',
-    ('liga', 'overall'),
-    ('liga', 'sport'),
-    ('liga', 'fun'),
+    ('liga', 'new_comer'),
     ('liga', 'women'),
+    ('liga', 'fun'),
+    ('liga', 'sport'),
+    ('liga', 'overall'),
     ('liga-records',),
     ('liga-fun',),
     'liga-turns',
@@ -91,6 +92,8 @@ LIGA = {
     'sport': ('Sport', lambda p: p['glider_cert'] in ('A', 'B', 'C')),
     'fun': ('Fun', lambda p: p['glider_cert'] in ('A', 'B')),
     'women': ('Női', lambda p: p['sex'] == 'F'),
+    'new_comer': ('Újonc', lambda p: p.get('new_comer')),
+
 }
 
 # The Liga records slide (src/season_stats.json), by value column: title, unit, decimals, and
@@ -102,12 +105,12 @@ LIGA_RECORDS = {
     'max_gps_alt': ('Legnagyobb magasság', 'm', 0, False),
 }
 
-# The fun stats slides (src/season_stats.json 'awards'): which awards, in this order, 5 per slide
+# The fun stats slides (src/season_stats.json 'awards'): one slide per theme (final glide and goal,
+# climbing, flying style), the awards in this order
 LIGA_FUN = [
-    'Legjobb majdnem gól', 'Legjobb mentés', 'Legkockázatosabb végsiklás',
-    'Legóvatosabb végsiklás', 'Legprecízebb indulás', 'Legtürelmesebb tekerés',
-    'Legtöbb magasság egy tekeréssel', 'Leghosszabb tekerés', 'Leggörbébb repülés',
-    'Legegyenesebb repülés',
+    ['Legjobb majdnem gól', 'Legjobb mentés', 'Legkockázatosabb végsiklás', 'Legóvatosabb végsiklás'],
+    ['Legtürelmesebb tekerés', 'Legtöbb magasság egy tekeréssel', 'Leghosszabb tekerés'],
+    ['Legprecízebb indulás', 'Leggörbébb repülés', 'Legegyenesebb repülés'],
 ]
 
 # The Liga pilots on the slides, by AirScore ID: (name on the slide, photo name in assets/img/photos/
@@ -425,7 +428,7 @@ def liga_records_slide(season, liga):
             + f'<td class="num pts">{f"{r[key]:.{places}f}".replace(".", ",")} {unit}</td></tr>'
             for i, r in enumerate(rec['rows'], 1)
         )
-        cards.append(f'''  <div class="card rec">
+        cards.append(f'''  <div class="card rec{" fragment" if cards else ""}">
     <h3>{title}</h3>
     <table class="list">
       <tbody>
@@ -435,28 +438,30 @@ def liga_records_slide(season, liga):
   </div>''')
     body = '\n'.join(cards)
     return f'''<section data-background-image="{LIGA_BG}" class="liga liga-records">
-  <h2>Liga rekordok</h2>
 {body}
 </section>'''
 
-
 def liga_fun_slides(season, liga):
-    # the awards of LIGA_FUN, one row each: name, then pilot, task and value
+    # one slide per theme of LIGA_FUN, a card per award (the first shown with the slide, the others on
+    # click): award name, then the pilot and the value highlighted
     awards = {a['award']: a for a in season['awards']}
-    rows = [
-        f'''  <div class="card fun">
-    <h3>{escape(a["award"])}</h3>
-    <div class="who"><b>{escape(", ".join(liga_name(p, season, liga) for p in a["pilots"]))}</b><span>T{a["task"]}</span></div>
-    <div class="value">{escape(a["value"])}</div>
-  </div>'''
-        for a in (awards[n] for n in LIGA_FUN)
-    ]
-    return [
-        f'<section data-background-image="{LIGA_BG}" class="liga liga-fun">\n  <h2>Vicces statisztikák</h2>\n'
-        + '\n'.join(rows[i : i + 5])
-        + '\n</section>'
-        for i in range(0, len(rows), 5)
-    ]
+    out = []
+    for names in LIGA_FUN:
+        cards = []
+        for a in (awards[n] for n in names):
+            who = escape(', '.join(liga_name(p, season, liga) for p in a['pilots']))
+            cards.append(f'''    <div class="card fun{" fragment" if cards else ""}">
+      <h3>{escape(a["award"])}</h3>
+      <div class="who">{who}</div>
+      <div class="value">{escape(a["value"])}</div>
+    </div>''')
+        body = '\n'.join(cards)
+        out.append(f'''<section data-background-image="{LIGA_BG}" class="liga liga-fun">
+  <div class="fun-grid">
+{body}
+  </div>
+</section>''')
+    return out
 
 
 def liga_name(pilot, season, liga):

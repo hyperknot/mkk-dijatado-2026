@@ -842,24 +842,21 @@ section.liga {
 section.liga-records {
   display: grid !important;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto 1fr 1fr;
-  gap: 50px 70px;
-  padding: 90px 160px;
+  align-content: center;
+  gap: 40px 40px;
 }
 
-.liga-records > h2 {
-  grid-column: 1 / 3;
-  margin-bottom: 30px;
+.liga-records table.list {
+  font-size: 42px;
 }
 
 .rec {
-  align-self: start;
-  padding: 30px 46px;
+  padding: 40px 56px;
 }
 
 .rec h3 {
-  margin: 0 0 14px;
-  font-size: 40px;
+  margin: 0 0 28px;
+  font-size: 50px;
   font-weight: 800;
 }
 
@@ -867,43 +864,49 @@ section.liga-records {
   color: var(--muted);
 }
 
-/* the fun stats (liga_fun_slides in build.py): 5 award rows per slide */
+/* the fun stats (liga_fun_slides in build.py): award cards filling the slide, always 2x2; the award name small on top, the pilot and the value
+   highlighted */
 section.liga-fun {
-  display: flex !important;
-  flex-direction: column;
-  gap: 22px;
-  padding: 70px 140px;
+  display: grid !important;
+  padding: 60px 100px;
+  text-align: center;
+}
+
+.fun-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 50px;
 }
 
 .fun {
-  display: grid;
-  grid-template-columns: 1fr 380px 400px;
-  align-items: center;
-  gap: 30px;
-  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 24px 40px;
 }
 
 .fun h3 {
   margin: 0;
-  font-size: 40px;
-  font-weight: 800;
-}
-
-.fun .who b {
-  display: block;
-  font-size: 32px;
-}
-
-.fun .who span {
-  font-size: 24px;
+  font-size: 38px;
   font-weight: 700;
+  line-height: 1.2;
   color: var(--muted);
 }
 
-.fun .value {
-  text-align: right;
-  font-size: 30px;
+/* name and value centered in the space below the title */
+.fun .who {
+  margin-top: auto;
+  font-size: 80px;
   font-weight: 800;
+  line-height: 1.1;
+}
+
+.fun .value {
+  margin-bottom: auto;
+  font-size: 60px;
+  font-weight: 800;
+  line-height: 1.2;
   color: var(--orange);
 }
 
