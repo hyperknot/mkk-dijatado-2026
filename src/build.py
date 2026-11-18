@@ -67,7 +67,14 @@ HU = {
 FOCUS = {
     'CZIGLERELEK': '35% 30%', 'Doto': '50% 40%', 'H_Tami': '33% 40%', 'S.Dori': '20% 30%',
     'Wmpilot': '85% 50%', 'horakgyuszibacsi': '50% 30%', 'janibar': '38% 30%', 'karip': '50% 30%',
-    'ubalika': '72% 40%', 'homokipisztrang': '55% 40%', 'Onesto': '55% 40%', 'okrosl': '50% 40%',
+    'ubalika': '72% 40%', 'homokipisztrang': '55% 40%', 'Onesto': '55% 40%',
+}
+
+# The logos on the PG Klub podium slides (assets/img/logos/), by club name; from the clubs' websites
+CLUB_LOGOS = {
+    'Eged Eagles SE': 'eged-eagles.jpg',
+    'Sirius SE': 'sirius.jpg',  # sirius-se.hu, the white star on a dark blue like the site header
+    'Winchflyer SE': 'winchflyer.jpg',  # winchflyer.hu
 }
 
 # Takeoffs XContest shows as "?" (not named by the pilot): the name the other pilots of the same
@@ -119,7 +126,7 @@ LIGA_FUN = [
 # pilot, else a name-based one (pilots without a known XContest username)
 LIGA_PILOTS = {
     314: ('Rácz Balázs', 'ENAIRGY'),
-    1111: ('Barna János', 'barna-janos'),
+    1111: ('Barna János', 'janibar'),
     4: ('Szalóki Zoltán', 'Zale'),
     125: ('Takács Zsolt', 'takacs-zsolt'),
     77: ('Dósa Richárd', 'dosa.richard'),
@@ -326,8 +333,8 @@ def club_slides(clubs):
             for i, m in enumerate(c['members'], 1)
         )
         logo = ''
-        if c['name'] == 'Eged Eagles SE':
-            logo = '\n  <img class="club-logo" src="assets/img/logos/eged-eagles.jpg" alt="Eged Eagles SE">'
+        if c['name'] in CLUB_LOGOS:
+            logo = f'\n  <img class="club-logo" src="assets/img/logos/{CLUB_LOGOS[c["name"]]}" alt="{escape(c["name"])}">'
         out.append(f'''<section class="podium club">
   <div class="head">
     <div><span class="place p{c["place"]}">{ROMAN[c["place"]]}</span></div>
