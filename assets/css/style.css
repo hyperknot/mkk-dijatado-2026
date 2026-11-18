@@ -785,8 +785,7 @@ section.records-slide {
   padding: 20px 30px 24px;
 }
 
-.record .date,
-.record .meta {
+.record .date {
   color: var(--muted);
   font-size: 26px;
   font-weight: 700;
@@ -797,6 +796,13 @@ section.records-slide {
   font-size: 38px;
   font-weight: 800;
   line-height: 1.15;
+}
+
+.record .takeoff {
+  font-size: 46px;
+  font-weight: 800;
+  line-height: 1.1;
+  color: var(--link);
 }
 
 .record .who span {
@@ -811,7 +817,7 @@ section.records-slide {
 }
 
 .record li {
-  margin-top: 10px;
+  margin-top: 8px;
   font-size: 25px;
   font-weight: 600;
   line-height: 1.25;
@@ -820,7 +826,7 @@ section.records-slide {
 .record li b {
   display: block;
   color: var(--orange);
-  font-size: 40px;
+  font-size: 38px;
   font-weight: 800;
   line-height: 1.15;
 }
