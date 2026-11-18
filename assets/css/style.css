@@ -712,25 +712,6 @@ section.stats {
   font-size: 70px;
 }
 
-.records {
-  font-size: 32px;
-  font-weight: 500;
-  line-height: 1.4;
-}
-
-.records li {
-  margin-bottom: 14px;
-}
-
-.records .date {
-  color: var(--muted);
-  font-weight: 700;
-}
-
-.event {
-  text-align: center;
-}
-
 /* outdated or missing content: a thick red frame with a label; remove the class when updated */
 .stale {
   position: relative;
@@ -779,20 +760,73 @@ section.club .card {
   margin-top: 36px;
 }
 
+/* the 2026 records (src/slides/records.html): a card per flight in a 3x2 grid, the values highlighted */
 section.records-slide {
   display: flex !important;
   flex-direction: column;
   align-items: center;
-  gap: 30px;
+  gap: 24px;
+  padding: 40px 80px;
 }
 
-.records-slide .card {
-  width: 1600px;
+.records-slide h2 {
+  margin: 0;
+  font-size: 64px;
 }
 
-.records-slide ul {
-  margin: 10px 0;
-  padding-left: 30px;
+.record-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  width: 100%;
+}
+
+.record {
+  padding: 20px 30px 24px;
+}
+
+.record .date,
+.record .meta {
+  color: var(--muted);
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.record .who {
+  margin: 2px 0;
+  font-size: 38px;
+  font-weight: 800;
+  line-height: 1.15;
+}
+
+.record .who span {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.record ul {
+  margin: 8px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.record li {
+  margin-top: 10px;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.record li b {
+  display: block;
+  color: var(--orange);
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 1.15;
+}
+
+.records-slide .note {
+  margin: 0;
 }
 
 .podium .glider {
