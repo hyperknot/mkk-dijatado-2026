@@ -760,73 +760,88 @@ section.club .card {
   margin-top: 36px;
 }
 
-/* the 2026 records (src/slides/records.html): a card per flight in a 3x2 grid, the values highlighted */
+/* the 2026 records (src/slides/records.html): a card per flight in a 3x2 grid. The cards share their
+   rows (subgrid), so date, pilot, takeoff and records line up across a row of cards. Sober: small radius,
+   dark text, the values bold instead of colored. */
 section.records-slide {
   display: flex !important;
   flex-direction: column;
   align-items: center;
   gap: 24px;
-  padding: 40px 80px;
+  padding: 36px 60px 44px !important;
 }
 
 .records-slide h2 {
   margin: 0;
-  font-size: 64px;
+  font-size: 68px;
 }
 
 .record-grid {
+  flex: 1;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
+  grid-template-rows: repeat(2, auto auto auto 1fr);
+  align-content: stretch;
+  gap: 0 24px;
   width: 100%;
 }
 
 .record {
-  padding: 20px 30px 24px;
+  grid-row: span 4;
+  display: grid;
+  grid-template-rows: subgrid;
+  padding: 20px 30px 22px;
+  border-radius: 6px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.25);
+}
+
+.record:nth-child(n + 4) {
+  margin-top: 24px;
 }
 
 .record .date {
   color: var(--muted);
-  font-size: 26px;
+  font-size: 25px;
   font-weight: 700;
 }
 
 .record .who {
-  margin: 2px 0;
-  font-size: 38px;
+  margin-top: 2px;
+  font-size: 36px;
   font-weight: 800;
   line-height: 1.15;
 }
 
-.record .takeoff {
-  font-size: 46px;
-  font-weight: 800;
-  line-height: 1.1;
-  color: var(--link);
+.record .who span {
+  display: block;
+  font-size: 26px;
+  font-weight: 600;
+  color: var(--muted);
 }
 
-.record .who span {
-  font-size: 28px;
+.record .takeoff {
+  font-size: 30px;
   font-weight: 600;
+  color: var(--muted);
 }
 
 .record ul {
-  margin: 8px 0 0;
-  padding: 0;
+  margin: 12px 0 0;
+  padding: 4px 0 0;
+  border-top: 1px solid #d3d9e0;
   list-style: none;
 }
 
 .record li {
   margin-top: 8px;
-  font-size: 25px;
+  font-size: 24px;
   font-weight: 600;
   line-height: 1.25;
 }
 
 .record li b {
   display: block;
-  color: var(--orange);
-  font-size: 38px;
+  font-size: 36px;
   font-weight: 800;
   line-height: 1.15;
 }
