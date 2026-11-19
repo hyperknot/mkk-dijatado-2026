@@ -608,6 +608,10 @@ section.sponsors {
   grid-column: span 2;
 }
 
+.sponsors .sirius {
+  max-height: 150px;
+}
+
 .sponsors .serlegbolt {
   filter: invert(0.8) drop-shadow(0 0 1px #000);
 }
