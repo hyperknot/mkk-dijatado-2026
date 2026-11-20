@@ -1,8 +1,6 @@
 {
-  "_doc": "MKK statistics per year for the stats slide chart (src/charts.py). 2007–2025 values without a note are read off the old statisztika.jpg (Fichtinger's Excel chart, no source table exists; about ±4 on the left axis, ±100 on the right). Definitions found with the validation repo (xcontest-hun-validate): legtersertes = KO flights of our validation, ko100 = KO flights with at least 100 points (the 2024 archive gives 75 KO / 22 with 100+ points, matching the old chart), klub = clubs in the PG Klub ranking (lib/scoring.py club_ranking, as XContest's 'PG Klubok'). The definition of tav is unknown. 'missing': series without a 2026 value.",
-  "missing": [
-    "tav"
-  ],
+  "_doc": "MKK statistics per year for the stats slide chart (src/charts.py). 2007–2025 values without a note are read off the old statisztika.jpg (Fichtinger's Excel chart, no source table exists; about ±4 on the left axis, ±100 on the right). Definitions found with the validation repo (xcontest-hun-validate): legtersertes = KO flights of our validation, ko100 = KO flights with at least 100 points (the 2024 archive gives 75 KO / 22 with 100+ points, matching the old chart), klub = clubs in the PG Klub ranking (lib/scoring.py club_ranking, as XContest's 'PG Klubok'). tav (estimate, user 2026-11-20: '10 km+'): valid flights of at least 10 km, on the right axis; it fits the old chart (2007: equal to all flights; 2024: 2 809 computed, about 2 815 on the old chart). 'missing': series without a 2026 value.",
+  "missing": [],
   "series": {
     "pilota": {
       "label": "Pilóták",
@@ -26,11 +24,11 @@
       "note": "2024–2026: all flights of the MKK contest in our XContest API export (data_keep/flights_export, 2026-10-25); 2024 and 2025 match the old chart. The stats slide's 'feltöltött repülés' (pilot list sum, 5838) is another count"
     },
     "tav": {
-      "label": "Táv",
-      "axis": "left",
+      "label": "Táv: 10 km+ repülések (jobb tengely)",
+      "axis": "right",
       "color": "#5b9bd5",
-      "values": { "2007": 38, "2008": 50, "2009": 68, "2010": 60, "2011": 72, "2012": 76, "2013": 64, "2014": 72, "2015": 76, "2016": 92, "2017": 110, "2018": 110, "2019": 126, "2020": 138, "2021": 144, "2022": 126, "2023": 136, "2024": 140, "2025": 146 },
-      "note": "unit unknown"
+      "values": { "2007": 760, "2008": 1000, "2009": 1360, "2010": 1200, "2011": 1440, "2012": 1520, "2013": 1280, "2014": 1440, "2015": 1520, "2016": 1840, "2017": 2200, "2018": 2200, "2019": 2520, "2020": 2760, "2021": 2880, "2022": 2520, "2023": 2720, "2024": 2809, "2025": 2547, "2026": 2033 },
+      "note": "2007–2023: read off the old chart (it is on the right axis). 2024, 2025: XContest-valid (active, not KO) flights of at least 10 km in our XContest export (data_keep/flights_export, 2026-10-25); the old chart showed about 2 880 for 2025. 2026: OK flights of at least 10 km in our final validation (data_temp/out/pont.html, 2026-10-15)"
     },
     "legtersertes": {
       "label": "Légtérsértések",

@@ -646,21 +646,21 @@ section.budget {
 }
 
 .budget .panel {
-  font-size: 27px;
-  padding: 24px 40px;
+  font-size: 25px;
+  padding: 20px 40px;
 }
 
 .budget .panel h2 {
-  font-size: 56px;
-  margin-bottom: 10px;
+  font-size: 50px;
+  margin-bottom: 8px;
 }
 
 .budget .panel p {
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .budget .panel .stale {
-  margin-top: 34px;
+  margin: 34px 0 14px;
   padding: 6px 12px;
 }
 
