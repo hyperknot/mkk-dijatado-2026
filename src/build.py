@@ -39,14 +39,15 @@ DECK = [
     'records',
     'thanks',
     'liga-cover',
+    ('liga-records',),
+    ('liga-fun',),
+    'liga-turns',
+    ('liga-tasks',),
     ('liga', 'new_comer'),
     ('liga', 'women'),
     ('liga', 'fun'),
     ('liga', 'sport'),
     ('liga', 'overall'),
-    ('liga-records',),
-    ('liga-fun',),
-    'liga-turns',
 ]
 
 # Engraved names (the cup order, Hungarian order) by XContest username; others keep the XContest name
@@ -180,6 +181,8 @@ def main():
             slides += club_slides(data['clubs'])
         elif entry[0] == 'liga':
             slides += liga_slides(liga, entry[1], photos)
+        elif entry[0] == 'liga-tasks':
+            slides.append(liga_tasks_slide(liga))
         elif entry[0] == 'liga-records':
             slides.append(liga_records_slide(season, liga))
         elif entry[0] == 'liga-fun':
@@ -423,6 +426,34 @@ def liga_podium(category, r, liga, photos):
           </tbody>
         </table>
       </div>
+</section>'''
+
+
+def liga_tasks_slide(liga):
+    # a card per task (the first shown with the slide, the others on click): the top 5 by full task
+    # points ('pre', before FTV)
+    cards = []
+    for i, t in enumerate(liga['tasks'], 1):
+        c = t['task_code']
+        top = sorted(liga['results'], key=lambda p: -p['results'][c]['pre'])[:5]
+        rows = []
+        for p in top:
+            pts = p['results'][c]['pre']
+            n = 1 + sum(o['results'][c]['pre'] > pts for o in top)  # equal points share the place
+            rows.append(
+                f'      <li><span class="rank p{n}">{n}</span><b>{escape(LIGA_PILOTS.get(p["ID"], (p["name"],))[0])}</b>'
+                f'<span class="pts">{pts:.1f} p.</span></li>'
+            )
+        rows = '\n'.join(rows)
+        cards.append(f'''  <div class="card rec task{" fragment" if cards else ""}">
+    <h3>Task {i}</h3>
+    <ol>
+{rows}
+    </ol>
+  </div>''')
+    body = '\n'.join(cards)
+    return f'''<section data-background-image="{LIGA_BG}" class="liga liga-tasks">
+{body}
 </section>'''
 
 

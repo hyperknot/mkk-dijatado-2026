@@ -1098,3 +1098,52 @@ section.example-flight {
   box-sizing: border-box;
   box-shadow: var(--shadow);
 }
+
+/* the liga task winners (liga_tasks_slide in build.py): 5 cards, 3 + 2 centered (5 in a row would be too narrow for
+   the names on one line); task title, then the top 5 with name and points in a row */
+.reveal .slides section.liga-tasks {
+  display: flex !important;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  gap: 24px;
+  padding: 40px 50px;
+}
+
+.rec.task {
+  width: 590px;
+  box-sizing: border-box;
+  padding: 26px 32px 32px;
+}
+
+.rec.task h3 {
+  font-size: 50px;
+  margin-bottom: 14px;
+}
+
+.task ol {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.task li {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 36px;
+  white-space: nowrap;
+}
+
+.task li .rank {
+  flex: none;
+}
+
+.task li .pts {
+  margin-left: auto;
+  color: var(--orange);
+  font-weight: 800;
+}
