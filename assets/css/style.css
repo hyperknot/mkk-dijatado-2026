@@ -664,10 +664,8 @@ section.budget {
   padding-left: 32px;
 }
 
-.budget .panel h3 {
-  margin: 0 0 2px;
-  font-size: 30px;
-  font-weight: 800;
+/* the sum, as the last line of its block */
+.budget .panel .total {
   color: #ffd27a;
 }
 
