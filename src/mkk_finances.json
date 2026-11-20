@@ -13,13 +13,12 @@
     "2020": {"xcontest": 378840, "kupak": 95000, "siresz": 185840, "hffa": 138000, "sarkany": 150000, "source": "same PDF"},
     "2021": {"xcontest": 429244, "kupak": 95000, "siresz": 410744, "hffa": 113500, "sarkany": 0, "source": "same PDF"},
     "2022": {
-      "xcontest": 459000, "kupak": 127000, "siresz_cel": 290000, "siresz_alt": 186000, "hffa": 105500, "sarkany": 0,
-      "digitized": ["xcontest", "kupak"],
-      "source": "Income: Drive sheet 'szamok' (1geoeOIAMSf5k8Ll77rnW-QxwsFVIz_iW6Z8Egf6t850), '2022-23' minus '2023' (HFFA paid 250 000 for 2022-2023 on 2023-10-27). Costs: read off the old koltsegek-bevetelek-2011-2025.jpg (scale fitted on the known 2021 and 2024 bars), about ±5 000"
+      "xcontest": 462008, "kupak": 119040, "siresz_cel": 290000, "siresz_alt": 185548, "hffa": 105500, "sarkany": 0,
+      "source": "Fichtinger's 'MKK12_év.xlsx' (/Users/user/Documents/life/paragliding/2024/MKK/eloadas 2023/): XContest 462 007,61 (316 pilots), díjak 119 040, HFFA 105 500, SIRESZ Sportalap 475 547,61; the SIRESZ split (céltámogatás 290 000) from the Drive sheet 'szamok' (1geoeOIAMSf5k8Ll77rnW-QxwsFVIz_iW6Z8Egf6t850)"
     },
     "2023": {
-      "xcontest": 680000, "kupak": 100000, "siresz_cel": 297000, "siresz_alt": 338000, "hffa": 144500, "sarkany": 0,
-      "source": "Deck 'MKK előadás 2023' (1bvVB7tO7g0WZ-ObLhHnAyMexTNxB5YAtKEEaAxOiQgA), slides '2023 év kiadásai' / 'bevételei' (rounded), and the 'szamok' sheet"
+      "xcontest": 679853, "kupak": 99861, "siresz_cel": 297000, "siresz_alt": 338214, "hffa": 144500, "sarkany": 0,
+      "source": "'MKK12_év.xlsx': XContest 679 852,97 (465 pilots), díjak 99 861, HFFA 144 500, SIRESZ Sportalap 635 213,97; the SIRESZ split (céltámogatás 297 000) from the 'szamok' sheet and the 2023 deck"
     },
     "2024": {
       "xcontest": 786813, "kupak": 374338, "siresz_cel": 686800, "hffa": 418500, "sarkany": 0,
