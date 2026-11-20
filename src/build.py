@@ -20,6 +20,7 @@ DECK = [
     'title',
     'sponsors',
     'budget',
+    'budget-charts',
     'stats',
     'ceremony',
     ('class', 'standard'),

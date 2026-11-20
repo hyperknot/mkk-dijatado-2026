@@ -34,7 +34,7 @@ A merge conflict in `index.html`: resolve `src/`, then rebuild instead of mergin
 
 Common changes:
 
-- **Text of a hand-written slide** (title, sponsors, budget, stats, records, thanks): edit its file in `src/slides/`.
+- **Text of a hand-written slide** (title, sponsors, budget, budget-charts, stats, records, thanks): edit its file in `src/slides/`.
 - **New slide**: add `src/slides/<name>.html` with `<section>...</section>` and put `'<name>'` into `DECK` in `src/build.py` at its place. Use the existing classes (`cover`, `panel`, `card`, `fact`, `two-col`, ...) from `style.css`.
 - **Budget and stats charts**: edit the numbers in `src/mkk_finances.json` / `src/mkk_stats.json` (keep the `source`, drop a key from `estimate` / `unsure` / `missing` when it becomes final), then rebuild. The slides have `<!-- chart:NAME -->` placeholders that `build.py` fills.
 - **Result slides** (categories, KMK, clubs) are generated from `src/results.json`; change the generator in `src/build.py`, not the output.
