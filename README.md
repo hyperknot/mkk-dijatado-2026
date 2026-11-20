@@ -11,6 +11,9 @@ The slide deck of the MKK 2026 award ceremony (Magyar Köztársaság Kupa, Hunga
 ```
 index.html            GENERATED, never edit by hand
 src/build.py          builds index.html: DECK (slide order), name/photo/takeoff fixes, result slide HTML
+src/charts.py         the MKK charts of the budget and stats slides as inline SVG (no JS), from the two files below
+src/mkk_finances.json MKK costs and income per year (2011–2026), every value with its source
+src/mkk_stats.json    MKK statistics per year (2007–2026) for the stats slide chart
 src/slides/*.html     hand-written slides, one or more <section> per file
 src/results.json      the results data (rankings, flights, clubs, KMK), from export_results.py
 src/template.html     the page around the slides (reveal.js setup)
@@ -33,6 +36,7 @@ Common changes:
 
 - **Text of a hand-written slide** (title, sponsors, budget, stats, special prizes, records, thanks): edit its file in `src/slides/`.
 - **New slide**: add `src/slides/<name>.html` with `<section>...</section>` and put `'<name>'` into `DECK` in `src/build.py` at its place. Use the existing classes (`cover`, `panel`, `card`, `fact`, `two-col`, ...) from `style.css`.
+- **Budget and stats charts**: edit the numbers in `src/mkk_finances.json` / `src/mkk_stats.json` (keep the `source`, drop a key from `estimate` / `hatch` / `missing` when it becomes final), then rebuild. The slides have `<!-- chart:NAME -->` placeholders that `build.py` fills.
 - **Result slides** (categories, KMK, clubs) are generated from `src/results.json`; change the generator in `src/build.py`, not the output.
 - **Pilot photo**: put `assets/img/photos/<username>.jpg` (about 1000 px, JPEG). Without a photo the slide shows the initials. If the face is cut off, add the username to `FOCUS` in `build.py` (CSS `object-position`, e.g. `'70% 30%'`).
 - **Pilot name**: podium slides use `HU` in `build.py` (the names engraved on the cups, Hungarian order); everyone else keeps the XContest name.
@@ -48,7 +52,8 @@ Common changes:
 ## Sources
 
 - Results: our own validation of all flights (final, 2026-10-15; objection period closed 10-28). Names on the podium: the cup order.
-- Stats slide: the XContest MKK pilot list (https://www.xcontest.org/hungary/pilotak/ and `/2025/hungary/pilotak/`), 2026-11-17; the chart (2007–2025) and the budget slide are from the 2025 deck and still red.
+- Stats slide: the XContest MKK pilot list (https://www.xcontest.org/hungary/pilotak/ and `/2025/hungary/pilotak/`), 2026-11-17. The chart: `src/mkk_stats.json` (2007–2025 mostly read off the old Excel chart image of the 2025 deck, which is in git history before the SVG charts; no source table exists). Still red: the 2026 klub, 100+ KO and táv (definitions unknown, Fichtinger's Excel).
+- Budget slide: `src/mkk_finances.json` (sources per year: Fichtinger's 2011–2021 PDF, the 2023 deck, his ledger, invoices, the SIRESZ eTitkár Sportalap page). Still red: the 2026 Serlegbolt invoice (webshop estimate, hatched on the charts) and the 2026 Sárkányrepülésért Alapítvány support. XContest in Ft is the EUR invoice × the ECB rate (accepted by the user). Server costs and SVB fuel are not MKK costs.
 - Records and Repülés Éjszakája: https://szakbizottsag.hu/rekordok/ and https://szakbizottsag.hu/
 - Route type colors follow XContest: FAI triangle blue, flat triangle green, free distance orange.
 

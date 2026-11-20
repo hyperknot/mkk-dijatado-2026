@@ -1,0 +1,44 @@
+{
+  "_doc": "MKK costs and income per year, in Ft, for the budget slide charts (src/charts.py). Costs: xcontest (XContest fee), kupak (cups, medals, gift cards). Income: siresz (SIRESZ Sportalap, total, before 2022), siresz_cel (SIRESZ Sportalap céltámogatás: the pilots' voluntary MKK payments), siresz_alt (SIRESZ Sportalap general, covers the rest), hffa, sarkany (Sárkányrepülésért Alapítvány). Every value is verified unless its key is in 'estimate' (computed from an invoice or prices), 'digitized' (read off the old 2025 chart image) or 'derived' (siresz_alt = costs minus the other income; computed by charts.py, not stored). 'hatch': keys drawn hatched on the charts (not final). Server costs (starthelyek.hu) and SVB fuel are not MKK costs (user, 2026-11-20).",
+  "years": {
+    "2011": {"xcontest": 215433, "kupak": 71539, "siresz": 216972, "hffa": 70000, "sarkany": 0, "source": "Drive 'MKK - elmúlt 10 éve.pdf' (1foO7ooFvpsXgobL3SwmYKxuw-B1HQ1hO, Fichtinger, 2022-10-25); HFFA 140 000 for 2011-2012, half each"},
+    "2012": {"xcontest": 247744, "kupak": 84000, "siresz": 261744, "hffa": 70000, "sarkany": 0, "source": "same PDF"},
+    "2013": {"xcontest": 204827, "kupak": 257720, "siresz": 462547, "hffa": 0, "sarkany": 0, "source": "same PDF"},
+    "2014": {"xcontest": 243875, "kupak": 207940, "siresz": 231815, "hffa": 0, "sarkany": 220000, "source": "same PDF"},
+    "2015": {"xcontest": 249113, "kupak": 76593, "siresz": 75706, "hffa": 0, "sarkany": 250000, "source": "same PDF"},
+    "2016": {"xcontest": 264789, "kupak": 150185, "siresz": 264974, "hffa": 0, "sarkany": 150000, "source": "same PDF"},
+    "2017": {"xcontest": 296968, "kupak": 199868, "siresz": 346836, "hffa": 0, "sarkany": 150000, "source": "same PDF"},
+    "2018": {"xcontest": 306794, "kupak": 134410, "siresz": 441204, "hffa": 0, "sarkany": 0, "source": "same PDF"},
+    "2019": {"xcontest": 351464, "kupak": 102870, "siresz": 316334, "hffa": 138000, "sarkany": 0, "source": "same PDF; HFFA 276 000 for 2019-2020, half each"},
+    "2020": {"xcontest": 378840, "kupak": 95000, "siresz": 185840, "hffa": 138000, "sarkany": 150000, "source": "same PDF"},
+    "2021": {"xcontest": 429244, "kupak": 95000, "siresz": 410744, "hffa": 113500, "sarkany": 0, "source": "same PDF"},
+    "2022": {
+      "xcontest": 459000, "kupak": 127000, "siresz_cel": 290000, "siresz_alt": 186000, "hffa": 105500, "sarkany": 0,
+      "digitized": ["xcontest", "kupak"],
+      "source": "Income: Drive sheet 'szamok' (1geoeOIAMSf5k8Ll77rnW-QxwsFVIz_iW6Z8Egf6t850), '2022-23' minus '2023' (HFFA paid 250 000 for 2022-2023 on 2023-10-27). Costs: read off the old koltsegek-bevetelek-2011-2025.jpg (scale fitted on the known 2021 and 2024 bars), about ±5 000"
+    },
+    "2023": {
+      "xcontest": 680000, "kupak": 100000, "siresz_cel": 297000, "siresz_alt": 338000, "hffa": 144500, "sarkany": 0,
+      "source": "Deck 'MKK előadás 2023' (1bvVB7tO7g0WZ-ObLhHnAyMexTNxB5YAtKEEaAxOiQgA), slides '2023 év kiadásai' / 'bevételei' (rounded), and the 'szamok' sheet"
+    },
+    "2024": {
+      "xcontest": 786813, "kupak": 374338, "siresz_cel": 686800, "hffa": 418500, "sarkany": 0,
+      "derived": ["siresz_alt"],
+      "source": "Fichtinger's ledger (screenshot, 'MKK hatékony' chat, 2025-11-07): XContest invoice FV20240107 786 813; Serlegbolt 1617/2024 109 375 + 1619/2024 4 963; Decathlon 260 000; HFFA 418 500; SIRESZ Önkéntes Sportalap 686 800"
+    },
+    "2025": {
+      "xcontest": 662701, "kupak": 274975, "siresz_cel": 408700, "hffa": 316000, "sarkany": 200000,
+      "estimate": ["xcontest"],
+      "derived": ["siresz_alt"],
+      "source": "XContest invoice FV20250074 1 734,82 EUR × 382 Ft/EUR (the rate on the 2025 deck); Serlegbolt invoice 2025/01483 114 975 (S023 27 cm cups, 20% discount) + Decathlon 8 × 20 000; SIRESZ 'MKK 2025 - SIRESZ' table (Fichtinger, chat 2025-11-07, 214 payers); HFFA 316 000 (Kerekes László, email 2025-11-10); Sárkányrepülésért Alapítvány 200 000 paid 2025-02-03 (Fichtinger, chat 2025-11-08)"
+    },
+    "2026": {
+      "xcontest": 597020, "kupak": 259248, "siresz_cel": 271500, "hffa": 300000,
+      "estimate": ["xcontest", "kupak"],
+      "derived": ["siresz_alt"],
+      "hatch": ["kupak", "siresz_alt"],
+      "missing": ["sarkany"],
+      "source": "XContest invoice FV20260052 (2026-10-29, 396 pilots) 1 635,76 EUR × 364,98 (ECB, 2026-11-12, due date). kupak: Decathlon 8 × 20 000 + Serlegbolt estimate 99 248 from the webshop prices (2026-11-20) with last year's 20% discount: 22 S023 cups 3 430, 23 plastic plates 900, 15 e011 medals 610, 15 nemzeti szalag 200, 15 medal engravings 500, and 22 custom cup inserts 300 without discount; replace with the invoice. SIRESZ: the 'MKK (n)' parts of https://etitkar.siresz.hu/pages.php?page=SIRESzSportBase&year=2026 (134 payments, 2026-11-20). HFFA 300 000 (arrived, user 2026-11-20). Sárkányrepülésért Alapítvány 2026: unknown"
+    }
+  }
+}

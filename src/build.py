@@ -9,6 +9,8 @@ import json
 from html import escape
 from pathlib import Path
 
+from charts import charts as mkk_charts
+
 ROOT = Path(__file__).resolve().parent.parent
 SRC = ROOT / 'src'
 
@@ -184,6 +186,9 @@ def main():
             slides += liga_fun_slides(season, liga)
     template = (SRC / 'template.html').read_text()
     html = template.replace('<!-- SLIDES -->', '\n\n'.join(slides))
+    # the MKK charts (budget, stats slides): inline SVG from src/mkk_*.json, see src/charts.py
+    for chart, svg in mkk_charts().items():
+        html = html.replace(f'<!-- chart:{chart} -->', svg)
     (ROOT / 'index.html').write_text(html)
     print(f'index.html: {html.count("<section")} slides')
 
