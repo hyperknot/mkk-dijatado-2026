@@ -514,7 +514,7 @@ section.stage {
 
 section.kmk {
   display: grid !important;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   gap: 50px;
 }
 
@@ -639,17 +639,76 @@ section.sponsors {
 
 /* budget: the 2026 numbers, expenses left, income right */
 section.budget-numbers {
-  grid-template-rows: auto auto;
-  align-content: start;
+  display: flex !important;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.reveal .slides section.budget-numbers {
+  padding: 70px 70px 80px;
+}
+
+.budget-numbers h2 {
+  text-align: center;
+}
+
+/* expenses left, income right; the panels fill the height, the totals sit on one line at the bottom */
+.budget-numbers .ledgers {
+  flex: 1;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 50px;
+}
+
+.budget-numbers .panel {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  padding: 70px 48px 56px;
+  font-size: 50px;
+  background: rgba(15, 30, 45, 0.7);
+  line-height: 1.2;
+}
+
+/* one line: label left, amount right-aligned */
+.budget-numbers .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 30px;
+}
+
+.budget-numbers .row span,
+.budget-numbers .row b {
+  white-space: nowrap;
+}
+
+.budget-numbers .row b {
+  font-weight: 700;
+}
+
+.budget-numbers .row small {
+  display: block;
+  margin-top: 4px;
+  font-size: 32px;
+  font-weight: 500;
+  opacity: 0.75;
 }
 
 /* the parts of a sum, below it */
 .budget-numbers .sub {
-  padding-left: 48px;
+  margin-top: -36px;
+  padding-left: 50px;
+  font-size: 42px;
+  font-weight: 500;
+  opacity: 0.85;
 }
 
 /* the sum, as the last line of its block */
 .budget-numbers .total {
+  margin-top: auto;
+  padding-top: 26px;
+  border-top: 3px solid rgba(255, 255, 255, 0.45);
   color: #ffd27a;
 }
 
