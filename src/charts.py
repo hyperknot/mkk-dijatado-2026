@@ -14,7 +14,9 @@ INCOME_DETAIL = [
     ('siresz_alt', 'SIRESZ Sportalap (általános)', '#3f7a2a'),
 ]
 INCOME = [('siresz', 'SIRESZ', '#70ad47'), ('hffa', 'HFFA', '#5b9bd5'), ('sarkany', 'Sárkányrepülésért Alapítvány', '#ffc000')]
-HATCH_NOTE = 'csíkozott: becslés'
+# segments not certain yet ('unsure' in mkk_finances.json): drawn with a red frame, as the red frames of the slides
+UNSURE_NOTE = 'piros keret: nem biztos'
+RED = '#e01b1b'
 
 
 def charts():
@@ -23,8 +25,8 @@ def charts():
     detail = [(y, v) for y, v in years if y >= 2022]
     income = [(y, {**v, 'siresz': v.get('siresz', 0) + v.get('siresz_cel', 0) + v.get('siresz_alt', 0)}) for y, v in years]
     for y, v in income:
-        if 'siresz_alt' in v['hatch']:
-            v['hatch'] = v['hatch'] | {'siresz'}
+        if 'siresz_alt' in v['unsure']:
+            v['unsure'] = v['unsure'] | {'siresz'}
     return {
         'income-detail': hbar('Bevételek 2022–2026 (eFt)', detail, INCOME_DETAIL, 840, 400, totals=True),
         'costs': hbar('Költségek (eFt)', years, COSTS, 840, 470),
@@ -34,14 +36,14 @@ def charts():
 
 
 def finances():
-    # [(year, {key: Ft, 'hatch': set}), ...]; siresz_alt derived where marked
+    # [(year, {key: Ft, 'unsure': set}), ...]; siresz_alt derived where marked
     data = json.loads((SRC / 'mkk_finances.json').read_text())['years']
     out = []
     for y, d in sorted(data.items()):
         v = {k: d[k] for k in ('xcontest', 'kupak', 'siresz', 'siresz_cel', 'siresz_alt', 'hffa', 'sarkany') if k in d}
         if 'siresz_alt' in d.get('derived', []):
             v['siresz_alt'] = v['xcontest'] + v['kupak'] - sum(v.get(k, 0) for k in ('siresz_cel', 'hffa', 'sarkany'))
-        v['hatch'] = set(d.get('hatch', []))
+        v['unsure'] = set(d.get('unsure', []))
         out.append((int(y), v))
     return out
 
@@ -49,13 +51,13 @@ def finances():
 def hbar(title, rows, series, w, h, totals=False):
     # stacked horizontal bars, one row per year, values in thousand Ft
     left, right, top = 78, 70 if totals else 24, 92
-    legend_rows, legend = legend_svg(series + ([(None, HATCH_NOTE, None)] if any(v['hatch'] for _, v in rows) else []), w)
+    legend_rows, legend = legend_svg(series + ([(None, UNSURE_NOTE, None)] if any(v['unsure'] for _, v in rows) else []), w)
     bottom = h - 16 - 30 * legend_rows
     xmax, step = 1400, 200
     sx = (w - left - right) / xmax
     band = (bottom - top) / len(rows)
     bar = min(band * 0.68, 46)
-    out = [svg_open(w, h, title), hatch_defs(series), text(w / 2, 36, title, 30, weight=700)]
+    out = [svg_open(w, h, title), text(w / 2, 36, title, 30, weight=700)]
     for t in range(0, xmax + 1, step):
         x = left + t * sx
         out.append(f'<line x1="{x:.1f}" y1="{top - 8}" x2="{x:.1f}" y2="{bottom}" class="grid"/>')
@@ -68,8 +70,8 @@ def hbar(title, rows, series, w, h, totals=False):
             val = v.get(key, 0) / 1000
             if val <= 0:
                 continue
-            fill = f'url(#hatch-{key})' if key in v['hatch'] else color
-            out.append(f'<rect x="{x:.1f}" y="{cy - bar / 2:.1f}" width="{val * sx:.1f}" height="{bar:.1f}" fill="{fill}"/>')
+            frame = f' stroke="{RED}" stroke-width="4"' if key in v['unsure'] else ''
+            out.append(f'<rect x="{x:.1f}" y="{cy - bar / 2:.1f}" width="{val * sx:.1f}" height="{bar:.1f}" fill="{color}"{frame}/>')
             x += val * sx
         if totals:
             out.append(text(x + 10, cy + 7, fmt(round(sum(v.get(k, 0) for k, _, _ in series) / 1000)), 21, anchor='start', weight=600))
@@ -81,24 +83,24 @@ def hbar(title, rows, series, w, h, totals=False):
 def stats_chart():
     data = json.loads((SRC / 'mkk_stats.json').read_text())
     series = data['series']
-    w, h = 1000, 640
-    left, right, top = 70, 86, 70
+    # wide for the full-width chart of the stats slide (about 1740 x 720 px on the slide)
+    w, h = 1740, 720
+    left, right, top = 80, 96, 34
     order = ['pilota', 'tavrepulo', 'repulesek', 'tav', 'legtersertes', 'ko100', 'klub']
-    legend_rows, legend = legend_svg([(k, series[k]['label'], series[k]['color']) for k in order], w, line=True)
-    bottom = h - 46 - 30 * legend_rows
+    legend_rows, legend = legend_svg([(k, series[k]['label'], series[k]['color']) for k in order], w, line=True, size=25)
+    bottom = h - 62 - 36 * legend_rows
     years = list(range(2007, 2027))
     sx = (w - left - right) / (len(years) - 1)
     scales = {'left': (600, 100), 'right': (12000, 2000)}
-    title = 'MKK számokban, 2007–2026'
-    out = [svg_open(w, h, title), text(w / 2, 40, title, 30, weight=700)]
+    out = [svg_open(w, h, 'MKK számokban, 2007–2026')]
     for i in range(7):
         y = bottom - i * (bottom - top) / 6
         out.append(f'<line x1="{left}" y1="{y:.1f}" x2="{w - right}" y2="{y:.1f}" class="grid"/>')
-        out.append(text(left - 12, y + 6, fmt(i * 100), 18, anchor='end', cls='tick'))
-        out.append(text(w - right + 12, y + 6, fmt(i * 2000), 18, anchor='start', cls='tick'))
+        out.append(text(left - 14, y + 8, fmt(i * 100), 24, anchor='end', cls='tick'))
+        out.append(text(w - right + 14, y + 8, fmt(i * 2000), 24, anchor='start', cls='tick'))
     for i, yr in enumerate(years):
-        if (yr % 2 and yr != years[-2]) or yr == years[-1]:
-            out.append(text(left + i * sx, bottom + 30, str(yr), 18 if yr != years[-1] else 20, weight=500 if yr != years[-1] else 700, cls='tick' if yr != years[-1] else ''))
+        last = yr == years[-1]
+        out.append(text(left + i * sx, bottom + 36, str(yr), 26 if last else 23, weight=700 if last else 500, cls='' if last else 'tick'))
     for key in reversed(order):
         s = series[key]
         ymax = scales[s['axis']][0]
@@ -114,17 +116,17 @@ def stats_chart():
             runs.append(cur)
         for run in runs:
             d = ' '.join(f'{x:.1f},{y:.1f}' for x, y in run)
-            out.append(f'<polyline points="{d}" fill="none" stroke="{s["color"]}" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>')
+            out.append(f'<polyline points="{d}" fill="none" stroke="{s["color"]}" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>')
         if pts[-1]:
             x, y = pts[-1]
-            out.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="7" fill="{s["color"]}" stroke="#fff" stroke-width="2"/>')
-    out.append(f'<g transform="translate(0 {bottom + 62})">{legend}</g>')
+            out.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="9" fill="{s["color"]}" stroke="#fff" stroke-width="2.5"/>')
+    out.append(f'<g transform="translate(0 {bottom + 80})">{legend}</g>')
     out.append('</svg>')
     return '\n'.join(out)
 
 
 def legend_svg(items, w, line=False, size=20):
-    # centered legend rows; items: (key, label, color); color None: the hatch sample
+    # centered legend rows; items: (key, label, color); color None: the red frame sample
     widths = [34 + len(label) * size * 0.56 + 30 for _, label, _ in items]
     rows, cur, cur_w = [], [], 0
     for item, iw in zip(items, widths):
@@ -137,29 +139,16 @@ def legend_svg(items, w, line=False, size=20):
     out = []
     for r, (row, row_w) in enumerate(rows):
         x = (w - row_w) / 2
-        y = r * 30
+        y = r * (size + 11)
         for (key, label, color), iw in row:
             if line:
                 out.append(f'<line x1="{x:.1f}" y1="{y:.1f}" x2="{x + 24:.1f}" y2="{y:.1f}" stroke="{color}" stroke-width="5" stroke-linecap="round"/>')
             else:
-                fill = color or 'url(#hatch-sample)'
-                out.append(f'<rect x="{x:.1f}" y="{y - 9:.1f}" width="20" height="18" fill="{fill}"/>')
+                style = f'fill="{color}"' if color else f'fill="none" stroke="{RED}" stroke-width="4"'
+                out.append(f'<rect x="{x:.1f}" y="{y - 9:.1f}" width="20" height="18" {style}/>')
             out.append(text(x + 32, y + 7, label, size, anchor='start'))
             x += iw
     return len(rows), ''.join(out)
-
-
-def hatch_defs(series):
-    pats = [
-        f'<pattern id="hatch-{key}" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">'
-        f'<rect width="10" height="10" fill="{color}" opacity="0.45"/><rect width="5" height="10" fill="{color}"/></pattern>'
-        for key, _, color in series
-    ]
-    pats.append(
-        '<pattern id="hatch-sample" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">'
-        '<rect width="10" height="10" fill="#bbb" opacity="0.45"/><rect width="5" height="10" fill="#bbb"/></pattern>'
-    )
-    return f'<defs>{"".join(pats)}</defs>'
 
 
 def svg_open(w, h, label):

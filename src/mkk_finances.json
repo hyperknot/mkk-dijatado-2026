@@ -1,5 +1,5 @@
 {
-  "_doc": "MKK costs and income per year, in Ft, for the budget slide charts (src/charts.py). Costs: xcontest (XContest fee), kupak (cups, medals, gift cards). Income: siresz (SIRESZ Sportalap, total, before 2022), siresz_cel (SIRESZ Sportalap céltámogatás: the pilots' voluntary MKK payments), siresz_alt (SIRESZ Sportalap general, covers the rest), hffa, sarkany (Sárkányrepülésért Alapítvány). Every value is verified unless its key is in 'estimate' (computed from an invoice or prices), 'digitized' (read off the old 2025 chart image) or 'derived' (siresz_alt = costs minus the other income: SIRESZ Sportalap always covers the rest of the year; computed by charts.py, not stored). 'hatch': keys drawn hatched on the charts (not final). Server costs (starthelyek.hu) and SVB fuel are not MKK costs (user, 2026-11-20). XContest in Ft: the EUR invoice × the ECB rate on the invoice date (user, 2026-11-20); there is no forint debit. Income and costs are complete (user, 2026-11-20): no other items.",
+  "_doc": "MKK costs and income per year, in Ft, for the budget slide charts (src/charts.py). Costs: xcontest (XContest fee), kupak (cups, medals, gift cards). Income: siresz (SIRESZ Sportalap, total, before 2022), siresz_cel (SIRESZ Sportalap céltámogatás: the pilots' voluntary MKK payments), siresz_alt (SIRESZ Sportalap general, covers the rest), hffa, sarkany (Sárkányrepülésért Alapítvány). Every value is verified unless its key is in 'estimate' (from webshop prices, no invoice yet), 'digitized' (read off the old 2025 chart image) or 'derived' (siresz_alt = costs minus the other income: SIRESZ Sportalap always covers the rest of the year; computed by charts.py, not stored). 'unsure': segments drawn with a red frame on the charts (not certain). 'missing': unknown values. XContest at the ECB rate of the invoice date counts as exact. Server costs (starthelyek.hu) and SVB fuel are not MKK costs (user, 2026-11-20). XContest in Ft: the EUR invoice × the ECB rate on the invoice date (user, 2026-11-20); there is no forint debit.",
   "years": {
     "2011": {
       "xcontest": 215433,
@@ -132,9 +132,9 @@
       "hffa": 300000,
       "estimate": ["kupak"],
       "derived": ["siresz_alt"],
-      "hatch": ["kupak", "siresz_alt"],
-      "source": "XContest invoice FV20260052 (2026-10-29, 396 pilots) 1 635,76 EUR × 365,95 (ECB, 2026-10-29, the invoice date). kupak: Decathlon 8 × 20 000 + Serlegbolt estimate 99 248 from the webshop prices (2026-11-20) with last year's 20% discount: 22 S023 cups 3 430, 23 plastic plates 900, 15 e011 medals 610, 15 nemzeti szalag 200, 15 medal engravings 500, and 22 custom cup inserts 300 without discount; replace with the invoice. SIRESZ: the 'MKK (n)' parts of https://etitkar.siresz.hu/pages.php?page=SIRESzSportBase&year=2026 (134 payments, 2026-11-20). HFFA 300 000 (arrived, user 2026-11-20). No Sárkányrepülésért Alapítvány support in 2026 (user: all income is known)",
-      "sarkany": 0
+      "source": "XContest invoice FV20260052 (2026-10-29, 396 pilots) 1 635,76 EUR × 365,95 (ECB, 2026-10-29, the invoice date). kupak: Decathlon 8 × 20 000 + Serlegbolt estimate 99 248 from the webshop prices (2026-11-20) with last year's 20% discount: 22 S023 cups 3 430, 23 plastic plates 900, 15 e011 medals 610, 15 nemzeti szalag 200, 15 medal engravings 500, and 22 custom cup inserts 300 without discount; replace with the invoice. SIRESZ: the 'MKK (n)' parts of https://etitkar.siresz.hu/pages.php?page=SIRESzSportBase&year=2026 (134 payments, 2026-11-20). HFFA 300 000 (arrived, user 2026-11-20). Sárkányrepülésért Alapítvány 2026: not known (red); siresz_alt assumes none",
+      "unsure": ["kupak", "siresz_alt"],
+      "missing": ["sarkany"]
     }
   }
 }
