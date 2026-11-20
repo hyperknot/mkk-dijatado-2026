@@ -7,13 +7,18 @@ from pathlib import Path
 SRC = Path(__file__).resolve().parent
 
 COSTS = [('xcontest', 'XContest', '#4472c4'), ('kupak', 'Díjak (kupák, érmek, utalványok)', '#ed7d31')]
-INCOME_DETAIL = [
+# before 2022 only the SIRESZ total is known ('siresz'): striped in the two SIRESZ greens
+INCOME = [
+    ('siresz', 'SIRESZ, 2022 előtt nincs bontás', 'url(#siresz-stripes)'),
     ('siresz_cel', 'SIRESZ önkéntes támogatás', '#70ad47'),
     ('hffa', 'HFFA önkéntes támogatás', '#5b9bd5'),
     ('sarkany', 'Sárkányrepülésért Alapítvány', '#ffc000'),
     ('siresz_alt', 'SIRESZ Sportalap', '#3f7a2a'),
 ]
-INCOME = [('siresz', 'SIRESZ', '#70ad47'), ('hffa', 'HFFA', '#5b9bd5'), ('sarkany', 'Sárkányrepülésért Alapítvány', '#ffc000')]
+STRIPES = (
+    '<defs><pattern id="siresz-stripes" width="14" height="14" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">'
+    '<rect width="7" height="14" fill="#70ad47"/><rect x="7" width="7" height="14" fill="#3f7a2a"/></pattern></defs>'
+)
 # segments not certain yet ('unsure' in mkk_finances.json): drawn with a red frame, as the red frames of the slides
 UNSURE_NOTE = 'piros keret: nem biztos'
 RED = '#e01b1b'
@@ -22,15 +27,10 @@ RED = '#e01b1b'
 def charts():
     # placeholder name -> SVG
     years = finances()
-    detail = [(y, v) for y, v in years if y >= 2022]
-    income = [(y, {**v, 'siresz': v.get('siresz', 0) + v.get('siresz_cel', 0) + v.get('siresz_alt', 0)}) for y, v in years]
-    for y, v in income:
-        if 'siresz_alt' in v['unsure']:
-            v['unsure'] = v['unsure'] | {'siresz'}
     return {
-        'income-detail': hbar('Bevételek 2022–2026 (eFt)', detail, INCOME_DETAIL, 840, 400, totals=True),
-        'costs': hbar('Költségek (eFt)', years, COSTS, 840, 430),
-        'income': hbar('Bevételek (eFt)', income, INCOME, 840, 430),
+        # same height and legend space: the years of the two charts side by side line up
+        'costs': hbar('Költségek (eFt)', years, COSTS, 840, 940, totals=True, legend_rows=3),
+        'income': hbar('Bevételek (eFt)', years, INCOME, 840, 940, totals=True, legend_rows=3),
         'stats': stats_chart(),
     }
 
@@ -48,16 +48,18 @@ def finances():
     return out
 
 
-def hbar(title, rows, series, w, h, totals=False):
+def hbar(title, rows, series, w, h, totals=False, legend_rows=1):
     # stacked horizontal bars, one row per year, values in thousand Ft
     left, right, top = 78, 70 if totals else 24, 92
-    legend_rows, legend = legend_svg(series + ([(None, UNSURE_NOTE, None)] if any(v['unsure'] & {k for k, _, _ in series} for _, v in rows) else []), w)
-    bottom = h - 16 - 30 * legend_rows
+    rows_used, legend = legend_svg(series + ([(None, UNSURE_NOTE, None)] if any(v['unsure'] & {k for k, _, _ in series} for _, v in rows) else []), w)
+    bottom = h - 16 - 30 * max(rows_used, legend_rows)
     xmax, step = 1400, 200
     sx = (w - left - right) / xmax
     band = (bottom - top) / len(rows)
     bar = min(band * 0.68, 46)
     out = [svg_open(w, h, title), text(w / 2, 36, title, 30, weight=700)]
+    if any(c and c.startswith('url(') for _, _, c in series):
+        out.append(STRIPES)
     for t in range(0, xmax + 1, step):
         x = left + t * sx
         out.append(f'<line x1="{x:.1f}" y1="{top - 8}" x2="{x:.1f}" y2="{bottom}" class="grid"/>')
