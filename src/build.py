@@ -153,7 +153,11 @@ LIGA_PILOTS = {
     1122: ('Fűrész Dóra', None),
     7777: ('Radnai András', None),
     32: ('Hargitai Dávid', None),
-    42: ('Molnar Peter A.', None),
+    42: ('Molnár Péter A.', None),
+    1339: ('Barát Ádám', None),
+    76: ('Kovács Attila', None),
+    27: ('Szalai Szabolcs', None),
+    96723: ('Barta Levente', None),
 }
 
 ROMAN = {1: 'I.', 2: 'II.', 3: 'III.'}
