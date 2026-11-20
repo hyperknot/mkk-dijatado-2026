@@ -51,7 +51,7 @@ def finances():
 def hbar(title, rows, series, w, h, totals=False):
     # stacked horizontal bars, one row per year, values in thousand Ft
     left, right, top = 78, 70 if totals else 24, 92
-    legend_rows, legend = legend_svg(series + ([(None, UNSURE_NOTE, None)] if any(v['unsure'] for _, v in rows) else []), w)
+    legend_rows, legend = legend_svg(series + ([(None, UNSURE_NOTE, None)] if any(v['unsure'] & {k for k, _, _ in series} for _, v in rows) else []), w)
     bottom = h - 16 - 30 * legend_rows
     xmax, step = 1400, 200
     sx = (w - left - right) / xmax

@@ -127,13 +127,12 @@
     },
     "2026": {
       "xcontest": 598606,
-      "kupak": 259248,
+      "kupak": 280150,
       "siresz_cel": 271500,
       "hffa": 300000,
-      "estimate": ["kupak"],
       "derived": ["siresz_alt"],
-      "source": "XContest invoice FV20260052 (2026-10-29, 396 pilots) 1 635,76 EUR × 365,95 (ECB, 2026-10-29, the invoice date). kupak: Decathlon 8 × 20 000 + Serlegbolt estimate 99 248 from the webshop prices (2026-11-20) with last year's 20% discount: 22 S023 cups 3 430, 23 plastic plates 900, 15 e011 medals 610, 15 nemzeti szalag 200, 15 medal engravings 500, and 22 custom cup inserts 300 without discount; replace with the invoice. SIRESZ: the 'MKK (n)' parts of https://etitkar.siresz.hu/pages.php?page=SIRESzSportBase&year=2026 (134 payments, 2026-11-20). HFFA 300 000 (arrived, user 2026-11-20). Sárkányrepülésért Alapítvány 2026: not known (red); siresz_alt assumes none",
-      "unsure": ["kupak", "siresz_alt"],
+      "source": "XContest invoice FV20260052 (2026-10-29, 396 pilots) 1 635,76 EUR × 365,95 (ECB, 2026-10-29, the invoice date). kupak: Decathlon 8 × 20 000 + Serlegbolt invoice 2026/01503 (BALU 2001 Kft., 2026-11-20) 120 150 gross (30% discount): 8 + 7 + 7 cups 34/32/30 cm, 23 plastic plates, 15 medals 7 cm with engraving and ribbon, 22 custom medal inserts. SIRESZ: the 'MKK (n)' parts of https://etitkar.siresz.hu/pages.php?page=SIRESzSportBase&year=2026 (134 payments, 2026-11-20). HFFA 300 000 (arrived, user 2026-11-20). Sárkányrepülésért Alapítvány 2026: not known (red); siresz_alt assumes none",
+      "unsure": ["siresz_alt"],
       "missing": ["sarkany"]
     }
   }
