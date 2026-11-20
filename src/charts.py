@@ -7,18 +7,14 @@ from pathlib import Path
 SRC = Path(__file__).resolve().parent
 
 COSTS = [('xcontest', 'XContest', '#4472c4'), ('kupak', 'Díjak (kupák, érmek, utalványok)', '#ed7d31')]
-# before 2022 only the SIRESZ total is known ('siresz'): striped in the two SIRESZ greens
+# before 2022 only the SIRESZ total is known ('siresz'), a plain lighter green
 INCOME = [
-    ('siresz', 'SIRESZ, 2022 előtt nincs bontás', 'url(#siresz-stripes)'),
+    ('siresz', 'SIRESZ', '#a9d18e'),
     ('siresz_cel', 'SIRESZ önkéntes támogatás', '#70ad47'),
     ('hffa', 'HFFA önkéntes támogatás', '#5b9bd5'),
     ('sarkany', 'Sárkányrepülésért Alapítvány', '#ffc000'),
     ('siresz_alt', 'SIRESZ Sportalap', '#3f7a2a'),
 ]
-STRIPES = (
-    '<defs><pattern id="siresz-stripes" width="14" height="14" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">'
-    '<rect width="7" height="14" fill="#70ad47"/><rect x="7" width="7" height="14" fill="#3f7a2a"/></pattern></defs>'
-)
 # segments not certain yet ('unsure' in mkk_finances.json): drawn with a red frame, as the red frames of the slides
 UNSURE_NOTE = 'piros keret: nem biztos'
 RED = '#e01b1b'
@@ -58,8 +54,6 @@ def hbar(title, rows, series, w, h, totals=False, legend_rows=1):
     band = (bottom - top) / len(rows)
     bar = min(band * 0.68, 46)
     out = [svg_open(w, h, title), text(w / 2, 36, title, 30, weight=700)]
-    if any(c and c.startswith('url(') for _, _, c in series):
-        out.append(STRIPES)
     for t in range(0, xmax + 1, step):
         x = left + t * sx
         out.append(f'<line x1="{x:.1f}" y1="{top - 8}" x2="{x:.1f}" y2="{bottom}" class="grid"/>')
