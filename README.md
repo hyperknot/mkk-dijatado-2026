@@ -52,8 +52,8 @@ Common changes:
 ## Sources
 
 - Results: our own validation of all flights (final, 2026-10-15; objection period closed 10-28). Names on the podium: the cup order.
-- Stats slide: the XContest MKK pilot list (https://www.xcontest.org/hungary/pilotak/ and `/2025/hungary/pilotak/`), 2026-11-17. The chart: `src/mkk_stats.json` (2007–2025 mostly read off the old Excel chart image of the 2025 deck, which is in git history before the SVG charts; no source table exists). Still red: the 2026 klub, 100+ KO and táv (definitions unknown, Fichtinger's Excel).
-- Budget slide: `src/mkk_finances.json` (sources per year: Fichtinger's 2011–2021 PDF, the 2023 deck, his ledger, invoices, the SIRESZ eTitkár Sportalap page). Still red: the 2026 Serlegbolt invoice (webshop estimate, hatched on the charts) and the 2026 Sárkányrepülésért Alapítvány support. XContest in Ft is the EUR invoice × the ECB rate (accepted by the user). Server costs and SVB fuel are not MKK costs.
+- Stats slide: the XContest MKK pilot list (https://www.xcontest.org/hungary/pilotak/ and `/2025/hungary/pilotak/`), 2026-11-17. The chart: `src/mkk_stats.json` (2007–2025 mostly read off the old Excel chart image of the 2025 deck, which is in git history before the SVG charts; no source table exists). 2026 légtérsértés (KO), 100+ KO (KO flights with 100+ points) and klub (clubs in the PG Klub ranking) come from the validation repo (`../src`, final `pont.html` and `lib/scoring.py`). Still red: táv (definition unknown).
+- Budget slide: `src/mkk_finances.json` (sources per year: Fichtinger's `MKK12_év.xlsx` 2011–2023 (`/Users/user/Documents/life/paragliding/2024/MKK/eloadas 2023/`), the 2023 deck, his ledger, invoices, the SIRESZ eTitkár Sportalap page). Still red: the 2026 Serlegbolt invoice (webshop estimate, hatched on the charts) and the 2026 Sárkányrepülésért Alapítvány support. XContest in Ft is the EUR invoice × the ECB rate (accepted by the user). Server costs and SVB fuel are not MKK costs.
 - Records and Repülés Éjszakája: https://szakbizottsag.hu/rekordok/ and https://szakbizottsag.hu/
 - Route type colors follow XContest: FAI triangle blue, flat triangle green, free distance orange.
 
