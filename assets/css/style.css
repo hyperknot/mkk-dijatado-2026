@@ -659,6 +659,11 @@ section.budget {
   margin-bottom: 8px;
 }
 
+/* the parts of a sum, below it */
+.budget .panel .sub {
+  padding-left: 32px;
+}
+
 .budget .panel h3 {
   margin: 0 0 2px;
   font-size: 30px;
