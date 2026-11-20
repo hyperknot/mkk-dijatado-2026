@@ -659,14 +659,39 @@ section.budget {
   margin-bottom: 8px;
 }
 
+.budget .panel h3 {
+  margin: 0 0 2px;
+  font-size: 30px;
+  font-weight: 800;
+  color: #ffd27a;
+}
+
+.budget .panel hr {
+  margin: 14px 0 12px;
+  border: 0;
+  border-top: 2px solid rgba(255, 255, 255, 0.45);
+}
+
+/* the uncertain lines of the panel: one line each, the red label inline before the text */
 .budget .panel .stale {
-  margin: 34px 0 14px;
-  padding: 6px 12px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 12px 0 4px 6px;
+  padding: 2px 10px 2px 0;
+  outline-width: 6px;
+}
+
+.budget .panel .stale p {
+  margin: 0;
 }
 
 .budget .panel .stale::before {
-  font-size: 24px;
-  top: -36px;
+  position: static;
+  transform: none;
+  padding: 2px 12px;
+  border-radius: 6px;
+  font-size: 20px;
 }
 
 .budget .wide {

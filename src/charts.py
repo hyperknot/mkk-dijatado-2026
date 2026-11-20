@@ -8,10 +8,10 @@ SRC = Path(__file__).resolve().parent
 
 COSTS = [('xcontest', 'XContest', '#4472c4'), ('kupak', 'Díjak (kupák, érmek, utalványok)', '#ed7d31')]
 INCOME_DETAIL = [
-    ('siresz_cel', 'SIRESZ Sportalap céltámogatás', '#70ad47'),
-    ('hffa', 'HFFA', '#5b9bd5'),
+    ('siresz_cel', 'SIRESZ önkéntes támogatás', '#70ad47'),
+    ('hffa', 'HFFA önkéntes támogatás', '#5b9bd5'),
     ('sarkany', 'Sárkányrepülésért Alapítvány', '#ffc000'),
-    ('siresz_alt', 'SIRESZ Sportalap (általános)', '#3f7a2a'),
+    ('siresz_alt', 'SIRESZ Sportalap', '#3f7a2a'),
 ]
 INCOME = [('siresz', 'SIRESZ', '#70ad47'), ('hffa', 'HFFA', '#5b9bd5'), ('sarkany', 'Sárkányrepülésért Alapítvány', '#ffc000')]
 # segments not certain yet ('unsure' in mkk_finances.json): drawn with a red frame, as the red frames of the slides
@@ -29,8 +29,8 @@ def charts():
             v['unsure'] = v['unsure'] | {'siresz'}
     return {
         'income-detail': hbar('Bevételek 2022–2026 (eFt)', detail, INCOME_DETAIL, 840, 400, totals=True),
-        'costs': hbar('Költségek (eFt)', years, COSTS, 840, 470),
-        'income': hbar('Bevételek (eFt)', income, INCOME, 840, 470),
+        'costs': hbar('Költségek (eFt)', years, COSTS, 840, 430),
+        'income': hbar('Bevételek (eFt)', income, INCOME, 840, 430),
         'stats': stats_chart(),
     }
 
