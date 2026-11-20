@@ -86,7 +86,7 @@ def stats_chart():
     # wide for the full-width chart of the stats slide (about 1740 x 720 px on the slide)
     w, h = 1740, 720
     left, right, top = 80, 96, 34
-    order = ['pilota', 'tavrepulo', 'repulesek', 'tav', 'legtersertes', 'ko100', 'klub']
+    order = ['pilota', 'tavrepulo', 'repulesek', 'tav', 'legtersertes', 'ko100']  # klub: in the data, not drawn
     legend_rows, legend = legend_svg([(k, series[k]['label'], series[k]['color']) for k in order], w, line=True, size=25)
     bottom = h - 62 - 36 * legend_rows
     years = list(range(2007, 2027))
